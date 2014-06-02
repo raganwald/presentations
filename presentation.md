@@ -1,18 +1,6 @@
-# A Unified Theory of JavaScript Style
+### A Unified Theory of JavaScript Style, Part I
 
-Reginald Braithwaite
-
-GitHub, Inc.
-
-Oslo, Norway, June 5, 2014
-
-![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
-
-^ https://www.flickr.com/photos/wwworks/3226981951
-
----
-
-# Part I: JavaScript Combinators
+# JavaScript Combinators
 
 ![](https://farm3.staticflickr.com/2706/4378437185_4bdff99419_o_d.jpg)
 
@@ -244,7 +232,9 @@ pluckWith('name')(stooges);
 
 ---
 
-# Part II: The Art of the JavaScript Metaobject Protocol
+### A Unified Theory of JavaScript Style, Part II
+
+# The Art of the JavaScript Metaobject Protocol
 
 ![](https://farm7.staticflickr.com/6203/6139595092_03a302ac43_o_d.jpg)
 
@@ -252,37 +242,48 @@ pluckWith('name')(stooges);
 
 ---
 
-## Encapsulation
+# Basics
 
-![](https://farm9.staticflickr.com/8187/8134526531_ca358cc78d_o_d.jpg)
+![](https://farm1.staticflickr.com/33/49012397_1fbe7855e3_o_d.jpg)
 
-^ https://www.flickr.com/photos/lukepeterson/8134526531
-
----
-
-> OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
---Dr. Alan Kay
+^ https://www.flickr.com/photos/zscheyge/49012397
 
 ---
 
-# Software entities should be open for extension, but closed for modification
-
-![](https://farm4.staticflickr.com/3683/9715489429_43048e0f9c_o_d.jpg)
-
-^ https://www.flickr.com/photos/jorbasa/9715489429
-^ [The Open/Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
+```javascript
+var sam = {
+  firstName: 'Sam',
+  lastName: 'Lowry',
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+  rename: function (first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return this;
+  }
+}
+```
 
 ---
 
-# Mutable metaobjects violate the open/closed principle
+```javascript
+var sam = {
+  firstName: 'Sam',
+  lastName: 'Lowry'
+};
 
----
-
-# extend considered harmful
-
-![](https://farm9.staticflickr.com/8199/8178035999_b74a17a2a7_o_d.jpg)
-
-^ https://www.flickr.com/photos/marfis75/8178035999
+var Person = {
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+  rename: function (first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return this;
+  }
+};
+```
 
 ---
 
@@ -305,5 +306,234 @@ function extend () {
   return consumer;
 }
 ```
+
+---
+
+# Mixins are many to _
+
+```javascript
+extend(sam, Person);
+
+var peck = {
+  firstName: 'Sam',
+  lastName: 'Peckinpah'
+};
+
+extend(peck, Person);
+```
+
+---
+
+# Mixins are _ to many
+
+```javascript
+var HasCareer = {
+  career: function () {
+    return this.chosenCareer;
+  },
+  setCareer: function (career) {
+    this.chosenCareer = career;
+    return this;
+  }
+};
+
+extend(peck, HasCareer);
+
+peck.setCareer('Director');
+```
+
+---
+
+# Software entities should be open for extension, but closed for modification
+
+![](https://farm4.staticflickr.com/3683/9715489429_43048e0f9c_o_d.jpg)
+
+^ https://www.flickr.com/photos/jorbasa/9715489429
+^ [The Open/Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
+
+---
+
+# `extend` considered harmful
+
+## Mutable metaobjects violate the open/closed principle
+
+![](https://farm9.staticflickr.com/8199/8178035999_b74a17a2a7_o_d.jpg)
+
+^ https://www.flickr.com/photos/marfis75/8178035999
+
+---
+
+```javascript
+function composeObjects () {
+	return extend.apply(
+		null,
+		[{}].concat([].slice.call(arguments, 0))
+	);
+}
+
+var Both = composeObjects(Person, Director);
+```
+
+---
+
+## Encapsulation
+
+![](https://farm9.staticflickr.com/8187/8134526531_ca358cc78d_o_d.jpg)
+
+^ https://www.flickr.com/photos/lukepeterson/8134526531
+
+---
+
+> OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
+--Dr. Alan Kay
+
+---
+
+```javascript
+function proxy (baseObject, optionalPrototype) {
+  var proxyObject = Object.create(optionalPrototype || null),
+      methodName;
+  for (methodName in baseObject) {
+    if (typeof(baseObject[methodName]) ===  'function') {
+      (function (methodName) {
+        proxyObject[methodName] = function () {
+          var result = baseObject[methodName].apply(
+						baseObject,
+						arguments
+					);
+          return (result === baseObject)
+                 ? proxyObject
+                 : result;
+        }
+      })(methodName);
+    }
+  }
+  return proxyObject;
+}
+```
+---
+
+```javascript
+var stack = {
+  array: [],
+  index: -1,
+  push: function (value) {
+    return this.array[this.index += 1] = value;
+  },
+  pop: function () {
+    var value = this.array[this.index];
+    this.array[this.index] = void 0;
+    if (this.index >= 0) {
+      this.index -= 1;
+    }
+    return value;
+  },
+  isEmpty: function () {
+    return this.index < 0;
+  }
+};
+```
+
+---
+
+```javascript
+var stackProxy = proxy(stack);
+
+stackProxy.push('first');
+
+stackProxy
+  //=>
+    { push: [Function],
+      pop: [Function],
+      isEmpty: [Function] }
+
+stackProxy.pop();
+  //=> first
+```
+
+---
+
+# Open recursion considered harmful
+
+![](https://farm1.staticflickr.com/224/497450458_860c31f0e9_o_d.jpg)
+
+^ https://www.flickr.com/photos/furryscalyman/497450458
+
+---
+
+The **fragile base class problem** is a fundamental architectural problem of object-oriented programming systems where base classes (superclasses) are considered "fragile" because seemingly safe modifications to a base class, when inherited by the derived classes, may cause the derived classes to malfunction.
+
+![original, right](https://farm4.staticflickr.com/3598/4081192022_2e79a7d42f_o_d.jpg)
+
+^ https://www.flickr.com/photos/stevenduong/4081192022
+
+---
+
+![](https://farm4.staticflickr.com/3617/3572489968_0eecae201c_o_d.png)
+
+^ https://www.flickr.com/photos/yugui/3572489968
+
+---
+
+# Encapsulation for Metaobjects
+
+![](https://farm5.staticflickr.com/4121/4895250473_84ed3332e1_o_d.jpg)
+
+^ https://www.flickr.com/photos/realsmiley/4895250473
+
+---
+
+![fit](images/7/proxy.png)
+
+---
+
+![fit](images/7/inner_proxy.png)
+
+---
+
+```javascript
+var number = 0;
+
+function encapsulate (behaviour) {
+  var safekeepingName = "__" + ++number + "__",
+      encapsulatedObject = {};
+
+  Object.keys(behaviour).forEach(function (methodName) {
+    var methodBody = behaviour[methodName];
+
+    encapsulatedObject[methodName] = function () {
+      var context = this[safekeepingName],
+          result;
+      if (context == null) {
+        context = proxy(this);
+        Object.defineProperty(this, safekeepingName, {
+          enumerable: false,
+          writable: false,
+          value: context
+        });
+      }
+      result = methodBody.apply(context, arguments);
+      return (result === context) ? this : result;
+    };
+  });
+  return encapsulatedObject;
+}
+```
+
+^ includes safekeeping pattern
+
+---
+
+# Reginald Braithwaite
+
+## GitHub, Inc.
+
+## http://raganwald.com
+
+NDC Conference, Oslo, Norway, June 5, 2014
+
+![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
+
+^ https://www.flickr.com/photos/wwworks/3226981951
 
 ---
