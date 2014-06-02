@@ -38,15 +38,9 @@ Oslo, Norway, June 5, 2014
 
 ---
 
-### Partial application transforms binary operations into unary operations
+#Proposition:
 
-![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
-
-^ https://www.flickr.com/photos/genista/4449316
-
----
-
-> Proposition: "Dense is Better than Sparse."
+## Dense is better than sparse
 
 ![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
 
@@ -80,6 +74,12 @@ flip(arrow)("x", "y")
 ---
 
 # A dash of curry
+
+![](https://farm9.staticflickr.com/8490/8170948596_372d1960a5_o_d.jpg)
+
+^ https://www.flickr.com/photos/saramarlowe/8170948596
+
+---
 
 ```javascript
 function curry (fn) {
@@ -125,21 +125,31 @@ taoism('moon')
 
 ---
 
+# Proposition:
+
+## Partial application transforms binary operations into unary operations
+
+![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
+
+^ https://www.flickr.com/photos/genista/4449316
+
+---
+
 ```javascript
-function get (object, property) {
+function property (object, property) {
 	return object[property];
 }
 
-get({foo: 1}, 'foo')
+property({foo: 1}, 'foo')
 	//=> 1
 ```
 
 ---
 
 ```javascript
-var getWith = curry(flip(get));
+var propertyWith = curry(flip(property));
 
-getWith('foo')({foo: 1})
+propertyWith('foo')({foo: 1})
 	//=> 1
 ```
 
@@ -174,6 +184,14 @@ doubleAll([1, 2, 3])
 
 ---
 
+# Underscore
+
+![](https://farm4.staticflickr.com/3813/12756787045_f9f0266bcc_o_d.jpg)
+
+^ https://www.flickr.com/photos/mediterraneaaan/12756787045
+
+---
+
 `_.pluck` is "a convenient version of what is perhaps the most common use-case for `map`: extracting a list of property values."
 
 ```javascript
@@ -192,19 +210,35 @@ _.pluck(stooges, 'name');
 
 ---
 
-## Plucky combinators
+```javascript
+function pluckWith (attr) {
+  return mapWith(getWith(attr))
+}
+
+pluckWith('name')(stooges);
+	//=> ["moe", "larry", "curly"]
+```
+
+---
+
+# Compose
+
+![](https://farm9.staticflickr.com/8376/8487304182_01e9c118c8_o_d.jpg)
+
+^ https://www.flickr.com/photos/ctaweb/8487304182
+
+---
 
 ```javascript
-var stooges = [
-	{name: 'moe', age: 40},
-	{name: 'larry', age: 50},
-	{name: 'curly', age: 60}];
-	
-var pluck = function(obj, key) {
-  return _.map(obj, _.property(key));
-};
+function compose (a, b) {
+	return function composed (c) {
+		return a(b(c));
+	}
+}
 
-_.pluck(stooges, 'name');
+var pluckWith = compose(mapWith, getWith);
+
+pluckWith('name')(stooges);
 	//=> ["moe", "larry", "curly"]
 ```
 
@@ -231,9 +265,45 @@ _.pluck(stooges, 'name');
 
 ---
 
-> Software entities should be open for extension, but closed for modification
--- [The Open/Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
+# Software entities should be open for extension, but closed for modification
+
+![](https://farm4.staticflickr.com/3683/9715489429_43048e0f9c_o_d.jpg)
+
+^ https://www.flickr.com/photos/jorbasa/9715489429
+^ [The Open/Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
 
 ---
 
-### Mutable state violates the open/closed principle
+# Mutable metaobjects violate the open/closed principle
+
+---
+
+# extend considered harmful
+
+![](https://farm9.staticflickr.com/8199/8178035999_b74a17a2a7_o_d.jpg)
+
+^ https://www.flickr.com/photos/marfis75/8178035999
+
+---
+
+```javascript
+function extend () {
+  var consumer = arguments[0],
+      providers = [].slice.call(arguments, 1),
+      key,
+      i,
+      provider;
+
+  for (i = 0; i < providers.length; ++i) {
+    provider = providers[i];
+    for (key in provider) {
+      if (provider.hasOwnProperty(key)) {
+        consumer[key] = provider[key];
+      };
+    };
+  };
+  return consumer;
+}
+```
+
+---
