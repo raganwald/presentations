@@ -379,10 +379,14 @@ function pluckWith (key, mappable) {
 ## lesson
 # *Composing functions with combinators increases code flexibility...*
 
+^ teases apart heterogeneous factoring
+
 ---
 
 ## lesson
 # *Composing functions with combinators demands increased mental flexibility*
+
+^ asterix: with care, they can be easier to read.
 
 ---
 
@@ -660,7 +664,9 @@ NDC Conference, Oslo, Norway, June 5, 2014
 
 ---
 
-# Basics
+## Basics
+
+# Open Mixins
 
 ![](https://farm1.staticflickr.com/33/49012397_1fbe7855e3_o_d.jpg)
 
@@ -762,6 +768,139 @@ peck.setCareer('Director');
 
 ---
 
+## Basics
+
+# Private Mixins
+
+![](https://farm5.staticflickr.com/4041/4654012932_a2f91f9397_o_d.jpg)
+
+^ https://www.flickr.com/photos/ell-r-brown/4654012932
+
+---
+
+```javascript
+function extendPrivately (receiver, mixin) {
+  var methodName,
+      privateProperty = Object.create(null);
+
+  for (methodName in mixin) {
+    if (mixin.hasOwnProperty(methodName)) {
+      receiver[methodName] = mixin[methodName].bind(privateProperty);
+    };
+  };
+  return receiver;
+};
+```
+
+---
+
+```javascript
+var peck = {
+  firstName: 'Sam',
+  lastName: 'Peckinpah'
+};
+
+extendPrivately(peck, HasCareer);
+
+peck.setCareer("Director;
+
+peck.chosenCareer
+	//=> undefined
+```
+
+^ hand-waving over "self"
+
+---
+
+## Basics
+
+# Forwarding
+
+![](https://farm4.staticflickr.com/3192/2398128614_e91c986018_o_d.jpg)
+
+^ https://www.flickr.com/photos/oddwick/2398128614
+
+---
+
+```javascript
+function forward (receiver, metaobject, methods) {
+  if (methods == null) {
+    methods = Object.keys(metaobject).filter(function (methodName) {
+      return typeof(metaobject[methodName]) == 'function';
+    });
+  }
+  methods.forEach(function (methodName) {
+    receiver[methodName] = function () {
+      var result = metaobject[methodName].apply(metaobject, arguments);
+      return result === metaobject ? this : result;
+    };
+  });
+
+  return receiver;
+};
+```
+
+---
+
+# Four shades of gray
+
+1. A mixin uses the receiver's method body, and executes in the receiver's context.
+2. A private mixin uses the receiver's method body, but executes in another object's context.
+3. Forwarding uses another object's method body, and executes in another object's context.
+4. What uses another object's method body, but executes in the receiver's context?
+
+![](https://farm9.staticflickr.com/8372/8571474312_d925ee68f7_o_d.jpg)
+
+^ https://www.flickr.com/photos/astragony/8571474312
+
+---
+
+```javascript
+function delegate (receiver, metaobject, methods) {
+  if (methods == null) {
+    methods = Object.keys(metaobject).filter(function (methodName) {
+      return typeof(metaobject[methodName]) == 'function';
+    });
+  }
+  methods.forEach(function (methodName) {
+    receiver[methodName] = function () {
+      return metaobject[methodName].apply(receiver, arguments);
+    };
+  });
+
+  return receiver;
+};
+```
+
+---
+
+# Could there be another way to delegate to a metaobject?
+
+![right](https://farm8.staticflickr.com/7164/6415460111_c31a968754_o_d.jpg)
+
+^ https://www.flickr.com/photos/carbonnyc/6415460111
+
+---
+
+# Yes.
+
+```javascript
+var obj = Object.create(metaobject);
+```
+
+---
+
+# problems to be solved
+
+1. `extend` violates open/closed principle
+2. Open recursion couples metaobjects
+3. 
+
+^ THIS SEEMS CONFUSED. We need to think through the exact ordering of solving these problems.
+^ Maybe cut the "extend" problem out and jump right to the solution
+
+---
+
 # Software entities should be open for extension, but closed for modification
 
 ![](https://farm4.staticflickr.com/3683/9715489429_43048e0f9c_o_d.jpg)
@@ -771,7 +910,7 @@ peck.setCareer('Director');
 
 ---
 
-# `extend` considered harmful
+# "extend" considered harmful
 
 ## Mutable metaobjects violate the open/closed principle
 
@@ -953,5 +1092,3 @@ NDC Conference, Oslo, Norway, June 5, 2014
 ![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
 
 ^ https://www.flickr.com/photos/wwworks/3226981951
-
----
