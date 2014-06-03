@@ -6,9 +6,125 @@
 
 ^ https://www.flickr.com/photos/andy_li/4378437185
 
+^ The "backbone" of this talk is to explain the combinators make software that is easier to factor and refactor by creating an "aglgebra" where functions form a semigroup, rather than using code, which is more flexibible but creates a sparse group
+
 ---
 
-## It's Just Math
+# what's ahead...
+
+![](https://farm8.staticflickr.com/7371/10395426296_b499fc85ce_o_d.jpg)
+
+^ https://www.flickr.com/photos/nicholas_t/10395426296
+
+---
+
+![](https://farm8.staticflickr.com/7371/10395426296_b499fc85ce_o_d.jpg)
+
+^ https://www.flickr.com/photos/nicholas_t/10395426296
+
+^ discuss composition, groups, density as a metaphor
+
+---
+
+## composition
+# *We compose entities to create new entities.*
+
+![](https://farm4.staticflickr.com/3061/3036797409_9898145d41_o_d.jpg)
+
+^ https://www.flickr.com/photos/scelera/3036797409
+
+---
+
+## interfaces
+# *Not all entities "fit together"*
+
+![](https://farm6.staticflickr.com/5125/5317820857_7d86383407_o_d.jpg)
+
+^ https://www.flickr.com/photos/justinbaeder/5317820857
+
+^ worse, some are time-dependent
+
+---
+
+# Homogeneous interfaces create dense spaces...
+
+![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+---
+
+![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ Example: Integers and addition, multiplication: very dense
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+---
+
+# Heterogeneous interfaces create sparse spaces...
+
+![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+---
+
+![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ counter-example: imagine an operation on integers wher emost operations were invalid. you'd have to engage in  a complex search to find the path from any one integer to another.
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+---
+
+# Dense is more flexible than sparse...
+
+![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+---
+
+![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+---
+
+# Sparse can be quicker to grasp...
+
+![](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
+
+^ https://www.flickr.com/photos/dipfan/110857520
+
+![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
+
+^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
+
+---
+
+![original](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
+
+^ https://www.flickr.com/photos/dipfan/110857520
+
+![original](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
+
+^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
+
+^ we'll give an example, showing how we have to build up.
+
+---
+
+## enough with the math!
 
 ![](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
 
@@ -16,31 +132,47 @@
 
 ---
 
-> In mathematics, a *unary operation* is an operation with only one operand, i.e. a single input.
+## pluck: "A convenient version of what is perhaps the most common use-case for map: extracting a list of property values."
+
+![](https://farm4.staticflickr.com/3813/12756787045_f9f0266bcc_o_d.jpg)
+
+^ https://www.flickr.com/photos/mediterraneaaan/12756787045
+
+^ underscorejs.org
 
 ---
 
-> In mathematics, a *binary operation* on a set is a calculation that combines two elements of the set to produce another element of the set.
-
-^ In mathematics, a binary operation on a set is a calculation that combines two elements of the set (called operands) to produce another element of the set (more formally, an operation whose arity is two, and whose two domains and one codomain are (subsets of) the same set).
+# "pluckWith" is the flipped form of "pluck"
 
 ---
 
-#Proposition:
+```javascript
+function pluck (mappable, key) {
+  return mappable.map(function (obj) {
+		return obj[key];
+	});
+};
 
-## Dense is better than sparse
+function pluckWith (key, mappable) {
+  return pluck(mappable, key);
+};
 
-![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
+var stooges = [
+	{name: 'moe', age: 40},
+	{name: 'larry', age: 50},
+	{name: 'curly', age: 60}];
 
-^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
-
-![](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
-
-^ https://www.flickr.com/photos/dipfan/110857520
+pluckWith('name', stooges);
+	//=> ["moe", "larry", "curly"]
+```
 
 ---
 
-# A simple combinator
+# Let's make "pluckWith" out of combinators
+
+___
+
+# A unary combinator
 
 ```javascript
 function flip (fn) {
@@ -61,7 +193,7 @@ flip(arrow)("x", "y")
 
 ---
 
-# A dash of curry
+# Another unary combinator
 
 ![](https://farm9.staticflickr.com/8490/8170948596_372d1960a5_o_d.jpg)
 
@@ -113,33 +245,42 @@ taoism('moon')
 
 ---
 
-# Proposition:
-
-## Partial application transforms binary operations into unary operations
+## nota bene
+# *Partial application transforms binary operations into unary operations*
 
 ![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
 
 ^ https://www.flickr.com/photos/genista/4449316
 
+^ makes the interface more homogeneous
+
 ---
 
 ```javascript
-function property (object, property) {
+function get (object, property) {
 	return object[property];
 }
 
-property({foo: 1}, 'foo')
+get({foo: 1}, 'foo')
 	//=> 1
 ```
 
 ---
 
 ```javascript
-var propertyWith = curry(flip(property));
+var getWith = curry(flip(get));
 
-propertyWith('foo')({foo: 1})
+getWith('foo')({foo: 1})
 	//=> 1
 ```
+
+---
+
+## "map" is a mathematical term, it has very little to do with cartography
+
+![](https://farm9.staticflickr.com/8011/7646442604_a7a0d0929a_o_d.jpg)
+
+^ https://www.flickr.com/photos/philipedmondson/7646442604
 
 ---
 
@@ -172,39 +313,14 @@ doubleAll([1, 2, 3])
 
 ---
 
-# Underscore
-
-![](https://farm4.staticflickr.com/3813/12756787045_f9f0266bcc_o_d.jpg)
-
-^ https://www.flickr.com/photos/mediterraneaaan/12756787045
-
----
-
-`_.pluck` is "a convenient version of what is perhaps the most common use-case for `map`: extracting a list of property values."
-
-```javascript
-var stooges = [
-	{name: 'moe', age: 40},
-	{name: 'larry', age: 50},
-	{name: 'curly', age: 60}];
-	
-_.pluck = function(obj, key) {
-  return _.map(obj, _.property(key));
-};
-
-_.pluck(stooges, 'name');
-	//=> ["moe", "larry", "curly"]
-```
+> almost there...
 
 ---
 
 ```javascript
 function pluckWith (attr) {
-  return mapWith(getWith(attr))
+  return mapWith(getWith(attr));
 }
-
-pluckWith('name')(stooges);
-	//=> ["moe", "larry", "curly"]
 ```
 
 ---
@@ -223,12 +339,314 @@ function compose (a, b) {
 		return a(b(c));
 	}
 }
+```
 
+---
+
+## quod erat demonstrandum
+# *The combinator implementation of* "pluckWith"
+
+---
+
+```javascript
+var pluckWith = compose(mapWith, getWith);
+```
+
+---
+
+## let's compare both implementations of "pluckWith"
+
+---
+
+```javascript
 var pluckWith = compose(mapWith, getWith);
 
-pluckWith('name')(stooges);
-	//=> ["moe", "larry", "curly"]
+//// versus ////
+
+function pluck (mappable, key) {
+  return mappable.map(function (obj) {
+		return obj[key];
+	});
+};
+
+function pluckWith (key, mappable) {
+  return pluck(mappable, key);
+};
 ```
+
+---
+
+## lesson
+# *Composing functions with combinators increases code flexibility...*
+
+---
+
+## lesson
+# *Composing functions with combinators demands increased mental flexibility*
+
+---
+
+## enough theory!
+# *Some practical method combinators*
+
+---
+
+```javascript
+function Cake () {}
+
+extend(Cake.prototype, {
+  mix: function () {
+    // mix ingredients together
+		return this;
+  },
+  rise: function (duration) {
+    // let the ingredients rise
+		return this;
+  },
+  bake: function () {
+    // do some baking
+		return this;
+  }
+});
+```
+
+---
+
+# fluent
+
+```javascript
+function fluent (methodBody) {
+  return function fluentized () {
+    methodBody.apply(this, arguments);
+    return this;
+  }
+}
+```
+
+---
+
+```javascript
+function Cake () {}
+
+extend(Cake.prototype, {
+  mix: fluent( function () {
+    // mix ingredients together
+  }),
+  rise: fluent( function (duration) {
+    // let the ingredients rise
+  }),
+  bake: fluent(function () {
+    // do some baking
+  })
+});
+```
+
+---
+
+## new requirements
+# *Mix before rising or baking*
+
+---
+
+```javascript
+extend(Cake.prototype, {
+  mix: fluent( function () {
+    // mix ingredients together
+  }),
+  rise: fluent( function (duration) {
+		this.mix();
+    // let the ingredients rise
+  }),
+  bake: fluent(function () {
+		this.mix();
+    // do some baking
+  })
+});
+```
+
+---
+
+# before
+## a combinator that transforms decorations into decorators
+
+```javascript
+var before = curry(
+	function decorate (decoration, method) {
+		return function decoratedWithBefore () {
+    	decoration.apply(this, arguments);
+    	return method.apply(this, arguments);
+		};
+  }
+);
+
+var mixFirst = before(function () {
+  this.mix()
+});
+```
+
+---
+
+# the final version
+
+```javascript
+extend(Cake.prototype, {
+  
+  // Other methods...
+  
+  mix: fluent( function () {
+    // mix ingredients together
+  }),
+  rise: fluent( mixFirst( function (duration) {
+    // let the ingredients rise
+  })),
+  bake: fluent( mixFirst( function () {
+    // do some baking
+  }))
+});
+```
+
+---
+
+## lesson
+# *Method decorators declutter secondary concerns*
+
+---
+
+# after
+
+```javascript
+var after = curry(
+	function decorate (decoration, method) {
+		return function decoratedWithAfter () {
+			var returnValue = method.apply(this, arguments);
+    	decoration.apply(this, arguments);
+    	return returnValue;
+		};
+  }
+);
+```
+
+---
+
+# around
+
+```javascript
+var around = curry(
+	function decorate (decoration, method) {
+		return function decoratedWithAround () {
+			var methodPrepended = [method].concat(
+				[].slice.call(arguments, 0)
+			);
+			
+    	return decoration.apply(this, methodPrepended);
+		};
+  }
+);
+```
+
+---
+
+# call me maybe
+
+```javascript
+var maybe = around(function (fn, value) {
+	if (value != null) {
+		return fn.call(this, value);;
+	}
+});
+
+maybe(double)(2)
+	//=> 4
+	
+maybe(double)(null)
+	//=> undefined
+```
+
+---
+
+# generalized guards
+
+```javascript
+function provided (guard) {
+	return around(function () {
+		var fn = arguments[0],
+		    values = [].slice.call(arguments, 1);
+				
+		if (guard.apply(this, values)) {
+			return fn.apply(this, values);
+		}
+	});
+}
+
+var maybe = provided( function (value) { 
+	return value != null; 
+});
+```
+
+---
+
+# inversions
+
+```javascript
+function not (fn) {
+	return function notted () {
+		return !fn.apply(this, arguments)
+	}
+}
+
+var except = compose(provided, not);
+
+var maybe = except( function (value) {
+	return value == null;
+});
+```
+
+---
+
+## wrap up
+
+![original](https://farm7.staticflickr.com/6211/6210847796_ab54ea2b0b_o_d.jpg)
+
+^ https://www.flickr.com/photos/68112440@N07/6210847796
+
+---
+
+## lesson one
+# *Combinators increase code flexibility and require increased mental flexibility*
+
+---
+
+## lesson two
+# *Method decorators declutter secondary concerns*
+
+---
+
+## lesson three
+# *Do not follow in the footsteps of the sages. Seek what they sought...*
+
+![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
+
+^ https://www.flickr.com/photos/suburbanbloke/723665503
+
+---
+
+![original](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
+
+^ https://www.flickr.com/photos/suburbanbloke/723665503
+
+---
+
+# Reginald Braithwaite
+
+## GitHub, Inc.
+
+## http://raganwald.com
+
+NDC Conference, Oslo, Norway, June 5, 2014
+
+![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
+
+^ https://www.flickr.com/photos/wwworks/3226981951
 
 ---
 
@@ -298,7 +716,7 @@ function extend () {
   for (i = 0; i < providers.length; ++i) {
     provider = providers[i];
     for (key in provider) {
-      if (provider.hasOwnProperty(key)) {
+      if (provider.hasOwnget(key)) {
         consumer[key] = provider[key];
       };
     };
@@ -506,7 +924,7 @@ function encapsulate (behaviour) {
           result;
       if (context == null) {
         context = proxy(this);
-        Object.defineProperty(this, safekeepingName, {
+        Object.defineget(this, safekeepingName, {
           enumerable: false,
           writable: false,
           value: context
