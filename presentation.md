@@ -1,3 +1,11 @@
+![original](https://farm3.staticflickr.com/2706/4378437185_4bdff99419_o_d.jpg)
+
+^ https://www.flickr.com/photos/andy_li/4378437185
+
+^ "A Unified Theory of JavaScript Style, Part I"
+
+---
+
 ### A Unified Theory of JavaScript Style, Part I
 
 # JavaScript Combinators
@@ -10,28 +18,62 @@
 
 ---
 
-# what's ahead...
+![](https://farm7.staticflickr.com/6132/5991539415_300af283a6_o_d.jpg)
 
-![](https://farm8.staticflickr.com/7371/10395426296_b499fc85ce_o_d.jpg)
+^ https://www.flickr.com/photos/popculturegeek/5991539415
 
-^ https://www.flickr.com/photos/nicholas_t/10395426296
+^ "talk about Combinators and decorators"
 
 ---
 
-![](https://farm8.staticflickr.com/7371/10395426296_b499fc85ce_o_d.jpg)
+## we'll talk about
+# Combinators and decorators
 
-^ https://www.flickr.com/photos/nicholas_t/10395426296
+![](https://farm7.staticflickr.com/6132/5991539415_300af283a6_o_d.jpg)
 
-^ discuss composition, groups, density as a metaphor
+^ https://www.flickr.com/photos/popculturegeek/5991539415
+
+---
+
+![](https://farm4.staticflickr.com/3306/3521504068_3664448df2_o_d.jpg)
+
+^ https://www.flickr.com/photos/creative_stock/3521504068
+
+^ "think about flexibility and decluttering"
+
+---
+
+## but think about
+# Flexibility and decluttering
+
+![](https://farm4.staticflickr.com/3306/3521504068_3664448df2_o_d.jpg)
+
+^ https://www.flickr.com/photos/creative_stock/3521504068
+
+---
+
+![original](https://farm4.staticflickr.com/3061/3036797409_9898145d41_o_d.jpg)
+
+^ https://www.flickr.com/photos/scelera/3036797409
+
+^ "We compose entities to create new entities"
 
 ---
 
 ## composition
-# *We compose entities to create new entities.*
+# *We compose entities to create new entities*
 
 ![](https://farm4.staticflickr.com/3061/3036797409_9898145d41_o_d.jpg)
 
 ^ https://www.flickr.com/photos/scelera/3036797409
+
+---
+
+![original](https://farm6.staticflickr.com/5125/5317820857_7d86383407_o_d.jpg)
+
+^ https://www.flickr.com/photos/justinbaeder/5317820857
+
+^ Not all entities "fit together"
 
 ---
 
@@ -46,47 +88,39 @@
 
 ---
 
-# Homogeneous interfaces create dense spaces...
+![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+^ "Homogeneous interfaces create dense spaces"
+
+---
+
+# Homogeneous interfaces create dense spaces
 
 ![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
 
 ^ https://www.flickr.com/photos/michale/2744016741
-
----
-
-![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
 
 ^ Example: Integers and addition, multiplication: very dense
 
-^ https://www.flickr.com/photos/michale/2744016741
-
----
-
-# Heterogeneous interfaces create sparse spaces...
-
-![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
-
-^ https://www.flickr.com/photos/stretta/5572576057
-
 ---
 
 ![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
 
-^ counter-example: imagine an operation on integers wher emost operations were invalid. you'd have to engage in  a complex search to find the path from any one integer to another.
-
 ^ https://www.flickr.com/photos/stretta/5572576057
+
+^ "Heterogeneous interfaces create sparse spaces"
 
 ---
 
-# Dense is more flexible than sparse...
-
-![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
-
-^ https://www.flickr.com/photos/michale/2744016741
+# Heterogeneous interfaces create sparse spaces
 
 ![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
 
 ^ https://www.flickr.com/photos/stretta/5572576057
+
+^ counter-example: imagine an operation on integers wher emost operations were invalid. you'd have to engage in  a complex search to find the path from any one integer to another.
 
 ---
 
@@ -98,17 +132,19 @@
 
 ^ https://www.flickr.com/photos/stretta/5572576057
 
+^ "Dense is more flexible than sparse"
+
 ---
 
-# Sparse can be quicker to grasp...
+# Dense is more flexible than sparse
 
-![](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
+![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
 
-^ https://www.flickr.com/photos/dipfan/110857520
+^ https://www.flickr.com/photos/michale/2744016741
 
-![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
+![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
 
-^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
+^ https://www.flickr.com/photos/stretta/5572576057
 
 ---
 
@@ -120,7 +156,29 @@
 
 ^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
 
+^ "Sparse can be quicker to grasp"
+
+---
+
+# Sparse can be quicker to grasp
+
+![](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
+
+^ https://www.flickr.com/photos/dipfan/110857520
+
+![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
+
+^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
+
 ^ we'll give an example, showing how we have to build up.
+
+---
+
+![original](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
+
+^ https://www.flickr.com/photos/joao_trindade/4362414729
+
+^ "enough with the math!"
 
 ---
 
@@ -129,6 +187,14 @@
 ![](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
 
 ^ https://www.flickr.com/photos/joao_trindade/4362414729
+
+---
+
+![original](https://farm4.staticflickr.com/3813/12756787045_f9f0266bcc_o_d.jpg)
+
+^ https://www.flickr.com/photos/mediterraneaaan/12756787045
+
+^ "pluck"
 
 ---
 
@@ -193,6 +259,16 @@ flip(arrow)("x", "y")
 
 ---
 
+![](https://farm9.staticflickr.com/8490/8170948596_372d1960a5_o_d.jpg)
+
+^ https://www.flickr.com/photos/saramarlowe/8170948596
+
+^ Another unary combinator
+
+---
+
+## curry
+
 # Another unary combinator
 
 ![](https://farm9.staticflickr.com/8490/8170948596_372d1960a5_o_d.jpg)
@@ -245,6 +321,14 @@ taoism('moon')
 
 ---
 
+![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
+
+^ https://www.flickr.com/photos/genista/4449316
+
+^ "Partial application transforms binary operations into unary operations"
+
+---
+
 ## nota bene
 # *Partial application transforms binary operations into unary operations*
 
@@ -276,7 +360,15 @@ getWith('foo')({foo: 1})
 
 ---
 
-## "map" is a mathematical term, it has very little to do with cartography
+![](https://farm9.staticflickr.com/8011/7646442604_a7a0d0929a_o_d.jpg)
+
+^ https://www.flickr.com/photos/philipedmondson/7646442604
+
+^ "map" is a mathematical term, it has very little to do with cartography
+
+---
+
+## ("map" is a mathematical term, it has very little to do with cartography)
 
 ![](https://farm9.staticflickr.com/8011/7646442604_a7a0d0929a_o_d.jpg)
 
@@ -322,6 +414,14 @@ function pluckWith (attr) {
   return mapWith(getWith(attr));
 }
 ```
+
+---
+
+![](https://farm9.staticflickr.com/8376/8487304182_01e9c118c8_o_d.jpg)
+
+^ https://www.flickr.com/photos/ctaweb/8487304182
+
+^ "Compose"
 
 ---
 
@@ -390,8 +490,8 @@ function pluckWith (key, mappable) {
 
 ---
 
-## enough theory!
-# *Some practical method combinators*
+## using combinators to make
+# *Decorators*
 
 ---
 
@@ -512,7 +612,7 @@ extend(Cake.prototype, {
 ---
 
 ## lesson
-# *Method decorators declutter secondary concerns*
+# *Decorators declutter secondary concerns*
 
 ---
 
@@ -607,34 +707,69 @@ var maybe = except( function (value) {
 
 ---
 
-## wrap up
-
 ![original](https://farm7.staticflickr.com/6211/6210847796_ab54ea2b0b_o_d.jpg)
 
 ^ https://www.flickr.com/photos/68112440@N07/6210847796
+
+^ "lessons"
+
+---
+
+## lessons
+
+![](https://farm7.staticflickr.com/6211/6210847796_ab54ea2b0b_o_d.jpg)
+
+^ https://www.flickr.com/photos/68112440@N07/6210847796
+
+---
+
+![original](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+
+^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+
+^ "Combinators increase code flexibility and require increased mental flexibility"
 
 ---
 
 ## lesson one
 # *Combinators increase code flexibility and require increased mental flexibility*
 
+![](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+
+^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+
+---
+
+![original](https://farm1.staticflickr.com/54/107810852_44e98d9298_o_d.jpg)
+
+^ https://www.flickr.com/photos/terry_wha/107810852
+
+^ "Decorators declutter secondary concerns"
+
 ---
 
 ## lesson two
-# *Method decorators declutter secondary concerns*
+# *Decorators declutter secondary concerns*
 
----
+![](https://farm1.staticflickr.com/54/107810852_44e98d9298_o_d.jpg)
 
-## lesson three
-# *Do not follow in the footsteps of the sages. Seek what they sought...*
-
-![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
-
-^ https://www.flickr.com/photos/suburbanbloke/723665503
+^ https://www.flickr.com/photos/terry_wha/107810852
 
 ---
 
 ![original](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
+
+^ https://www.flickr.com/photos/suburbanbloke/723665503
+
+^ "Do not follow in the footsteps of the sages. Seek what they sought"
+
+---
+
+## lesson three
+# *Do not follow in the footsteps of the sages.*
+# *Seek what they sought*
+
+![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
 
 ^ https://www.flickr.com/photos/suburbanbloke/723665503
 
@@ -890,10 +1025,11 @@ var obj = Object.create(metaobject);
 
 ---
 
-# problems to be solved
+# problems/solutions
 
 1. `extend` violates open/closed principle
-2. Open recursion couples metaobjects
+2. prototypes -> hidden state
+2. private mixin decouples obOpen recursion couples metaobjects
 3. 
 
 ^ THIS SEEMS CONFUSED. We need to think through the exact ordering of solving these problems.
@@ -910,9 +1046,9 @@ var obj = Object.create(metaobject);
 
 ---
 
-# "extend" considered harmful
+## "extend" considered harmful
 
-## Mutable metaobjects violate the open/closed principle
+# Mutable metaobjects violate the open/closed principle
 
 ![](https://farm9.staticflickr.com/8199/8178035999_b74a17a2a7_o_d.jpg)
 
@@ -1010,11 +1146,19 @@ stackProxy.pop();
 
 ---
 
+![original](https://farm8.staticflickr.com/7132/7670055210_85dfe95e5b_o_d.jpg)
+
+^ https://www.flickr.com/photos/bitterjug/7670055210
+
+^ "Open recursion considered harmful"
+
+---
+
 # Open recursion considered harmful
 
-![](https://farm1.staticflickr.com/224/497450458_860c31f0e9_o_d.jpg)
+![](https://farm8.staticflickr.com/7132/7670055210_85dfe95e5b_o_d.jpg)
 
-^ https://www.flickr.com/photos/furryscalyman/497450458
+^ https://www.flickr.com/photos/bitterjug/7670055210
 
 ---
 
