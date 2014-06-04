@@ -803,12 +803,12 @@ NDC Conference, Oslo, Norway, June 5, 2014
 
 ^ https://www.flickr.com/photos/cogdog/5560050395
 
-^ "We'll talk about mixins, proxies and encapsulation"
+^ "We'll talk about Proxies, Encapsulation, and Composition"
 
 ---
 
 ## we'll talk about
-# Mixins, Proxies and Encapsulation
+# Proxies, Encapsulation, and Composition
 
 ![](https://farm6.staticflickr.com/5133/5560050395_5480bddd88_o_d.jpg)
 
@@ -1601,12 +1601,22 @@ function encapsulate (behaviour) {
 
 ---
 
-(encapsulation's beard picture)
+![](images/what_remains.png)
+
+^ https://www.flickr.com/photos/powerpig/6073050305
+
+^ (c) 2011 Chris McVeigh, All Rights Reserved. http://www.chrismcveigh.com
 
 ---
 
 ## encapsulation's beard is
 # Half Constructed
+
+![](images/what_remains.png)
+
+^ https://www.flickr.com/photos/powerpig/6073050305
+
+^ (c) 2011 Chris McVeigh, All Rights Reserved. http://www.chrismcveigh.com
 
 ^ We define the public methods we expose, but not the public methods we consume. This leads to coupling creep.
 
