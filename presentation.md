@@ -765,6 +765,8 @@ var maybe = except( function (value) {
 
 ## http://raganwald.com
 
+## @raganwald
+
 NDC Conference, Oslo, Norway, June 5, 2014
 
 ![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
@@ -1030,6 +1032,21 @@ function forward (receiver, metaobject, methods) {
 
 ---
 
+![](https://farm6.staticflickr.com/5097/5509806114_f2f68d1dd7_o_d.jpg)
+
+^ https://www.flickr.com/photos/25722571@N08/5509806114
+
+---
+
+## forwarding is important
+# Let's stick a tack in this for later
+
+![](https://farm6.staticflickr.com/5097/5509806114_f2f68d1dd7_o_d.jpg)
+
+^ https://www.flickr.com/photos/25722571@N08/5509806114
+
+---
+
 # Four shades of gray
 
 1. A mixin uses the receiver's method body, and executes in the receiver's context.
@@ -1062,9 +1079,15 @@ function delegate (receiver, metaobject, methods) {
 
 ---
 
+![](https://farm8.staticflickr.com/7164/6415460111_c31a968754_o_d.jpg)
+
+^ https://www.flickr.com/photos/carbonnyc/6415460111
+
+---
+
 # Could there be another way to delegate to a metaobject?
 
-![right](https://farm8.staticflickr.com/7164/6415460111_c31a968754_o_d.jpg)
+![left](https://farm8.staticflickr.com/7164/6415460111_c31a968754_o_d.jpg)
 
 ^ https://www.flickr.com/photos/carbonnyc/6415460111
 
@@ -1134,7 +1157,7 @@ Object.create(metaobject);
 
 ---
 
-# Problems at Scale
+### Problems at Scale
 
 ![](https://farm5.staticflickr.com/4039/4211020552_41390971c9_o_d.jpg)
 
@@ -1142,20 +1165,9 @@ Object.create(metaobject);
 
 ---
 
-# Problems at Scale
+### Problems at Scale
 
-1. object-object coupling
-
-![](https://farm5.staticflickr.com/4039/4211020552_41390971c9_o_d.jpg)
-
-^ https://www.flickr.com/photos/keyg3n/4211020552
-
----
-
-# Problems at Scale
-
-1. object-object coupling
-1. flexibility
+## - object coupling
 
 ![](https://farm5.staticflickr.com/4039/4211020552_41390971c9_o_d.jpg)
 
@@ -1163,11 +1175,22 @@ Object.create(metaobject);
 
 ---
 
-# Problems at Scale
+### Problems at Scale
 
-1. object-object coupling
-1. flexibility
-1. metaobject-metaobject coupling
+## - object coupling
+## - inflexibility
+
+![](https://farm5.staticflickr.com/4039/4211020552_41390971c9_o_d.jpg)
+
+^ https://www.flickr.com/photos/keyg3n/4211020552
+
+---
+
+### Problems at Scale
+
+## - object coupling
+## - inflexibility
+## - metaobject coupling
 
 ![](https://farm5.staticflickr.com/4039/4211020552_41390971c9_o_d.jpg)
 
@@ -1179,11 +1202,11 @@ Object.create(metaobject);
 
 ^ https://www.flickr.com/photos/genista/5756772
 
-^ "Object-Object Coupling"
+^ "object coupling"
 
 ---
 
-# Object-Object Coupling
+# object coupling
 
 ![](https://farm1.staticflickr.com/6/5756772_26fbcbf5de_o_d.jpg)
 
@@ -1292,7 +1315,7 @@ stackProxy.pop();
 
 ---
 
-# Flexibility
+# Inflexibility
 
 ![](https://farm3.staticflickr.com/2433/3725860708_a31b194503_o_d.jpg)
 
@@ -1379,7 +1402,7 @@ var sam = new Careerist();
 
 ^ https://www.flickr.com/photos/78428166@N00/7803972200
 
-^ "Metaobject-Metaobject Coupling"
+^ "metaobject coupling"
 
 ---
 
@@ -2225,7 +2248,8 @@ paulSimon.songs()
 ---
 
 ## final lesson
-# It's just JavaScript. Have an espresso and make your own protocol.
+# This isn't really about protocols.
+# It's about flexibility and coupling.
 
 ![](https://farm4.staticflickr.com/3130/2592917255_da543e561a_o_d.jpg)
 
@@ -2238,6 +2262,8 @@ paulSimon.songs()
 ## GitHub, Inc.
 
 ## http://raganwald.com
+
+## @raganwald
 
 NDC Conference, Oslo, Norway, June 5, 2014
 
