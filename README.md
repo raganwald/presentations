@@ -5,6 +5,7 @@ This was a two-part talk on given at [NDC Oslo 2014][1]. It is written in Markdo
 
 * [JavaScript Combinators][7] on SpeakerDeck
 * [The Art of the JavaScript Metaobject Protocol][8] on SpeakerDeck
+
 [7]: https://speakerdeck.com/raganwald/javascript-combinators
 [8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
 
@@ -16,7 +17,3 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [3]: https://leanpub.com/javascript-allonge/read
 [4]: https://leanpub.com/javascript-spessore/read
 [5]: http://allong.es
-
-A [PDF of the slides][6] is aviailable for a limited time. If you are interested, please download it and save it locally.
-
-[6]: https://www.dropbox.com/s/9brkecas6gvwxhy/presentation.pdf
