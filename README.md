@@ -12,3 +12,6 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [4]: https://leanpub.com/javascript-spessore/read
 [5]: http://allong.es
 
+A [PDF of the slides][6] is aviailable for a limited time. If you are interested, please download it and save it locally.
+
+[6]: https://www.dropbox.com/s/9brkecas6gvwxhy/presentation.pdf
