@@ -3,6 +3,11 @@
 
 This was a two-part talk on given at [NDC Oslo 2014][1]. It is written in Markdown and was presented on-screen using [Deckset][2].
 
+* [JavaScript Combinators][7] on SpeakerDeck
+* [The Art of the JavaScript Metaobject Protocol][8] on SpeakerDeck
+[7]: https://speakerdeck.com/raganwald/javascript-combinators
+[8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
+
 [1]: https://www.ndcoslo.com
 [2]: https://decksetapp.com
 
