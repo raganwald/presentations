@@ -633,9 +633,8 @@ var quacksLikeAStandardDuck =
 
 ```javascript
 AsStandard.prototype.neighbours = 
-  function neighbours (neighbours) {
-    return this.it.setNeighbours(neighbours);
-    return this;
+  function neighbours () {
+    return this.it.neighbours();
   };
   
 AsStandard.prototype.setNeighbours = 
@@ -717,6 +716,11 @@ var quacksLikeAColouredDuck =
 ---
 
 ```javascript
+AsColour.prototype.neighbours = 
+  function neighbours () {
+    return this.it.neighbours();
+  };
+  
 AsColour.prototype.setNeighbours = 
   function setNeighbours (neighbours) {
     this.it.setNeighbours(neighbours);
