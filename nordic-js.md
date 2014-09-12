@@ -6,9 +6,9 @@
 
 ---
 
-### the art of the javascript
+### the art of the javascript metaobject protocol
 
-# Metaobject Protocol
+# Adapt or Perish
 
 ![](images/part-3/473981158_cec8cb4f18_o.jpg)
 
