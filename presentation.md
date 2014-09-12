@@ -438,7 +438,7 @@ var pluckWith = compose(mapWith, getWith);
 
 ---
 
-## let's compare both implementations of "pluckWith"
+## Let's compare both implementations of "pluckWith"
 
 ---
 
@@ -763,15 +763,15 @@ var maybe = except( function (value) {
 
 ## GitHub, Inc.
 
-## http://raganwald.com
+## raganwald.com
 
 ## @raganwald
 
 NDC Conference, Oslo, Norway, June 5, 2014
 
-![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
+![right, fit](images/allonge.jpg)
 
-^ https://www.flickr.com/photos/wwworks/3226981951
+^ https://leanpub.com/javascript-allonge
 
 ---
 
@@ -825,7 +825,7 @@ NDC Conference, Oslo, Norway, June 5, 2014
 ---
 
 ## but think about
-# Flexibility and Deoupling at Scale
+# Flexibility and Decoupling at Scale
 
 ![](https://farm4.staticflickr.com/3651/3553005609_1208c8df1d_o_d.jpg)
 
@@ -2247,9 +2247,12 @@ paulSimon.songs()
 
 ---
 
-## final lesson
-# This isn't really about protocols.
-# It's about flexibility and coupling.
+### the biggest lesson?
+## [S]ingle Responsibility
+## [O]pen/Closed Principle
+## [L]iskov Substitutability
+## [I]nterface Segregation
+## [D]ependency Inversion
 
 ![](https://farm4.staticflickr.com/3130/2592917255_da543e561a_o_d.jpg)
 
@@ -2261,12 +2264,12 @@ paulSimon.songs()
 
 ## GitHub, Inc.
 
-## http://raganwald.com
+## raganwald.com
 
 ## @raganwald
 
 NDC Conference, Oslo, Norway, June 5, 2014
 
-![](https://farm4.staticflickr.com/3342/3226981951_cec5a7db02_o_d.jpg)
+![right, fit](images/spessore.png)
 
-^ https://www.flickr.com/photos/wwworks/3226981951
+^ https://leanpub.com/javascript-spessore
