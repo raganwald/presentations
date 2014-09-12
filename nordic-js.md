@@ -6,9 +6,9 @@
 
 ---
 
-### the art of the javascript metaobject protocol
+### the art of the javascript
 
-# Part III
+# Metaobject Protocol
 
 ![](images/part-3/473981158_cec8cb4f18_o.jpg)
 
@@ -16,19 +16,36 @@
 
 ---
 
-![](images/part-3/3356900874_a3893986af_o.jpg)
+![](images/part-3/5744858794_6e1150c74a_o.jpg)
 
-^ https://www.flickr.com/photos/tupwanders/3356900874
+^ https://www.flickr.com/photos/davelawler/5744858794
 
-^ "We'll talk about Proxies and Polymorphism"
+^ time is in short supply, so we'll talk about one thing about one thing
 
 ---
 
-# Duck Typing
+> Duck typing is a style of typing in which an object's methods and properties determine the valid semantics,
 
-![](images/part-3/3356900874_a3893986af_o.jpg)
+---
 
-^ https://www.flickr.com/photos/tupwanders/3356900874
+> ...rather than its inheritance from a particular class or implementation of an explicit interface.
+
+---
+
+![](images/part-3/15064250645_3e3122b453_k.jpg)
+
+^ https://www.flickr.com/photos/14052937@N04/15064250645
+
+---
+
+### Exercise:
+
+# Are Ocaml and Haskell 
+# "Duck Typed?"
+
+![](images/part-3/15064250645_3e3122b453_k.jpg)
+
+^ https://www.flickr.com/photos/14052937@N04/15064250645
 
 ---
 
@@ -68,7 +85,9 @@
 
 ---
 
-### "fruit" has a very specific meaning
+### "fruit" is not defined by its
+
+# Properties
 
 ![](images/part-3/54070471_1f5ffba40a_o.jpg)
 
@@ -78,28 +97,11 @@
 
 ---
 
-![](images/part-3/13507827355_e25e417d73_o.jpg)
-
-^ https://www.flickr.com/photos/raneko/13507827355
-
----
-
-### let's consider
-# Plus:
-
-![](images/part-3/13507827355_e25e417d73_o.jpg)
-
-^ https://www.flickr.com/photos/raneko/13507827355
-
----
-
 ![](images/part-3/7674654032_35752edf39_k.jpg)
 
 ^ https://www.flickr.com/photos/zigazou76/7674654032
 
 ---
-
-### correction:
 
 # Addition
 
@@ -114,6 +116,8 @@
 ^ https://www.flickr.com/photos/98925031@N08/9808827924
 
 ---
+
+### addition is based on being
 
 # "Enumerable"
 
@@ -161,13 +165,21 @@
 
 ---
 
-### duck typing is
+### duck typing is like
 
-## "Enumerable," not "Fruit"
+## "Enumerable," not like "Fruit"
 
 ![](images/part-3/5748155319_0544532721_o.jpg)
 
 ^ https://www.flickr.com/photos/jwright4701/5748155319
+
+---
+
+![](images/part-3/6340506358_49e4687b0a_o.jpg)
+
+^ https://www.flickr.com/photos/ourmaninjapan/6340506358
+
+^ "Let's get to work!"
 
 ---
 
@@ -300,15 +312,36 @@ View.prototype.drawCell =
     var xPlus = x + this.cellSize(),
         yPlus = y + this.cellSize()
     this._canvasContext.clearRect(x, y, xPlus, yPlus);
-    this._canvasContext.fillStyle = cell.alive() 
-                                    ? COLOURS.ALIVE 
-                                    : COLOURS.BACKGROUND);
+    this._canvasContext.fillStyle = this.cellColour(cell);
     this._canvasContext.fillRect(x, y, xPlus, yPlus);
     return self;
   };
-
-// ...
 ```
+
+---
+
+```javascript
+View.prototype.cellColour =
+  function cellColour (cell) {
+    return cell.alive()
+           ? WHITE
+           : BLACK;
+  };
+```
+
+---
+
+![](images/part-3/6636632951_c5d4f53f1c_o.jpg)
+
+^ https://www.flickr.com/photos/nanagyei/6636632951
+
+---
+
+# Ch-ch-ch-changes!
+
+![](images/part-3/6636632951_c5d4f53f1c_o.jpg)
+
+^ https://www.flickr.com/photos/nanagyei/6636632951
 
 ---
 
@@ -434,7 +467,6 @@ Universe.prototype.iterate =
 ---
 
 ```javascript
-
 var COLOURS =
   [ BLACK, GREEN, BLUE, YELLOW, WHITE, RED ];
 
@@ -492,28 +524,30 @@ Object.keys(ColourCell.prototype)
 
 ---
 
-![](https://farm1.staticflickr.com/6/5756772_26fbcbf5de_o_d.jpg)
+![](images/part-3/14262980504_4b7f8ed0e4_k.jpg)
 
-^ https://www.flickr.com/photos/genista/5756772
-
-^ "this is coupled"
+^ https://www.flickr.com/photos/120600995@N07/14262980504
 
 ---
 
-### cell, universe, and view are
-# coupled
+### changes to "cell" ripple through
+# Universe and View
 
-![](https://farm1.staticflickr.com/6/5756772_26fbcbf5de_o_d.jpg)
+![](images/part-3/14262980504_4b7f8ed0e4_k.jpg)
 
-^ https://www.flickr.com/photos/genista/5756772
+^ https://www.flickr.com/photos/120600995@N07/14262980504
+
+---
+
+![](images/part-3/183318800_100f6cc225_o.jpg)
+
+^ https://www.flickr.com/photos/maxwarren/183318800
 
 ---
 
 ![](images/part-3/6985514625_423a4001ea_k.jpg)
 
 ^ https://www.flickr.com/photos/42244964@N03/6985514625
-
-^ "problems at scale"
 
 ---
 
@@ -576,7 +610,9 @@ Object.keys(ColourCell.prototype)
 
 ---
 
-# Another Way
+### there is
+
+# Another...
 
 ![](images/part-3/4423502365_f4dbde780b_o.jpg)
 
@@ -653,41 +689,15 @@ Object.keys(AsStandard.prototype)
 
 ---
 
-![](images/part-3/3459777668_61ca9c2b82_o.jpg)
-
-^ https://www.flickr.com/photos/theincidental/3459777668
-
----
-
-# AsStandard is an Adapter
-
-![](images/part-3/3459777668_61ca9c2b82_o.jpg)
-
-^ https://www.flickr.com/photos/theincidental/3459777668
-
----
-
-> The adapter pattern is a software design pattern that allows the interface of an existing class to be used from another interface...
-
-^ Wikipedia
-
----
-
-> ... It is often used to make existing classes work with others without modifying their source code.
-
-^ Wikipedia
-
----
-
 ![](images/part-3/2290758079_f5883b74a3_o.jpg)
 
 ^ https://www.flickr.com/photos/anaru/2290758079
 
 ---
 
-### adapters can go both ways
+### we can go in the
 
-# narrowing & widening 
+# Other Direction
 
 ![](images/part-3/2290758079_f5883b74a3_o.jpg)
 
@@ -760,6 +770,34 @@ Object.keys(AsColour.prototype)
 
 ---
 
+![](images/part-3/3459777668_61ca9c2b82_o.jpg)
+
+^ https://www.flickr.com/photos/theincidental/3459777668
+
+---
+
+### AsStandard and AsColour are
+
+# Adapters
+
+![](images/part-3/3459777668_61ca9c2b82_o.jpg)
+
+^ https://www.flickr.com/photos/theincidental/3459777668
+
+---
+
+> The adapter pattern is a software design pattern that allows the interface of an existing class to be used from another interface...
+
+^ Wikipedia
+
+---
+
+> ... It is often used to make existing classes work with others without modifying their source code.
+
+^ Wikipedia
+
+---
+
 ![](images/part-3/3268894584_95d4237010_o.jpg)
 
 ^ https://www.flickr.com/photos/fhke/3268894584
@@ -814,6 +852,48 @@ function standardFromColour (colour) {
 
 ---
 
+![](images/part-3/8733249464_07ba616ac4_o.jpg)
+
+^ https://www.flickr.com/photos/jameshammond/8733249464
+
+---
+
+### if you use rails, you'd call these
+
+# "Object Migrations"
+
+![](images/part-3/8733249464_07ba616ac4_o.jpg)
+
+^ https://www.flickr.com/photos/jameshammond/8733249464
+
+---
+
+![](images/part-3/8271747835_b5e6f68251_k.jpg)
+
+^ https://www.flickr.com/photos/esoastronomy/8271747835
+
+---
+
+# Hmmm, that's interesting!
+
+![](images/part-3/8271747835_b5e6f68251_k.jpg)
+
+^ https://www.flickr.com/photos/esoastronomy/8271747835
+
+---
+
+> What if we could decouple modules by migrating between versions of classes?
+
+---
+
+![](images/part-3/6273266577_c37d3fec72_o.jpg)
+
+^ https://www.flickr.com/photos/zeevveez/6273266577
+
+^ "No time, mush rush on!"
+
+---
+
 ![](images/part-3/11689309615_98aaa0606c_k.jpg)
 
 ^ https://www.flickr.com/photos/samsaunders/11689309615
@@ -861,9 +941,9 @@ function standardFromColour (colour) {
 
 ---
 
-![](images/part-3/8598175927_1c63ac29ea_k.jpg)
+![](images/part-3/4380394959_28c761b7c6_o.jpg)
 
-^ https://www.flickr.com/photos/peterm7/8598175927
+^ https://www.flickr.com/photos/automotocycle/4380394959
 
 ---
 
@@ -877,15 +957,15 @@ function standardFromColour (colour) {
 
 ---
 
-![](images/part-3/4380394959_28c761b7c6_o.jpg)
+![](images/part-3/8598175927_1c63ac29ea_k.jpg)
 
-^ https://www.flickr.com/photos/automotocycle/4380394959
+^ https://www.flickr.com/photos/peterm7/8598175927
 
 ---
 
-### consider writing an
+### consider writing
 
-# Adapter
+# Adapters
 
 ![](images/part-3/8598175927_1c63ac29ea_k.jpg)
 
