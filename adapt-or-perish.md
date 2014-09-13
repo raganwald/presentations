@@ -612,7 +612,7 @@ Object.keys(ColourCell.prototype)
 
 ### there is
 
-# Another...
+# Another Way
 
 ![](images/part-3/4423502365_f4dbde780b_o.jpg)
 
@@ -838,9 +838,9 @@ Object.keys(AsColour.prototype)
 
 ```javascript
 function colourFromStandard (standard) {
-  var colour = new ColourCell()
-               .setNeighbours(standard.neighbours())
-               .setAge(standard.alive() ? 1 : 0);
+  return new ColourCell()
+         .setNeighbours(standard.neighbours())
+         .setAge(standard.alive() ? 1 : 0);
 }
 ```
 
@@ -848,9 +848,9 @@ function colourFromStandard (standard) {
 
 ```javascript
 function standardFromColour (colour) {
-  var colour = new StandardCell()
-               .setNeighbours(colour.neighbours())
-               .setAlive(colour.age() > 0);
+  return new StandardCell()
+         .setNeighbours(colour.neighbours())
+         .setAlive(colour.age() > 0);
 }
 ```
 
