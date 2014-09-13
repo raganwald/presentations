@@ -802,6 +802,22 @@ Object.keys(AsColour.prototype)
 
 ---
 
+![](images/part-3/3326060843_a5205e3183_o.jpg)
+
+^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
+
+---
+
+### homework: what are the implications of
+
+# Proxies and Ownership?
+
+![](images/part-3/3326060843_a5205e3183_o.jpg)
+
+^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
+
+---
+
 ![](images/part-3/3268894584_95d4237010_o.jpg)
 
 ^ https://www.flickr.com/photos/fhke/3268894584
