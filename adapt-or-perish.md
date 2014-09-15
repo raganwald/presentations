@@ -20,15 +20,7 @@
 
 ^ https://www.flickr.com/photos/davelawler/5744858794
 
-^ time is in short supply, so we'll talk about one thing about one thing
-
----
-
-> Duck typing is a style of typing in which an object's methods and properties determine the valid semantics,
-
----
-
-> ...rather than its inheritance from a particular class or implementation of an explicit interface.
+^ time is in short supply, so we'll talk about one thing
 
 ---
 
@@ -36,22 +28,39 @@
 
 ^ https://www.flickr.com/photos/14052937@N04/15064250645
 
+^ "fruit vs duck typing"
+
 ---
 
-### Exercise:
-
-# Are Ocaml and Haskell 
-# "Duck Typed?"
+# Fruit vs Duck Typing
 
 ![](images/part-3/15064250645_3e3122b453_k.jpg)
 
 ^ https://www.flickr.com/photos/14052937@N04/15064250645
+
+---
+
+![](images/part-3/6359758713_29ac30e758_o.jpg)
+
+^ https://www.flickr.com/photos/22711505@N05/6359758713
+
+^ "fruit typing"
+
+---
+
+# Fruit Typing:
+
+![](images/part-3/6359758713_29ac30e758_o.jpg)
+
+^ https://www.flickr.com/photos/22711505@N05/6359758713
 
 ---
 
 ![](images/part-3/3986974018_41c229f122_o.jpg)
 
 ^ https://www.flickr.com/photos/macieklew/3986974018
+
+^ "fruit"
 
 ---
 
@@ -83,11 +92,13 @@
 
 ^ https://www.flickr.com/photos/calliope/54070471
 
+^ "fruit is deeper than its taste, smell or color"
+
 ---
 
-### "fruit" is not defined by its
+### "fruit" is deeper than its
 
-# Properties
+# Taste, Smell or Color
 
 ![](images/part-3/54070471_1f5ffba40a_o.jpg)
 
@@ -97,17 +108,19 @@
 
 ---
 
-![](images/part-3/7674654032_35752edf39_k.jpg)
+![](images/part-3/3543936498_03a4b8d8c7_o.jpg)
 
-^ https://www.flickr.com/photos/zigazou76/7674654032
+^ https://www.flickr.com/photos/katdaned/3543936498
+
+^ "duck typing"
 
 ---
 
-# Addition
+# Duck Typing:
 
-![](images/part-3/7674654032_35752edf39_k.jpg)
+![](images/part-3/3543936498_03a4b8d8c7_o.jpg)
 
-^ https://www.flickr.com/photos/zigazou76/7674654032
+^ https://www.flickr.com/photos/katdaned/3543936498
 
 ---
 
@@ -115,9 +128,9 @@
 
 ^ https://www.flickr.com/photos/98925031@N08/9808827924
 
----
+^ "enumerable"
 
-### addition is based on being
+---
 
 # "Enumerable"
 
@@ -175,11 +188,27 @@
 
 ---
 
-![](images/part-3/6340506358_49e4687b0a_o.jpg)
+> Duck typing is a style of typing in which an object's methods and properties determine the valid semantics,
 
-^ https://www.flickr.com/photos/ourmaninjapan/6340506358
+---
 
-^ "Let's get to work!"
+> ...rather than its inheritance from a particular class or implementation of an explicit interface.
+
+---
+
+![](images/part-3/9704526768_e43ab62981_k.jpg)
+
+^ https://www.flickr.com/photos/ter-burg/9704526768
+
+---
+
+### a problem we usually
+
+# Solve with Duck Typing:
+
+![](images/part-3/9704526768_e43ab62981_k.jpg)
+
+^ https://www.flickr.com/photos/ter-burg/9704526768
 
 ---
 
@@ -328,6 +357,14 @@ View.prototype.cellColour =
            : BLACK;
   };
 ```
+
+---
+
+![](images/part-3/6340506358_49e4687b0a_o.jpg)
+
+^ https://www.flickr.com/photos/ourmaninjapan/6340506358
+
+^ "Let's get to work!"
 
 ---
 
@@ -688,6 +725,12 @@ Object.keys(AsStandard.prototype)
 
 ---
 
+![](images/part-3/3313053382_f128f329aa_o.jpg)
+
+^ https://www.flickr.com/photos/andymangold/3313053382
+
+---
+
 ![](images/part-3/2290758079_f5883b74a3_o.jpg)
 
 ^ https://www.flickr.com/photos/anaru/2290758079
@@ -782,7 +825,7 @@ Object.keys(AsColour.prototype)
 
 ### AsStandard and AsColour are
 
-# Adapters
+# Adaptors
 
 ![](images/part-3/3459777668_61ca9c2b82_o.jpg)
 
@@ -790,13 +833,13 @@ Object.keys(AsColour.prototype)
 
 ---
 
-> The adapter pattern is a software design pattern that allows the interface of an existing class to be used from another interface...
+> The adapter (sic) pattern is a software design pattern that allows the interface of an existing class to be used from another interface...
 
 ^ Wikipedia
 
 ---
 
-> ... It is often used to make existing classes work with others without modifying their source code.
+> It is often used to make existing classes work with others without modifying their source code.
 
 ^ Wikipedia
 
@@ -805,6 +848,8 @@ Object.keys(AsColour.prototype)
 ![](images/part-3/3326060843_a5205e3183_o.jpg)
 
 ^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
+
+^ "homework: what are the implications of proxies and ownership?"
 
 ---
 
@@ -816,11 +861,15 @@ Object.keys(AsColour.prototype)
 
 ^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
 
+^ "Can we create proxy adaptors instead of wrapping adaptors?"
+
 ---
 
 ![](images/part-3/3268894584_95d4237010_o.jpg)
 
 ^ https://www.flickr.com/photos/fhke/3268894584
+
+^ "good programmers borrow from smalltalk, great programmers steal from C++"
 
 ---
 
@@ -834,21 +883,7 @@ Object.keys(AsColour.prototype)
 
 ^ https://www.flickr.com/photos/fhke/3268894584
 
----
-
-![](images/part-3/322057575_9404372473_o.jpg)
-
-^ https://www.flickr.com/photos/jreed/322057575
-
----
-
-### copy constructors are
-
-# Value Adapters
-
-![](images/part-3/322057575_9404372473_o.jpg)
-
-^ https://www.flickr.com/photos/jreed/322057575
+^ "copy constructors are value adaptors"
 
 ---
 
@@ -876,6 +911,8 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/jameshammond/8733249464
 
+^ "if you use rails, you'd call these 'object migrations'"
+
 ---
 
 ### if you use rails, you'd call these
@@ -892,6 +929,8 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/esoastronomy/8271747835
 
+^ "that's interesting!"
+
 ---
 
 # Hmmm, that's interesting!
@@ -902,7 +941,15 @@ function standardFromColour (colour) {
 
 ---
 
-> What if we could decouple modules by migrating between versions of classes?
+> What if we could manage change with migrations between versions of classes?
+
+---
+
+![](images/part-3/4744866167_c631aa4e5f_o.jpg)
+
+^ https://www.flickr.com/photos/34316967@N04/4744866167
+
+^ Hmm some more!
 
 ---
 
@@ -918,15 +965,35 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/samsaunders/11689309615
 
+^ "seprate the concern of how to interact with a model from the concern of what the model does"
+
 ---
 
-### adapters 
+### adaptors 
 
-# separate concerns
+# Separate Concerns
 
 ![](images/part-3/11689309615_98aaa0606c_k.jpg)
 
 ^ https://www.flickr.com/photos/samsaunders/11689309615
+
+^ "seprate the concern of how to interact with a model from the concern of what the model does"
+
+---
+
+![](images/part-3/14944977391_7ce4c95d19_k.jpg)
+
+^ https://www.flickr.com/photos/xlibber/14944977391
+
+---
+
+### adaptors
+
+# Isolate Change
+
+![](images/part-3/14944977391_7ce4c95d19_k.jpg)
+
+^ https://www.flickr.com/photos/xlibber/14944977391
 
 ---
 
@@ -936,7 +1003,7 @@ function standardFromColour (colour) {
 
 ---
 
-### adapters
+### adaptors
 # Decouple Modules
 
 ![](images/part-3/9631393073_a965bb0929_o.jpg)
@@ -945,51 +1012,63 @@ function standardFromColour (colour) {
 
 ---
 
-![](images/part-3/3874139269_c9c16c41c8_o.jpg)
+![](images/part-3/8503205792_d98abf5f13_o.jpg)
 
-^ https://www.flickr.com/photos/russelljsmith/3874139269
+^ https://www.flickr.com/photos/dullhunk/8503205792
 
----
-
-### sometimes, you only want to
-
-# Pretend to be a Duck
-
-![](images/part-3/3874139269_c9c16c41c8_o.jpg)
-
-^ https://www.flickr.com/photos/russelljsmith/3874139269
+^ "adaptors *can* be used to solve compatibility problems"
 
 ---
 
-![](images/part-3/4380394959_28c761b7c6_o.jpg)
+### adaptors *can* be used to
 
-^ https://www.flickr.com/photos/automotocycle/4380394959
+# Solve Compatibility Problems
 
----
+![](images/part-3/8503205792_d98abf5f13_o.jpg)
 
-### instead of
-
-# Conflating Interfaces
-
-![](images/part-3/4380394959_28c761b7c6_o.jpg)
-
-^ https://www.flickr.com/photos/automotocycle/4380394959
+^ https://www.flickr.com/photos/dullhunk/8503205792
 
 ---
 
-![](images/part-3/8598175927_1c63ac29ea_k.jpg)
+![](images/part-3/5020192587_220423f8fd_o.jpg)
 
-^ https://www.flickr.com/photos/peterm7/8598175927
+^ https://www.flickr.com/photos/mathplourde/5020192587
+
+^ "but they also gives us the freedom to make changes, safely"
 
 ---
 
-### consider writing
+### but they also gives us the freedom to
 
-# Adapters
+# Make Changes, Safely 
 
-![](images/part-3/8598175927_1c63ac29ea_k.jpg)
+![](images/part-3/5020192587_220423f8fd_o.jpg)
 
-^ https://www.flickr.com/photos/peterm7/8598175927
+^ https://www.flickr.com/photos/mathplourde/5020192587
+
+---
+
+![](images/part-3/15150575105_66b36a3f0e_k.jpg)
+
+^ https://www.flickr.com/photos/kjcs/15150575105
+
+^ "tack så mycket"
+
+---
+
+# Tack Så Mycket!
+
+![](images/part-3/15150575105_66b36a3f0e_k.jpg)
+
+^ https://www.flickr.com/photos/kjcs/15150575105
+
+---
+
+# Questions?
+
+![](images/part-3/13262702873_4ae0e3429c_k.jpg)
+
+^ https://www.flickr.com/photos/w00ter/13262702873
 
 ---
 
