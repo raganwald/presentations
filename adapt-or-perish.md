@@ -1,18 +1,21 @@
-![](images/part-3/473981158_cec8cb4f18_o.jpg)
+![](images/part-3/9173790839_17092b33ba_k.jpg)
 
-^ https://www.flickr.com/photos/liberato/473981158
+^ https://www.flickr.com/photos/avidday/9173790839
 
-^ "A Unified Theory of JavaScript Style, Part III"
+^ "Duck Typing, Compatibility and the Adaptor Pattern"
 
 ---
 
 ### the art of the javascript metaobject protocol
 
-# Adapt or Perish
+# Duck Typing, Compatibility, and
+# The Adaptor Pattern
 
-![](images/part-3/473981158_cec8cb4f18_o.jpg)
+![](images/part-3/9173790839_17092b33ba_k.jpg)
 
-^ https://www.flickr.com/photos/liberato/473981158
+^ https://www.flickr.com/photos/avidday/9173790839
+
+^ "Duck Typing, Compatibility and the Adaptor Pattern"
 
 ---
 
@@ -20,171 +23,7 @@
 
 ^ https://www.flickr.com/photos/davelawler/5744858794
 
-^ time is in short supply, so we'll talk about one thing
-
----
-
-![](images/part-3/15064250645_3e3122b453_k.jpg)
-
-^ https://www.flickr.com/photos/14052937@N04/15064250645
-
-^ "fruit vs duck typing"
-
----
-
-# Fruit vs Duck Typing
-
-![](images/part-3/15064250645_3e3122b453_k.jpg)
-
-^ https://www.flickr.com/photos/14052937@N04/15064250645
-
----
-
-![](images/part-3/6359758713_29ac30e758_o.jpg)
-
-^ https://www.flickr.com/photos/22711505@N05/6359758713
-
-^ "fruit typing"
-
----
-
-# Fruit Typing:
-
-![](images/part-3/6359758713_29ac30e758_o.jpg)
-
-^ https://www.flickr.com/photos/22711505@N05/6359758713
-
----
-
-![](images/part-3/3986974018_41c229f122_o.jpg)
-
-^ https://www.flickr.com/photos/macieklew/3986974018
-
-^ "fruit"
-
----
-
-# Fruit
-
-![](images/part-3/3986974018_41c229f122_o.jpg)
-
-^ https://www.flickr.com/photos/macieklew/3986974018
-
----
-
-![](images/part-3/4547999416_d05fa35f80_o.jpg)
-
-^ https://www.flickr.com/photos/yimhafiz/4547999416
-
----
-
-# Not Fruit
-
-![](images/part-3/4547999416_d05fa35f80_o.jpg)
-
-^ https://www.flickr.com/photos/yimhafiz/4547999416
-
-^ something can look, smell, and taste like fruit but not *be* fruit
-
----
-
-![](images/part-3/54070471_1f5ffba40a_o.jpg)
-
-^ https://www.flickr.com/photos/calliope/54070471
-
-^ "fruit is deeper than its taste, smell or color"
-
----
-
-### "fruit" is deeper than its
-
-# Taste, Smell or Color
-
-![](images/part-3/54070471_1f5ffba40a_o.jpg)
-
-^ https://www.flickr.com/photos/calliope/54070471
-
-^ In botany, a fruit is a part of a flowering plant that derives from specific tissues of the flower, one or more ovaries, and in some cases accessory tissues. Fruits are the means by which these plants disseminate seeds. "Fruit" is defined in a semantic way that is deeper than the things we can observe of the fruit, deeper than its "interface."
-
----
-
-![](images/part-3/3543936498_03a4b8d8c7_o.jpg)
-
-^ https://www.flickr.com/photos/katdaned/3543936498
-
-^ "duck typing"
-
----
-
-# Duck Typing:
-
-![](images/part-3/3543936498_03a4b8d8c7_o.jpg)
-
-^ https://www.flickr.com/photos/katdaned/3543936498
-
----
-
-![](images/part-3/9808827924_046897b6df_k.jpg)
-
-^ https://www.flickr.com/photos/98925031@N08/9808827924
-
-^ "enumerable"
-
----
-
-# "Enumerable"
-
-![](images/part-3/9808827924_046897b6df_k.jpg)
-
-^ https://www.flickr.com/photos/98925031@N08/9808827924
-
----
-
-![](images/part-3/12909092113_866cbf935b_o.jpg)
-
-^ https://www.flickr.com/photos/lasvegasinside/12909092113
-
----
-
-### people are
-
-# "Enumerable"
-
-![](images/part-3/12909092113_866cbf935b_o.jpg)
-
-^ https://www.flickr.com/photos/lasvegasinside/12909092113
-
----
-
-![](images/part-3/90632001_46c99752b8_o.jpg)
-
-^ https://www.flickr.com/photos/martinlabar/90632001
-
----
-
-### rocks are
-
-# "Enumerable"
-
-![](images/part-3/90632001_46c99752b8_o.jpg)
-
-^ https://www.flickr.com/photos/martinlabar/90632001
-
----
-
-![](images/part-3/5748155319_0544532721_o.jpg)
-
-^ https://www.flickr.com/photos/jwright4701/5748155319
-
----
-
-### duck typing is like
-
-## "Enumerable," not like "Fruit"
-
-![](images/part-3/5748155319_0544532721_o.jpg)
-
-^ https://www.flickr.com/photos/jwright4701/5748155319
+^ time is in short supply, so we'll jump right into talking about duck typing
 
 ---
 
@@ -196,19 +35,71 @@
 
 ---
 
-![](images/part-3/9704526768_e43ab62981_k.jpg)
+![](images/part-3/3986974018_41c229f122_o.jpg)
 
-^ https://www.flickr.com/photos/ter-burg/9704526768
+^ https://www.flickr.com/photos/macieklew/3986974018
+
+^ "tastes like fruit"
 
 ---
 
-### a problem we usually
+# Tastes Like Fruit
 
-# Solve with Duck Typing:
+![](images/part-3/3986974018_41c229f122_o.jpg)
 
-![](images/part-3/9704526768_e43ab62981_k.jpg)
+^ https://www.flickr.com/photos/macieklew/3986974018
 
-^ https://www.flickr.com/photos/ter-burg/9704526768
+---
+
+![](images/part-3/4547999416_d05fa35f80_o.jpg)
+
+^ https://www.flickr.com/photos/yimhafiz/4547999416
+
+^ "also tastes like fruit"
+
+---
+
+# Also Tastes Like Fruit
+
+![](images/part-3/4547999416_d05fa35f80_o.jpg)
+
+^ https://www.flickr.com/photos/yimhafiz/4547999416
+
+---
+
+> "Write code that depends upon tastes-like(fruit) rather than depending upon is-a(fruit)."
+
+---
+
+![](images/part-3/2692040215_614a8bd83c_o.jpg)
+
+^ https://www.flickr.com/photos/hoeken/2692040215
+
+^ "duck typing is a compatibility technique"
+
+---
+
+### duck typing is a
+
+# Compatibility Technique
+
+![](images/part-3/2692040215_614a8bd83c_o.jpg)
+
+^ https://www.flickr.com/photos/hoeken/2692040215
+
+---
+
+![](images/part-3/3231308527_1d31e39093_o.jpg)
+
+^ https://www.flickr.com/photos/davies/3231308527
+
+---
+
+# A Problem:
+
+![](images/part-3/3231308527_1d31e39093_o.jpg)
+
+^ https://www.flickr.com/photos/davies/3231308527
 
 ---
 
@@ -223,6 +114,44 @@
 ![](images/part-3/turingmachine.jpg)
 
 ^ https://www.youtube.com/watch?v=DD0B-4KNna8
+
+---
+
+> "Conway's Game of Life is a two-state cellular automata."
+
+---
+
+# An Implementation
+
+1. Cells,
+
+---
+
+# An Implementation
+
+1. Cells,
+1. Universe,
+
+---
+
+# An Implementation
+
+1. Cells,
+1. Universe, and
+1. View.
+
+---
+
+# Cell
+
+1. Neighbours,
+
+---
+
+# Cell
+
+1. Neighbours, and
+1. State.
 
 ---
 
@@ -277,6 +206,27 @@ StandardCell.prototype.setAlive =
 ![](images/part-3/9524854754_2cedd492ac_k.jpg)
 
 ^ https://www.flickr.com/photos/gsfc/9524854754
+
+---
+
+# Cell
+
+1. Neighbours,
+1. State, and
+1. Transformation of State.
+
+---
+
+# Universe
+
+1. Neighbourhoods (not shown),
+
+---
+
+# Universe
+
+1. Neighbourhoods (not shown), and
+1. Transformation of States.
 
 ---
 
@@ -335,6 +285,12 @@ Universe.prototype.iterate =
 
 ---
 
+# View
+
+1. Drawing a Cell:
+
+---
+
 ```javascript
 View.prototype.drawCell =
   function drawCell (cell, x, y) {
@@ -364,7 +320,7 @@ View.prototype.cellColour =
 
 ^ https://www.flickr.com/photos/ourmaninjapan/6340506358
 
-^ "Let's get to work!"
+^ "5 minutes"
 
 ---
 
@@ -561,18 +517,28 @@ Object.keys(ColourCell.prototype)
 
 ---
 
+> The state of a cell is now "age" instead of "aliveness."
+
+---
+
 ![](images/part-3/14262980504_4b7f8ed0e4_k.jpg)
 
 ^ https://www.flickr.com/photos/120600995@N07/14262980504
 
 ---
 
-### changes to "cell" ripple through
-# Universe and View
+### These changes will
+# Ripple Through Universe and View
 
 ![](images/part-3/14262980504_4b7f8ed0e4_k.jpg)
 
 ^ https://www.flickr.com/photos/120600995@N07/14262980504
+
+---
+
+### our problem is that
+
+# Universe is coupled to Cell's Interface
 
 ---
 
@@ -580,20 +546,27 @@ Object.keys(ColourCell.prototype)
 
 ^ https://www.flickr.com/photos/maxwarren/183318800
 
----
-
-![](images/part-3/6985514625_423a4001ea_k.jpg)
-
-^ https://www.flickr.com/photos/42244964@N03/6985514625
+^ "ten minutes"
 
 ---
 
-### direct
-# Duck Typing
+![](images/part-3/9704526768_e43ab62981_k.jpg)
 
-![](images/part-3/6985514625_423a4001ea_k.jpg)
+^ https://www.flickr.com/photos/ter-burg/9704526768
 
-^ https://www.flickr.com/photos/42244964@N03/6985514625
+---
+
+### how smart people
+
+# Solve the Problem
+
+![](images/part-3/9704526768_e43ab62981_k.jpg)
+
+^ https://www.flickr.com/photos/ter-burg/9704526768
+
+---
+
+> "Make a coloured cell behave like a standard cell."
 
 ---
 
@@ -641,6 +614,57 @@ Object.keys(ColourCell.prototype)
 
 ---
 
+# Presto! Backwards Compatibility.
+
+### (it "tastes like a standard cell")
+
+---
+
+![](images/part-3/253281960_91f60e218b_o.jpg)
+
+^ https://www.flickr.com/photos/91553413@N00/253281960
+
+---
+
+### universe and cell are
+
+# No Longer Coupled
+
+![](images/part-3/253281960_91f60e218b_o.jpg)
+
+^ https://www.flickr.com/photos/91553413@N00/253281960
+
+---
+
+![](images/part-3/7569786950_8379220279_k.jpg)
+
+^ https://www.flickr.com/photos/66971402@N04/7569786950
+
+---
+
+# At What Cost?
+
+![](images/part-3/7569786950_8379220279_k.jpg)
+
+^ https://www.flickr.com/photos/66971402@N04/7569786950
+
+---
+
+![](images/part-3/7670055210_ed05b8c732_k.jpg)
+
+^ https://www.flickr.com/photos/bitterjug/7670055210
+
+---
+
+# Increasing Flexibility
+# Increases Complexity
+
+![](images/part-3/7670055210_ed05b8c732_k.jpg)
+
+^ https://www.flickr.com/photos/bitterjug/7670055210
+
+---
+
 ![](images/part-3/4423502365_f4dbde780b_o.jpg)
 
 ^ https://www.flickr.com/photos/angeloangelo/4423502365
@@ -657,12 +681,16 @@ Object.keys(ColourCell.prototype)
 
 ---
 
+> "Make a cell that behaves like a Standard Cell, but is implemented in terms of a Coloured Cell."
+
+---
+
 ```javascript
-function AsStandard (colour) {
-  this.it = colour;
+function AsStandard (colouredCell) {
+  this._colouredCell = colouredCell;
 }
 
-var quacksLikeAStandardDuck =
+var tastesLikeAStandardCell =
   new AsStandard(aColourCell);
 ```
 
@@ -671,12 +699,12 @@ var quacksLikeAStandardDuck =
 ```javascript
 AsStandard.prototype.neighbours = 
   function neighbours () {
-    return this.it.neighbours();
+    return this._colouredCell.neighbours();
   };
   
 AsStandard.prototype.setNeighbours = 
   function setNeighbours (neighbours) {
-    this.it.setNeighbours(neighbours);
+    this._colouredCell.setNeighbours(neighbours);
     return this;
   };
 ```
@@ -686,7 +714,7 @@ AsStandard.prototype.setNeighbours =
 ```javascript
 AsStandard.prototype.alive =
   function alive () {
-    return this.it.age() > 0;
+    return this._colouredCell.age() > 0;
   };
 ```
 
@@ -696,9 +724,9 @@ AsStandard.prototype.alive =
 AsStandard.prototype.setAlive =
   function setAlive (alive) {
     if (alive) {
-      this.it.setAge(this.it.age() + 1);
+      this._colouredCell.setAge(this._colouredCell.age() + 1);
     }
-    else this.it.setAge(0);
+    else this._colouredCell.setAge(0);
     return this;
   };
 ```
@@ -708,7 +736,7 @@ AsStandard.prototype.setAlive =
 ```javascript
 AsStandard.prototype.nextAlive =
   function nextAlive () {
-    return this.it.nextAge() > 0;
+    return this._colouredCell.nextAge() > 0;
   }
 ```
 
@@ -717,7 +745,8 @@ AsStandard.prototype.nextAlive =
 ```javascript
 Object.keys(AsStandard.prototype)
 // =>
-  [ 'setNeighbours',
+  [ 'neighbours',
+    'setNeighbours',
     'alive',
     'setAlive',
     'nextAlive' ]
@@ -725,95 +754,37 @@ Object.keys(AsStandard.prototype)
 
 ---
 
-![](images/part-3/3313053382_f128f329aa_o.jpg)
+# When we Upgrade to ColourCell
 
-^ https://www.flickr.com/photos/andymangold/3313053382
-
----
-
-![](images/part-3/2290758079_f5883b74a3_o.jpg)
-
-^ https://www.flickr.com/photos/anaru/2290758079
+1. View can depend upon ColourCell,
 
 ---
 
-### we can go in the
+# When we Upgrade to ColourCell
 
-# Other Direction
-
-![](images/part-3/2290758079_f5883b74a3_o.jpg)
-
-^ https://www.flickr.com/photos/anaru/2290758079
-
-------
-
-```javascript
-function AsColour (standard) {
-  this.it = standard;
-}
-
-var quacksLikeAColouredDuck =
-  new AsColour(aStandardCell);
-```
+1. View can depend upon ColourCell, and
+1. Universe can depend upon AsStandard.
 
 ---
 
-```javascript
-AsColour.prototype.neighbours = 
-  function neighbours () {
-    return this.it.neighbours();
-  };
-  
-AsColour.prototype.setNeighbours = 
-  function setNeighbours (neighbours) {
-    this.it.setNeighbours(neighbours);
-    return this;
-  };
-```
+# Sweet!
+
+1. Universe is decoupled from changes to Cell,
+
+![](images/part-3/3705717858_9056efa2d0_o.jpg)
+
+^ https://www.flickr.com/photos/56832361@N00/3705717858
 
 ---
 
-```javascript
-AsColour.prototype.age =
-  function age () {
-    return this.it.alive()
-           ? 1
-           : 0;
-  };
-```
+# Sweet!
 
----
+1. Universe is decoupled from changes to Cell, and
+2. ColourCell isn't burdened with backwards compatibility.
 
-```javascript
-AsColour.prototype.setAge =
-  function setAge (age) {
-    this.it.setAlive(age > 0);
-    return this;
-  };
-```
+![](images/part-3/3705717858_9056efa2d0_o.jpg)
 
----
-
-```javascript
-AsColour.prototype.nextAge =
-  function nextAge () {
-    return this.it.nextAlive()
-           ? 1
-           : 0;
-  }
-```
-
----
-
-```javascript
-Object.keys(AsColour.prototype)
-// =>
-  [ 'neighbours',
-    'setNeighbours',
-    'age',
-    'setAge',
-    'nextAge' ]
-```
+^ https://www.flickr.com/photos/56832361@N00/3705717858
 
 ---
 
@@ -823,9 +794,7 @@ Object.keys(AsColour.prototype)
 
 ---
 
-### AsStandard and AsColour are
-
-# Adaptors
+# AsStandard is an *Adaptor*
 
 ![](images/part-3/3459777668_61ca9c2b82_o.jpg)
 
@@ -845,23 +814,7 @@ Object.keys(AsColour.prototype)
 
 ---
 
-![](images/part-3/3326060843_a5205e3183_o.jpg)
-
-^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
-
-^ "homework: what are the implications of proxies and ownership?"
-
----
-
-### homework: what are the implications of
-
-# Proxies and Ownership?
-
-![](images/part-3/3326060843_a5205e3183_o.jpg)
-
-^ https://www.flickr.com/photos/mikaelmiettinen/3326060843
-
-^ "Can we create proxy adaptors instead of wrapping adaptors?"
+# TIMTOWTDI
 
 ---
 
@@ -875,9 +828,7 @@ Object.keys(AsColour.prototype)
 
 ### good programmers borrow from smalltalk,
 
-### great programmers
-
-# Steal from C++
+# Great Programmers Steal from C++
 
 ![](images/part-3/3268894584_95d4237010_o.jpg)
 
@@ -907,49 +858,19 @@ function standardFromColour (colour) {
 
 ---
 
-![](images/part-3/8733249464_07ba616ac4_o.jpg)
+![](images/part-3/6885969828_513d3964d1_k.jpg)
 
-^ https://www.flickr.com/photos/jameshammond/8733249464
+^ https://www.flickr.com/photos/e3000/6885969828
 
-^ "if you use rails, you'd call these 'object migrations'"
-
----
-
-### if you use rails, you'd call these
-
-# "Object Migrations"
-
-![](images/part-3/8733249464_07ba616ac4_o.jpg)
-
-^ https://www.flickr.com/photos/jameshammond/8733249464
+^ "Can we create co-proxies instead of wrappers?"
 
 ---
 
-![](images/part-3/8271747835_b5e6f68251_k.jpg)
+# Coproxies
 
-^ https://www.flickr.com/photos/esoastronomy/8271747835
+![](images/part-3/6885969828_513d3964d1_k.jpg)
 
-^ "that's interesting!"
-
----
-
-# Hmmm, that's interesting!
-
-![](images/part-3/8271747835_b5e6f68251_k.jpg)
-
-^ https://www.flickr.com/photos/esoastronomy/8271747835
-
----
-
-> What if we could manage change with migrations between versions of classes?
-
----
-
-![](images/part-3/4744866167_c631aa4e5f_o.jpg)
-
-^ https://www.flickr.com/photos/34316967@N04/4744866167
-
-^ Hmm some more!
+^ https://www.flickr.com/photos/e3000/6885969828
 
 ---
 
@@ -957,7 +878,23 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/zeevveez/6273266577
 
-^ "No time, mush rush on!"
+^ "fifteen minutes"
+
+---
+
+![](images/part-3/6081198171_99a3ddabe8_o.jpg)
+
+^ https://www.flickr.com/photos/warriorwoman531/6081198171
+
+^ "The conclusion is near"
+
+---
+
+# Approaching the End
+
+![](images/part-3/6081198171_99a3ddabe8_o.jpg)
+
+^ https://www.flickr.com/photos/warriorwoman531/6081198171
 
 ---
 
@@ -965,7 +902,7 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/samsaunders/11689309615
 
-^ "seprate the concern of how to interact with a model from the concern of what the model does"
+^ "separate the concern of how to interact with a model from the concern of what the model does"
 
 ---
 
@@ -977,7 +914,7 @@ function standardFromColour (colour) {
 
 ^ https://www.flickr.com/photos/samsaunders/11689309615
 
-^ "seprate the concern of how to interact with a model from the concern of what the model does"
+^ "separate the concern of how to interact with a model from the concern of what the model does"
 
 ---
 
@@ -987,7 +924,7 @@ function standardFromColour (colour) {
 
 ---
 
-### adaptors
+### and thus, adaptors
 
 # Isolate Change
 
@@ -1003,7 +940,7 @@ function standardFromColour (colour) {
 
 ---
 
-### adaptors
+### and they
 # Decouple Modules
 
 ![](images/part-3/9631393073_a965bb0929_o.jpg)
@@ -1012,27 +949,27 @@ function standardFromColour (colour) {
 
 ---
 
-![](images/part-3/8503205792_d98abf5f13_o.jpg)
+![](images/part-3/14188094421_d72a63c2dd_k.jpg)
 
-^ https://www.flickr.com/photos/dullhunk/8503205792
+^ https://www.flickr.com/photos/janitors/14188094421
 
-^ "adaptors *can* be used to solve compatibility problems"
+^ "adaptors solve compatibility problems"
 
 ---
 
-### adaptors *can* be used to
+### adaptors
 
 # Solve Compatibility Problems
 
-![](images/part-3/8503205792_d98abf5f13_o.jpg)
+![](images/part-3/14188094421_d72a63c2dd_k.jpg)
 
-^ https://www.flickr.com/photos/dullhunk/8503205792
+^ https://www.flickr.com/photos/janitors/14188094421
 
 ---
 
-![](images/part-3/5020192587_220423f8fd_o.jpg)
+![](images/part-3/14874539886_f8ad4b6880_k.jpg)
 
-^ https://www.flickr.com/photos/mathplourde/5020192587
+^ https://www.flickr.com/photos/highwaysagency/14874539886
 
 ^ "but they also gives us the freedom to make changes, safely"
 
@@ -1042,15 +979,287 @@ function standardFromColour (colour) {
 
 # Make Changes, Safely 
 
-![](images/part-3/5020192587_220423f8fd_o.jpg)
+![](images/part-3/14874539886_f8ad4b6880_k.jpg)
 
-^ https://www.flickr.com/photos/mathplourde/5020192587
+^ https://www.flickr.com/photos/highwaysagency/14874539886
 
 ---
 
-![](images/part-3/15150575105_66b36a3f0e_k.jpg)
+![](images/part-3/6970784086_b96b7163a4_k.jpg)
 
-^ https://www.flickr.com/photos/kjcs/15150575105
+^ https://www.flickr.com/photos/jacme31/6970784086
+
+---
+
+### when we're using teams to build software at scale
+
+# Adaptors are an Important Tool
+
+![](images/part-3/6970784086_b96b7163a4_k.jpg)
+
+^ https://www.flickr.com/photos/jacme31/6970784086
+
+---
+
+![](images/part-3/11671457605_3117e67919_k.jpg)
+
+^ https://www.flickr.com/photos/peddhapati/11671457605
+
+^ THE END
+
+---
+
+![](images/part-3/3391592144_3efb85a652_o.jpg)
+
+^ https://www.flickr.com/photos/swimparallel/3391592144/
+
+^ "eighteen minutes"
+
+---
+
+one more thing:
+
+---
+
+![](images/part-3/4772680734_489299f43f_o.jpg)
+
+^ https://www.flickr.com/photos/49889874@N05/4772680734
+
+^ "packages"
+
+---
+
+![](images/part-3/7994149144_2d3052dbd3_o.jpg)
+
+^ https://www.flickr.com/photos/seeminglee/7994149144
+
+---
+
+### when you're holding a
+
+# Version-Shaped Hammer
+
+![](images/part-3/7994149144_2d3052dbd3_o.jpg)
+
+^ https://www.flickr.com/photos/seeminglee/7994149144
+
+---
+
+![](images/part-3/8733249464_07ba616ac4_o.jpg)
+
+^ https://www.flickr.com/photos/jameshammond/8733249464
+
+---
+
+### all changes look like
+
+# Migration-Shaped Nails
+
+![](images/part-3/8733249464_07ba616ac4_o.jpg)
+
+^ https://www.flickr.com/photos/jameshammond/8733249464
+
+---
+
+![](images/part-3/7213010794_fa1e4d89dd_k.jpg)
+
+^ https://www.flickr.com/photos/poorfish/7213010794
+
+---
+
+# Packages Have Interlocking Dependencies
+
+![](images/part-3/7213010794_fa1e4d89dd_k.jpg)
+
+^ https://www.flickr.com/photos/poorfish/7213010794
+
+---
+
+![](images/part-3/4918018946_694b19ef5b_o.jpg)
+
+^ https://www.flickr.com/photos/imazerart/4918018946
+
+---
+
+# Migrations Can Cascade
+
+### you never know how much work a single upgrade can cause
+
+![](images/part-3/4918018946_694b19ef5b_o.jpg)
+
+^ https://www.flickr.com/photos/imazerart/4918018946
+
+---
+
+![](images/part-3/3466699346_e09bc9dc93_o.jpg)
+
+^ https://www.flickr.com/photos/sidelong/3466699346
+
+^ "semver: does a new version have to be duck-compatible? Or can it adapt?"
+
+---
+
+### migration is expensive, so semver values
+
+# Backwards Compatibility
+
+![](images/part-3/3466699346_e09bc9dc93_o.jpg)
+
+^ https://www.flickr.com/photos/sidelong/3466699346
+
+---
+
+![](images/part-3/13026781635_a871791f11_o.jpg)
+
+^ https://www.flickr.com/photos/aigle_dore/13026781635
+
+---
+
+### "duck typed" backwards compatibility
+
+# Holds Progress Back
+
+![](images/part-3/13026781635_a871791f11_o.jpg)
+
+^ https://www.flickr.com/photos/aigle_dore/13026781635
+
+---
+
+![](images/part-3/14040288979_6590cceb2c_k.jpg)
+
+^ https://www.flickr.com/photos/drphotomoto/14040288979
+
+---
+
+### breaking compatibilty
+
+# Exposes Clients to Bugs
+
+![](images/part-3/14040288979_6590cceb2c_k.jpg)
+
+^ https://www.flickr.com/photos/drphotomoto/14040288979
+
+---
+
+![](images/part-3/15083719955_e83cfe0922_k.jpg)
+
+^ https://www.flickr.com/photos/streetmatt/15083719955
+
+---
+
+### adaptors decouple
+
+# Compatibility from Progress
+
+![](images/part-3/15083719955_e83cfe0922_k.jpg)
+
+^ https://www.flickr.com/photos/streetmatt/15083719955
+
+---
+
+![](images/part-3/2216528316_b3a0380048_o.jpg)
+
+^ https://www.flickr.com/photos/sputnik_mania/2216528316
+
+^ "adaptors can provide safe backwards-compatibility without debt"
+
+---
+
+### adaptors provide
+
+# Safe Compatibility
+
+![](images/part-3/2216528316_b3a0380048_o.jpg)
+
+^ https://www.flickr.com/photos/sputnik_mania/2216528316
+
+---
+
+![](images/part-3/2353845688_d2080e2d24_o.jpg)
+
+^ https://www.flickr.com/photos/halfbisqued/2353845688
+
+^ What would an adaptor-aware package manager look like?
+
+---
+
+# What would an adaptor-aware package manager look like?
+
+![](images/part-3/2353845688_d2080e2d24_o.jpg)
+
+^ https://www.flickr.com/photos/halfbisqued/2353845688
+
+---
+
+# An Adaptor-Aware Package Manager
+
+1. Interfaces and Implementations would be independantly versioned,
+
+---
+
+# An Adaptor-Aware Package Manager
+
+1. Interfaces and Implementations would be independantly versioned,
+1. Interfaces would have a many-to-many relationship with Implementations, mediated by Adaptors,
+
+---
+
+# An Adaptor-Aware Package Manager
+
+1. Interfaces and Implementations would be independantly versioned,
+1. Interfaces would have a many-to-many relationship with implementations, mediated by adaptors,
+1. Clients would specifiy the required interface and implementation,
+
+---
+
+# An Adaptor-Aware Package Manager
+
+1. Interfaces and Implementations would be independantly versioned,
+1. Interfaces would have a many-to-many relationship with implementations, mediated by adaptors,
+1. Clients would specifiy the required interface and implementation, and
+1. Old clients can benefit from bug fixes without rewrites.
+
+---
+
+![](images/part-3/6171444454_573f37de59_o.jpg)
+
+^ https://www.flickr.com/photos/wackybadger/6171444454
+
+---
+
+### an adaptor-aware package manager would
+
+# Rewire the Way we Grow Software
+
+![](images/part-3/6171444454_573f37de59_o.jpg)
+
+^ https://www.flickr.com/photos/wackybadger/6171444454
+
+---
+
+![](images/part-3/8271747835_b5e6f68251_k.jpg)
+
+^ https://www.flickr.com/photos/esoastronomy/8271747835
+
+^ "and that provides food for thought for a very long time indeed"
+
+---
+
+### and that provides
+
+# Food for Thought
+
+### for a very long time indeed
+
+![](images/part-3/8271747835_b5e6f68251_k.jpg)
+
+^ https://www.flickr.com/photos/esoastronomy/8271747835
+
+---
+
+![](images/part-3/14175437597_2da2d44778_k.jpg)
+
+^ https://www.flickr.com/photos/lionsthlm/14175437597
 
 ^ "tack så mycket"
 
@@ -1058,9 +1267,9 @@ function standardFromColour (colour) {
 
 # Tack Så Mycket!
 
-![](images/part-3/15150575105_66b36a3f0e_k.jpg)
+![](images/part-3/14175437597_2da2d44778_k.jpg)
 
-^ https://www.flickr.com/photos/kjcs/15150575105
+^ https://www.flickr.com/photos/lionsthlm/14175437597
 
 ---
 
