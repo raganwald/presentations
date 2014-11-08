@@ -2,8 +2,8 @@
 
 The first two talks were given at [NDC Oslo 2014][1].
 
-* [JavaScript Combinators][7] on SpeakerDeck
-* [The Art of the JavaScript Metaobject Protocol][8] on SpeakerDeck
+* [JavaScript Combinators][7]
+* [The Art of the JavaScript Metaobject Protocol][8]
 
 [7]: https://speakerdeck.com/raganwald/javascript-combinators
 [8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
