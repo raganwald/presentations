@@ -17,7 +17,7 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [4]: https://leanpub.com/javascript-spessore/read
 [5]: http://allong.es
 
-The third talk was given at [Nordic JS 2013][6]:
+The third talk was given at [Nordic JS 2014][6]:
 
 * [Duck Typing, Compatibility, and the Adaptor Pattern][7]
 
