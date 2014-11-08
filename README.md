@@ -1,7 +1,6 @@
-"JavaScript Combinators" and "The Art of the JavaScript Metaobject Protocol"
-==============
+# Three talks about programming in JavaScript
 
-This was a two-part talk on given at [NDC Oslo 2014][1]. It is written in Markdown and was presented on-screen using [Deckset][2].
+The first two talks were given at [NDC Oslo 2014][1]. It is written in Markdown and was presented on-screen using [Deckset][2].
 
 * [JavaScript Combinators][7] on SpeakerDeck
 * [The Art of the JavaScript Metaobject Protocol][8] on SpeakerDeck
@@ -17,3 +16,10 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [3]: https://leanpub.com/javascript-allonge/read
 [4]: https://leanpub.com/javascript-spessore/read
 [5]: http://allong.es
+
+The third talk was given at [Nordic JS 2013][6]:
+
+* [Duck Typing, Compatibility, and the Adaptor Pattern][7]
+
+[6]: https://nordicjs.com
+[7]: https://speakerdeck.com/raganwald/duck-typing-compatibility-and-the-adaptor-pattern
