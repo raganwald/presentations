@@ -1,6 +1,6 @@
 # Three talks about programming in JavaScript
 
-The first two talks were given at [NDC Oslo 2014][1].
+The first two talks were given at [NDC Oslo 2014][1]:
 
 * [JavaScript Combinators][7]
 * [The Art of the JavaScript Metaobject Protocol][8]
