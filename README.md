@@ -1,6 +1,6 @@
 # Three talks about programming in JavaScript
 
-The first two talks were given at [NDC Oslo 2014][1]. It is written in Markdown and was presented on-screen using [Deckset][2].
+The first two talks were given at [NDC Oslo 2014][1].
 
 * [JavaScript Combinators][7] on SpeakerDeck
 * [The Art of the JavaScript Metaobject Protocol][8] on SpeakerDeck
@@ -23,3 +23,7 @@ The third talk was given at [Nordic JS 2013][6]:
 
 [6]: https://nordicjs.com
 [7]: https://speakerdeck.com/raganwald/duck-typing-compatibility-and-the-adaptor-pattern
+
+---
+
+All of these talks were composed in Markdown and presented on-screen using [Deckset][2].
