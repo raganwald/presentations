@@ -43,21 +43,77 @@
 
 ### Operations as Functions
 
+- thunks
+
 ---
 
 ### Operations as Methods
+
+- distinguish between functions and invocations
 
 ---
 
 ## "Design Patterns"
 
-### Implementing Undo and Redo with Operations
+### Implementing Undo and Redo with an Operation Stack
+
+- never confuse an example given of a pattern with the underlying purpose of the pattern
+
+- "higher-order invocation"
 
 ---
 
 ### Naked Objects
 
+- validation responsibility
+
 ---
 
 ### RESTful Operations
 
+---
+
+### An Algebra of Operations
+
+---
+
+### Operational Transforms
+
+---
+
+### composing insertions and deletions
+
+---
+
+### reordering operations
+
+- out-of-order undo
+- replay vs transformation
+- post-change transformations
+
+---
+
+### Eventual Consistency
+
+- ? out-of-scope??
+
+---
+
+### Thunks
+
+---
+
+### Comparing Commands to Thunks
+
+- functions are opaque
+- operations that cannot be performed on opaque thinks
+
+---
+
+### Single Responsibility Principle
+
+- using commands instead of methods for controllers
+
+---
+
+### Is trampolining a command pattern?
