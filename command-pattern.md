@@ -20,6 +20,8 @@
 
 ---
 
+### the canonical example:
+
 ## A Mutable Data Structure
 
 ![](images/command/9112267161_bb926bee3d_o.jpg)
@@ -36,20 +38,23 @@
 
 ![](images/command/16812936603_ac15e5c3e0_k.jpg)
 
-- `insert`
-- `delete`
+`insert(document, 42, 'foo')`
 
----
-
-### Operations as Functions
-
-- thunks
+`delete(document, 40, 6)`
 
 ---
 
 ### Operations as Methods
 
-- distinguish between functions and invocations
+`document.insert(42, 'foo')`
+
+`document.delete(40, 6)`
+
+---
+
+### Operations as Functions: Thunks
+
+`() => insert(document, 42, 'foo')`
 
 ---
 
