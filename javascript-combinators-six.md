@@ -991,17 +991,13 @@ class Bread {
 
 ---
 
-## final words
-
-# Do not follow in the footsteps of the sages:
+# Do not follow<br>in the footsteps of the sages.
 
 ![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
 
 ^ https://www.flickr.com/photos/suburbanbloke/723665503
 
 ---
-
-## final words
 
 # Seek what they sought.
 
