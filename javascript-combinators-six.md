@@ -1,9 +1,9 @@
-footer: © 2016, Reginald Braithaite 2016. Some Rights Reserved.
+footer: © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
 slidenumbers: true
 
-![original](https://farm3.staticflickr.com/2706/4378437185_4bdff99419_o_d.jpg)
+![original](images/homage-to-oud-and-von-doesburg.jpg)
 
-^ https://www.flickr.com/photos/andy_li/4378437185
+^ https://www.flickr.com/photos/faceme/7759225036
 
 ^ "A Unified Theory of JavaScript Style, Part I"
 
@@ -11,11 +11,9 @@ slidenumbers: true
 
 # JavaScript Combinators (2016)
 
-![](https://farm3.staticflickr.com/2706/4378437185_4bdff99419_o_d.jpg)
+![](images/homage-to-oud-and-von-doesburg.jpg)
 
-^ https://www.flickr.com/photos/andy_li/4378437185
-
-^ The "backbone" of this talk is to explain the combinators make software that is easier to factor and refactor by creating an "algebra" where functions form a semigroup, rather than using code, which is more flexibible but creates a sparse group
+^ https://www.flickr.com/photos/faceme/7759225036
 
 ---
 
@@ -28,7 +26,7 @@ slidenumbers: true
 ---
 
 ## we'll talk about
-# Combinators and Decorators
+# Using combinators for decomposition and composition
 
 ![](https://farm7.staticflickr.com/6132/5991539415_300af283a6_o_d.jpg)
 
@@ -45,7 +43,7 @@ slidenumbers: true
 ---
 
 ## and we'll think about
-# Decomposition and Factoring
+# Making responsibilities and relationships explicit
 
 ![](https://farm4.staticflickr.com/3306/3521504068_3664448df2_o_d.jpg)
 
@@ -77,7 +75,7 @@ slidenumbers: true
 
 ---
 
-# Example: A monolith
+## a monolith
 
 ```javascript
 Parse.User.logIn("user", "pass", {
@@ -99,7 +97,7 @@ Parse.User.logIn("user", "pass", {
 
 ---
 
-# Decomposed by extracting functions
+## decomposition by extracting functions
 
 ```javascript
 let assignCurrentUser = (user) => {
@@ -143,7 +141,7 @@ Parse.User.logIn("user", "pass", {
 
 ---
 
-# Example: Promises explicitly compose asynchronous functions
+## promises explicitly compose asynchronous functions
 
 ```javascript
 let findUser = (user) => query.find();
@@ -186,7 +184,7 @@ Parse.User.logIn("user", "pass")
 
 ---
 
-> Back to Decomposition
+> Back to decomposition
 
 ---
 
@@ -228,7 +226,7 @@ Parse.User.logIn("user", "pass")
 
 ---
 
-## pluck: "A convenient version of what is perhaps the most common use-case for `map`, extracting a list of property values."
+## `pluck`: "A convenient version of what is perhaps the most common use-case for `map`, extracting a list of property values."
 
 ![](https://c2.staticflickr.com/8/7743/17185509447_1166acf54b_h.jpg)
 
@@ -259,7 +257,7 @@ pluck(deStijl, 'name')
 
 ---
 
-# Manually decomposing `pluck`'s interface
+## manually decomposing `pluck`'s interface
 
 ```javascript
 let pluckFrom = (collection) =>
@@ -276,7 +274,7 @@ pluckFrom(deStijl)('name')
 
 ---
 
-# Manually decomposing `pluck`'s interface
+## manually decomposing `pluck`'s interface
 
 ```javascript
 let pluckWith = (property) =>
@@ -335,9 +333,7 @@ pluckFrom(deStijl)('name')
 
 ---
 
-## Partial Application (again)
-
-# Partial application decomposes a function from the outside-in
+## partial application decomposes a function from the outside-in
 
 ```javascript
 let pluck = (collection, property) =>
@@ -353,7 +349,7 @@ let pluckFrom = (collection) =>
 
 ---
 
-# Extract closed-over binding
+## extract closed-over binding
 
 ```javascript
 let pluckFrom = (collection) =>
@@ -841,17 +837,17 @@ class Bread {
 
 ---
 
-![original](images/confusion.jpg)
+![original](images/victory-boogie-woogie.jpg)
 
-^ https://www.flickr.com/photos/128733321@N05/19428475700
+^ https://www.flickr.com/photos/hogeslag/3404068564
 
 ---
 
 # What have we seen so far?
 
-![](images/confusion.jpg)
+![](images/victory-boogie-woogie.jpg)
 
-^ https://www.flickr.com/photos/128733321@N05/19428475700
+^ https://www.flickr.com/photos/hogeslag/3404068564
 
 ---
 
@@ -957,7 +953,17 @@ class Bread {
 
 ---
 
-> Combinators do not make the hard problem easy
+![original](images/constructive-lives.jpg)
+
+^ https://www.flickr.com/photos/cristiano_betta/2970086666
+
+---
+
+# Combinators do not make naming easy
+
+![](images/constructive-lives.jpg)
+
+^ https://www.flickr.com/photos/cristiano_betta/2970086666
 
 ---
 
@@ -1005,17 +1011,8 @@ class Bread {
 
 ---
 
-# Reginald Braithwaite
-
-## PagerDuty
-
-## raganwald.com
-
-## @raganwald
-
-NDC Conference, London, England, January 13, 2016.
-
-[Some Rights Reserved](http://creativecommons.org/licenses/by-sa/4.0/)
+# Reg Braithwaite<br>PagerDuty, Inc.
+### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
 
 ![right, fit](images/allonge-six.jpg)
 
