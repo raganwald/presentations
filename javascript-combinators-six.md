@@ -372,7 +372,7 @@ let pluckFrom = (collection) =>
 
 ---
 
-## Extract closed-over binding
+## extract closed-over binding
 
 # Decomposing `pluckFrom` into `leftApply` gives us a decorator
 
@@ -388,7 +388,7 @@ let pluckFrom = (collection) =>
 
 ---
 
-## Hmmmm
+## hmmmm
 
 # What does `leftApply(leftApply, leftApply)` do?
 
