@@ -1,3 +1,6 @@
+footer: © 2016, Reginald Braithaite 2016. Some Rights Reserved.
+slidenumbers: true
+
 ![original](https://farm3.staticflickr.com/2706/4378437185_4bdff99419_o_d.jpg)
 
 ^ https://www.flickr.com/photos/andy_li/4378437185
@@ -367,7 +370,7 @@ let pluckFrom = (collection) =>
 
 ---
 
-## Extract closed-over binding
+## extract closed-over binding
 
 # Closed over bindings can be extracted, just like parameters
 
@@ -571,48 +574,191 @@ let makeBread = after(bakeBread, cool);
 
 ---
 
-# decomposing `before` and `after`
+# decomposing `before`
 
 ```javascript
 let beforeWith = (decoration) =>
   rightApply(before, decoration);
 
-let mixBefore = beforeWith((...ingredients) =>
-  console.log('mixing', ...ingredients));
+let mixBefore = beforeWith(mix);
 
 let bakeBread = mixBefore(bake);
 ```
 
 ---
 
-# decomposing `before` and `after`
+# decomposing `after`
 
 ```javascript
 let afterWith = (decoration) =>
   rightApply(after, decoration);
 
-let coolAfter = afterWith(() =>
-  console.log('cooling'));
+let coolAfter = afterWith(after);
 
 let makeBread = coolAfter(bakeBread);
 ```
 
 ---
 
-> `beforeWith` and `afterWith` are combinators that turn functions into decorators
+> `beforeWith` and `afterWith` are combinators that turn functions into decorators that compose behaviour
 
 ---
 
-# generalized guards
+![original](images/hoover-dam-bypass.jpg)
+
+^ "These are not the whole story, by far."
+
+---
+
+![original](images/colours.jpg)
+
+^ https://www.flickr.com/photos/lightplay/4727131891
+
+---
+
+# JavaScript invocations are coloured
+
+![](images/colours.jpg)
+
+^ https://www.flickr.com/photos/lightplay/4727131891
+
+^ http://raganwald.com/2015/03/12/symmetry.html
+
+---
+## coloured decorators
+```javascript
+let before = (fn, decoration) =>
+  function (...args) {
+    decoration.apply(this, args);
+    return fn.apply(this, args);
+  };
+
+let after = (fn, decoration) =>
+  function (...args) {
+    let returnValue = fn.apply(this, args);
+    decoration.apply(this, args);
+    return returnValue;
+  };
+```
+
+---
+
+> Why coloured decorators matter
+
+---
+
+## bread, revisited
+```javascript
+class Bread {
+  constructor (...ingredients) {
+    this.ingredients = ingredients;
+  }
+
+  mix () {
+    console.log('mixing', ...this.ingredients)
+  };
+
+  bake () {
+    console.log('baking');
+  }
+
+  cool () {
+    console.log('cooling');
+  }
+
+  make () {
+    this.mix();
+    this.bake();
+    this.cool();
+  }
+}
+```
+
+---
+
+## bread, revisited
+```javascript
+class Bread {
+
+  // ...
+
+  make () {
+    this.mix();
+    this.bake();
+    this.cool();
+  }
+}
+```
+
+---
+
+> Classes can be decorated too
+
+---
+
+## `beforeAll`
 
 ```javascript
-function provided (guard) {
-  return around(function () {
-    var fn = arguments[0],
-        values = [].slice.call(arguments, 1);
+const beforeAll = (behaviour, ...methodNames) =>
+  (clazz) => {
+    for (let methodName of methodNames) {
+      const method = clazz.prototype[methodName];
 
-    if (guard.apply(this, values)) {
-      return fn.apply(this, va
+      Object.defineProperty(clazz.prototype, property, {
+        value: function (...args) {
+          behaviour.apply(this, args);
+          return method.apply(this, args);
+        },
+        writable: true
+      });
+    }
+    return clazz;
+  };
+```
+
+---
+
+## `afterAll`
+
+```javascript
+const afterAll = (behaviour, ...methodNames) =>
+  (clazz) => {
+    for (let methodName of methodNames) {
+      const method = clazz.prototype[methodName];
+
+      Object.defineProperty(clazz.prototype, property, {
+        value: function (...args) {
+          const returnValue = method.apply(this, args);
+
+          behaviour.apply(this, args);
+          return returnValue;
+        },
+        writable: true
+      });
+    }
+    return clazz;
+  };
+```
+
+---
+
+## better bread
+
+```javascript
+let invoke = (methodName) => function (...args) {
+  return this[methodName](...args);
+}
+
+let Bread = beforeAll(invoke('mix'), 'make')(
+  afterAll(invoke('cool'), 'make')(class {
+    // ...
+
+    make () {
+      this.bake();
+    }
+  })
+);
+```
 
 ---
 
@@ -620,11 +766,11 @@ function provided (guard) {
 
 ^ https://www.flickr.com/photos/68112440@N07/6210847796
 
-^ "lessons"
+^ "Looking Forward"
 
 ---
 
-## lessons
+## Looking Forward
 
 ![](https://farm7.staticflickr.com/6211/6210847796_ab54ea2b0b_o_d.jpg)
 
@@ -632,20 +778,104 @@ function provided (guard) {
 
 ---
 
-![original](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
-
-^ https://www.flickr.com/photos/paulmccoubrie/6792412657
-
-^ "Combinators increase code flexibility and require increased mental flexibility"
+> ES.who-knows-when
 
 ---
 
-## lesson one
-# *Combinators increase code flexibility and require increased mental flexibility*
+## better bread with class decorator sugar
 
-![](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+```javascript
+let invoke = (methodName) => function (...args) {
+  return this[methodName](...args);
+}
 
-^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+@beforeAll(invoke('mix'), 'make')
+@afterAll(invoke('cool'), 'make')
+class Bread {
+
+  // ...
+
+  make () {
+    this.bake();
+  }
+}
+```
+
+---
+
+## method decorators
+```javascript
+let methodDecorator = (decorator) =>
+  function (target, name, descriptor) {
+    descriptor.value = decorator(descriptor.value);
+  }
+
+
+let invokeBefore = (methodName) =>
+  methodDecorator( (methodBody) =>
+    before(methodBody, invoke(methodName))
+  );
+
+let invokeAfter = (methodName) =>
+  methodDecorator( (methodBody) =>
+    after(methodBody, invoke(methodName))
+  );
+```
+
+---
+
+## better bread
+
+```javascript
+class Bread {
+
+  // ...
+
+  @invokeBefore('mix')
+  @invokeAfter('cool')
+  make () {
+    this.bake();
+  }
+}
+```
+
+---
+
+![original](images/confusion.jpg)
+
+^ https://www.flickr.com/photos/128733321@N05/19428475700
+
+---
+
+# What have we seen so far?
+
+![](images/confusion.jpg)
+
+^ https://www.flickr.com/photos/128733321@N05/19428475700
+
+---
+
+# What have we seen so far?
+
+- Extract function
+- Promise interface
+- Partial application
+- Extract closed-over binding
+
+(more!)
+
+---
+
+# What have we seen so far?
+
+- Simple composition
+- Composition decorators
+- Class decorators
+- Method decorators
+
+---
+
+> Don't worry about the details!
 
 ---
 
@@ -657,8 +887,8 @@ function provided (guard) {
 
 ---
 
-## lesson two
-# *Decorators declutter secondary concerns*
+## it's all the same idea
+# Decomposition makes responsibilities explicit
 
 ![](https://farm1.staticflickr.com/54/107810852_44e98d9298_o_d.jpg)
 
@@ -666,17 +896,108 @@ function provided (guard) {
 
 ---
 
+![original](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+
+^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+
+^ "Composition makes relationships explicit"
+
+---
+
+## and it's all the same idea
+# Composition makes relationships explicit
+
+![](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+
+^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+
+---
+
+> These ideas matter
+
+---
+
+> There are only two hard problems in Computer Science: Cache invalidation, and naming things.
+
+![](images/phil-karlton.jpg)
+
+^ Phil Karlton
+
+---
+
+![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+^ "Naming entities is hard because you have to figure out which entities need to be named"
+
+---
+
+# Naming entities is hard because you have to figure out which entities need to be named
+
+![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
+
+^ https://www.flickr.com/photos/michale/2744016741
+
+---
+
+![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+^ "Naming relationships is hard because you have to figure out which relationships need to be named"
+
+---
+
+# Naming relationships is hard because you have to figure out which relationships need to be named
+
+![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
+
+^ https://www.flickr.com/photos/stretta/5572576057
+
+---
+
+> Combinators do not make the hard problem easy
+
+---
+
+![original](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
+
+^ https://www.flickr.com/photos/joao_trindade/4362414729
+
+^ "Combinators give us a language for naming things"
+
+---
+
+# Combinators give us a language for naming things
+
+![](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
+
+^ https://www.flickr.com/photos/joao_trindade/4362414729
+
+---
+
 ![original](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
 
 ^ https://www.flickr.com/photos/suburbanbloke/723665503
 
-^ "Do not follow in the footsteps of the sages. Seek what they sought"
+^ "Do not follow in the footsteps of the sages: Seek what they sought"
 
 ---
 
-## lesson three
-# *Do not follow in the footsteps of the sages.*
-# *Seek what they sought*
+## final words
+
+# Do not follow in the footsteps of the sages:
+
+![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
+
+^ https://www.flickr.com/photos/suburbanbloke/723665503
+
+---
+
+## final words
+
+# Seek what they sought.
 
 ![](https://farm2.staticflickr.com/1406/723665503_48c3a82af8_o_d.jpg)
 
@@ -692,203 +1013,10 @@ function provided (guard) {
 
 ## @raganwald
 
-NDC Conference, London, England, January 13, 2016
+NDC Conference, London, England, January 13, 2016.
+
+[Some Rights Reserved](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ![right, fit](images/allonge-six.jpg)
 
 ^ https://leanpub.com/javascriptallongesix
-
----
-
-> ANNEX
-
----
-
-![original](https://farm6.staticflickr.com/5125/5317820857_7d86383407_o_d.jpg)
-
-^ https://www.flickr.com/photos/justinbaeder/5317820857
-
-^ Not all entities "fit together"
-
----
-
-## interfaces
-# *Not all entities "fit together"*
-
-![](https://farm6.staticflickr.com/5125/5317820857_7d86383407_o_d.jpg)
-
-^ https://www.flickr.com/photos/justinbaeder/5317820857
-
-^ worse, some are time-dependent
-
----
-
-![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
-
-^ https://www.flickr.com/photos/michale/2744016741
-
-^ "Homogeneous interfaces create dense spaces"
-
----
-
-# Homogeneous interfaces create dense spaces
-
-![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
-
-^ https://www.flickr.com/photos/michale/2744016741
-
-^ Example: Integers and addition, multiplication: very dense
-
----
-
-![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
-
-^ https://www.flickr.com/photos/stretta/5572576057
-
-^ "Heterogeneous interfaces create sparse spaces"
-
----
-
-# Heterogeneous interfaces create sparse spaces
-
-![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
-
-^ https://www.flickr.com/photos/stretta/5572576057
-
-^ counter-example: imagine an operation on integers wher emost operations were invalid. you'd have to engage in  a complex search to find the path from any one integer to another.
-
----
-
-![original](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
-
-^ https://www.flickr.com/photos/michale/2744016741
-
-![original](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
-
-^ https://www.flickr.com/photos/stretta/5572576057
-
-^ "Dense is more flexible than sparse"
-
----
-
-# Dense is more flexible than sparse
-
-![](https://farm4.staticflickr.com/3260/2744016741_d3ca684983_o_d.jpg)
-
-^ https://www.flickr.com/photos/michale/2744016741
-
-![](https://farm6.staticflickr.com/5302/5572576057_86fc9b29cc_o_d.jpg)
-
-^ https://www.flickr.com/photos/stretta/5572576057
-
----
-
-![original](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
-
-^ https://www.flickr.com/photos/dipfan/110857520
-
-![original](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
-
-^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
-
-^ "Sparse can be quicker to grasp"
-
----
-
-# Sparse can be quicker to grasp
-
-![](https://farm1.staticflickr.com/54/110857520_7c8178c863_o_d.jpg)
-
-^ https://www.flickr.com/photos/dipfan/110857520
-
-![](https://farm4.staticflickr.com/3749/9604185186_7038cfaa83_o_d.jpg)
-
-^ https://www.flickr.com/photos/nathanoliverphotography/9604185186
-
-^ we'll give an example, showing how we have to build up.
-
----
-
-![original](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
-
-^ https://www.flickr.com/photos/joao_trindade/4362414729
-
-^ "enough with the math!"
-
----
-
-## enough with the math!
-
-![](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
-
-^ https://www.flickr.com/photos/joao_trindade/4362414729
-
-___
-
-# A unary combinator
-
-```javascript
-let flip = (fn) =>
-  (a, b) => fn(b, a);
-
-let arrow = (a, b) =>
-    `${a} -> ${b}`;
-
-flip(arrow)("x", "y")
-  //=> 'y -> x'
-```
-
-^ http://jsfiddle.net/raganwald/wFRP8/
-
----
-
-# Currying:
-
-```javascript
-let curry = (fn) =>
-  (a) => (b) => fn(a, b);
-
-let arrow = (a, b) =>
-    `${a} -> ${b}`;
-
-let curriedArrow = curry(arrow);
-  //=> [function]
-
-curriedArrow('finger')('moon')
-  //=> 'finger -> moon'
-```
-
-^ http://raganwald.com/2013/03/07/currying-and-partial-application.html
-
-
-![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
-
-^ https://www.flickr.com/photos/genista/4449316
-
-^ "Partial application transforms binary operations into unary operations"
-
----
-
-## nota bene
-# *Partial application transforms binary operations into unary operations*
-
-![](https://farm1.staticflickr.com/4/4449316_3a315432b5_o_d.jpg)
-
-^ https://www.flickr.com/photos/genista/4449316
-
----
-
-> Why do we care about
-> "unary operations?"
-
----
-
-# Currying and partial application *decompose* functions
-
-That allows us to re-compose them in different ways. We'll look at composition in a moment.
-
----
-
-> Partial Application in Action
-
-^ do a picture here
