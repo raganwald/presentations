@@ -261,8 +261,8 @@ class Buffer {
 
   constructor (text = '') {
     this.text = text;
-    this.undoStack = [];
-    this.redoStack = [];
+    this.history = [];
+    this.future = [];
   }
 
 }
@@ -277,8 +277,8 @@ class Buffer {
     let doer = new Edit(this, {replacement, from, to}),
         undoer = doer.reversed();
 
-    this.undoStack.push(undoer);
-    this.redoStack = [];
+    this.history.push(undoer);
+    this.future = [];
     return doer.doIt();
   }
 
@@ -299,10 +299,10 @@ class Buffer {
 class Buffer {
 
   undo () {
-    let undoer = this.undoStack.pop(),
+    let undoer = this.history.pop(),
         redoer = undoer.reversed();
 
-    this.redoStack.push(redoer);
+    this.future.unshift(redoer);
     return undoer.doIt();
   }
 
@@ -347,10 +347,10 @@ buffer.undo()
 class Buffer {
 
   redo () {
-    let redoer = this.redoStack.pop(),
+    let redoer = this.future.shift(),
         undoer = redoer.reversed();
 
-    this.undoStack.push(undoer);
+    this.history.push(undoer);
     return redoer.doIt();
   }
 
@@ -374,10 +374,6 @@ buffer.redo()
 ![](images/command/printer-mechanism.jpg)
 
 ^ https://www.flickr.com/photos/robbie1/8656027235
-
----
-
-> "Never confuse the example given of a pattern, with the underlying purpose of the pattern."
 
 ---
 
@@ -408,8 +404,8 @@ class Buffer {
     let doer = new Edit(this, {replacement, from, to}),
         undoer = doer.reversed();
 
-    this.undoStack.push(undoer);
-    this.redoStack = [];
+    this.history.push(undoer);
+    this.future = [];
     return doer.doIt();
   }
 
@@ -418,7 +414,7 @@ class Buffer {
 
 ---
 
-# why do we have to throw the redo stack away?
+# why do we have to throw the future away?
 
 ![](images/command/newspapers.jpg)
 
@@ -433,8 +429,8 @@ class Buffer {
     let doer = new Edit(this, {replacement, from, to}),
         undoer = doer.reversed();
 
-    this.undoStack.push(undoer);
-    // this.redoStack = [];
+    this.history.push(undoer);
+    // this.future = [];
     return doer.doIt();
   }
 
@@ -670,8 +666,8 @@ class Buffer {
     let doer = new Edit(this, {replacement, from, to}),
         undoer = doer.reversed();
 
-    this.undoStack.push(undoer);
-    this.redoStack = this.redoStack.map(
+    this.history.push(undoer);
+    this.future = this.future.map(
       (edit) => edit.prependedWith(doer)
     );
     return doer.doIt();
@@ -717,10 +713,7 @@ buffer.redo();
 
 ---
 
-# so: what can fixing `redo` teach us about invocations as first-class entities?
-![](images/command/magazines.jpg)
-
-^ https://www.flickr.com/photos/wordridden/4308645407
+# what can fixing `redo` teach us about invocations as first-class entities?
 
 ---
 
@@ -729,3 +722,171 @@ buffer.redo();
 ![](images/command/tardis.jpg)
 
 ^ https://www.flickr.com/photos/shimgray/2811100997
+
+^ https://www.youtube.com/watch?v=mDsN5lWLKU0
+
+---
+
+# `reversed()` and `prependedWith()` show us we can change both the direction and order of time.
+
+---
+
+![](images/command/alice-b-toklas.jpg)
+![](images/command/bob-fosse.jpg)
+
+^ "Alice B. Toklas and Bob Fosse are editing a script"
+
+---
+
+```javascript
+let alice = new Buffer(
+  "The quick brown fox jumped over the lazy dog"
+);
+
+let bob = new Buffer(
+  "The quick brown fox jumped over the lazy dog"
+);
+```
+
+---
+
+## for simplicity, we'll omit `undo` , `redo` and `reversed`
+
+```javascript
+class Buffer {
+
+  constructor (text = '') {
+    this.text = text;
+    this.history = [];
+  }
+
+}
+```
+
+---
+
+```javascript
+class Buffer {
+
+  replaceWith (replacement, from = 0, to = this.length()) {
+    let edit = new Edit(this,
+                   {replacement, from, to}
+                 );
+
+    this.history.push(edit);
+    return edit.doIt();
+  }
+
+}
+```
+
+---
+
+```javascript
+alice.replaceWith("My", 0, 3);
+  //=> My quick brown fox jumped over the lazy dog
+
+bob.replaceWith("fast", 4, 9);
+  //=> The fast brown fox jumped over the lazy dog
+```
+
+---
+
+![](images/command/operational-transforms.png)
+
+---
+
+```javascript
+class Buffer {
+
+  append (theirEdit) {
+    this.history.forEach( (myEdit) => {
+      theirEdit = theirEdit.prependedWith(myEdit);
+    });
+    return new Edit(this, theirEdit).doIt();
+  }
+
+}
+```
+
+---
+
+```javascript
+class Buffer {
+
+  appendAll(otherBuffer) {
+    otherBuffer.history.forEach(
+      (theirEdit) => this.append(theirEdit)
+    );
+    return this;
+  }
+
+}
+```
+
+---
+
+```javascript
+alice.appendAll(bob);
+  //=> My fast brown fox jumped over the lazy dog
+
+bob.appendAll(alice);
+  //=> My fast brown fox jumped over the lazy dog
+```
+
+---
+
+> "Unfortunately, implementing OT sucks. There's a million algorithms with different tradeoffs, mostly trapped in academic papers. The algorithms are really hard and time consuming to implement correctly."
+
+![](images/command/magazines.jpg)
+
+^ https://www.flickr.com/photos/wordridden/4308645407
+
+^ Joseph Gentle, from https://en.wikipedia.org/wiki/Operational_transformation
+
+---
+
+# perhaps we can algorithmically extract the edits, and perform three-way merges?
+
+---
+
+# git
+
+![](images/command/github.png)
+
+---
+
+# perhaps we should borrow a trick from react, and periodically scan a "shadow buffer" for diffs that we exchange with collaborators…
+
+^ congratulations, now we're talking differential synchronization. See Electron, Google Docs
+
+^ See also: https://neil.fraser.name/writing/sync/
+
+---
+
+# differential synchronization
+
+![](images/command/google-docs.png)
+
+---
+
+# with invocations as first-class entities, we can build algorithms and protocols mastering time and change, from single apps to distributed systems
+
+---
+
+> "Never confuse the example given of a pattern, with the underlying idea the pattern represents."
+
+![](images/command/ibm-1403-printer-chain.jpg)
+
+^ https://www.flickr.com/photos/mwichary/3338901313
+
+---
+
+# Reg Braithwaite<br>PagerDuty, Inc.
+### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
+
+![right, fit](images/allonge-six.jpg)
+
+^ https://leanpub.com/javascriptallongesix
+
+
