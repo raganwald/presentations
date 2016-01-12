@@ -5,11 +5,14 @@ slidenumbers: true
 
 ^ https://www.flickr.com/photos/faceme/7759225036
 
-^ "A Unified Theory of JavaScript Style, Part I"
+^ Make sure we touch a little more specifically about what this has to do with ES6 and JavaScript's "natural style"
+
+^ Consider an annex filled with clouds about why JS is a lightweight language
 
 ---
 
-# JavaScript Combinators (2016)
+# JavaScript Combinators
+### the "six" edition
 
 ![](images/homage-to-oud-and-von-doesburg.jpg)
 
