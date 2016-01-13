@@ -5,10 +5,6 @@ slidenumbers: true
 
 ^ https://www.flickr.com/photos/faceme/7759225036
 
-^ Make sure we touch a little more specifically about what this has to do with ES6 and JavaScript's "natural style"
-
-^ Consider an annex filled with clouds about why JS is a lightweight language
-
 ---
 
 # JavaScript Combinators
@@ -23,8 +19,6 @@ slidenumbers: true
 ![original](images/combinators/exhibition.jpg)
 
 ^ https://www.flickr.com/photos/mariannebevis/8636118515
-
-^ "talk about Combinators and decorators"
 
 ---
 
