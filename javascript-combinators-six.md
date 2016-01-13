@@ -20,9 +20,9 @@ slidenumbers: true
 
 ---
 
-![](https://farm7.staticflickr.com/6132/5991539415_300af283a6_o_d.jpg)
+![original](images/combinators/exhibition.jpg)
 
-^ https://www.flickr.com/photos/popculturegeek/5991539415
+^ https://www.flickr.com/photos/mariannebevis/8636118515
 
 ^ "talk about Combinators and decorators"
 
@@ -31,26 +31,26 @@ slidenumbers: true
 ## we'll talk about
 # Using combinators for decomposition and composition
 
-![](https://farm7.staticflickr.com/6132/5991539415_300af283a6_o_d.jpg)
+![](images/combinators/exhibition.jpg)
 
-^ https://www.flickr.com/photos/popculturegeek/5991539415
+^ https://www.flickr.com/photos/mariannebevis/8636118515
 
 ---
 
-![](https://farm4.staticflickr.com/3306/3521504068_3664448df2_o_d.jpg)
+![original](images/combinators/avond.jpg)
 
-^ https://www.flickr.com/photos/creative_stock/3521504068
+^ http://www.wikiart.org/en/piet-mondrian/avond-evening-the-red-tree-1910
 
-^ "think about flexibility and decluttering"
+^ "Making responsibilities and relationships explicit"
 
 ---
 
 ## and we'll think about
 # Making responsibilities and relationships explicit
 
-![](https://farm4.staticflickr.com/3306/3521504068_3664448df2_o_d.jpg)
+![](images/combinators/avond.jpg)
 
-^ https://www.flickr.com/photos/creative_stock/3521504068
+^ http://www.wikiart.org/en/piet-mondrian/avond-evening-the-red-tree-1910
 
 ---
 
@@ -103,9 +103,7 @@ Parse.User.logIn("user", "pass", {
 ## decomposition by extracting functions
 
 ```javascript
-let assignCurrentUser = (user) => {
-    currentUser = user;
-  };
+let assignCurrentUser = (user) => { currentUser = user; };
 
 let saveFirstUser = (users) =>
   users[0].save({ key: value }, {
@@ -117,9 +115,7 @@ let logUserIn = (user) =>
     success: saveFirstUser
   });
 
-Parse.User.logIn("user", "pass", {
-  success: logUserIn
-});
+Parse.User.logIn("user", "pass", { success: logUserIn });
 ```
 
 ^ Adapted from http://blog.parse.com/learn/engineering/whats-so-great-about-javascript-promises/
@@ -151,9 +147,7 @@ let findUser = (user) => query.find();
 
 let saveFirstUser = (user) => users[0].save({ key: value });
 
-let assignCurrentUser = (user) => {
-    currentUser = user;
-  };
+let assignCurrentUser = (user) => { currentUser = user; };
 
 Parse.User.logIn("user", "pass")
   .then(findUser)
@@ -263,13 +257,13 @@ pluck(deStijl, 'name')
 ## manually decomposing `pluck`'s interface
 
 ```javascript
-let pluckFrom = (collection) =>
-  (property) => pluck(collection, property);
-
 var deStijl = [
   {name: 'Theo van Doesburg', occupation: 'theorist'},
   {name: 'Piet Mondriaan', occupation: 'painter'},
   {name: 'Gerrit Rietveld', occupation: 'architect'}];
+
+let pluckFrom = (collection) =>
+  (property) => pluck(collection, property);
 
 pluckFrom(deStijl)('name')
   //=> ["Theo van Doesburg", "Piet Mondriaan", "Gerrit Rietveld"]
@@ -283,12 +277,7 @@ pluckFrom(deStijl)('name')
 let pluckWith = (property) =>
   (collection) => pluck(collection, property);
 
-var deStijl = [
-  {name: 'Theo van Doesburg', occupation: 'theorist'},
-  {name: 'Piet Mondriaan', occupation: 'painter'},
-  {name: 'Gerrit Rietveld', occupation: 'architect'}];
-
-pluckFrom(deStijl)('name')
+pluckWith('name')(deStijl)
   //=> ["Theo van Doesburg", "Piet Mondriaan", "Gerrit Rietveld"]
 ```
 
@@ -358,30 +347,33 @@ let pluckFrom = (collection) =>
 let pluckFrom = (collection) =>
   (property) => pluck(collection, property);
 
-// becomes:
+// extract `pluck`:
+
+let ____ = (pluck, collection) =>
+  (property) => pluck(collection, property);
+
+// rename:
 
 let leftApply = (fn, a) =>
   (b) => fn(a, b);
-
-let pluckFrom = (collection) =>
-  leftApply(pluck, collection);
 ```
 
 ---
 
-## extract closed-over binding
+## using `leftApply`
 
-# Closed over bindings can be extracted, just like parameters
+```javascript
+let pluckFrom = (collection) =>
+  leftApply(pluck, collection);
 
----
+// again:
 
-## extract closed-over binding
+let pluckFrom = leftApply(leftApply, pluck);
 
-# Decomposing `pluckFrom` into `leftApply` gives us a decorator
+// again
 
----
-
-> `leftApply` is a decorator that decomposes a function's interface
+let pluckFrom = leftApply(leftApply, leftApply)(pluck);
+```
 
 ---
 
@@ -391,9 +383,9 @@ let pluckFrom = (collection) =>
 
 ---
 
-## hmmmm
+# hmmmm
 
-# What does `leftApply(leftApply, leftApply)` do?
+## What is `leftApply(leftApply, leftApply)`?
 
 ![](https://farm9.staticflickr.com/8490/8170948596_372d1960a5_o_d.jpg)
 
@@ -407,13 +399,40 @@ let pluckFrom = (collection) =>
 let rightApply = (fn, b) =>
   (a) => fn(a, b);
 
-let pluckWith = (property) =>
-  rightApply(pluck, property);
+let pluckWith = (property) => (pluck, property);
+
+// again:
+
+let pluckWith = leftApply(rightApply, pluck);
+
+// again:
+
+let pluckWith = leftApply(leftApply, rightApply)(pluck);
 ```
 
 ---
 
-## more decomposition with partial application
+## combinators that decompose functions
+
+```javascript
+// leftApply(leftApply, leftApply)
+
+let Istarstar = (a) => (b) => (c) => a(b, c);
+
+let pluckFrom = Istarstar(pluck);
+
+// leftApply(leftApply, rightApply)
+
+let C = (a) => (b) => (c) => a(c, b)
+
+let pluckWith = C(pluck);
+```
+
+^ "cardinal"
+
+---
+
+## more decomposition with combinators
 
 ```javascript
 let get = (object, property) =>
@@ -422,7 +441,7 @@ let get = (object, property) =>
 get({name: 'Gerrit Rietveld'}, 'name')
   //=> Gerrit Rietveld
 
-let getWith = (property) => rightApply(get, property);
+let getWith = C(get);
 
 let nameOf = getWith('name');
 
@@ -432,18 +451,58 @@ nameOf({name: 'Gerrit Rietveld'})
 
 ---
 
-## more decomposition with partial application
+![original](images/combinators/cafe-de-unie.jpg)
+
+^ http://www.panoramio.com/photo/82281274
+
+---
+
+# `get` is a function taking two arguments
+
+# `getWith` is a decomposition of `get` that names one part
+
+# `nameOf` is a decomposition of `get` that names and specifies one part
+
+![](images/combinators/cafe-de-unie.jpg)
+
+^ http://www.panoramio.com/photo/82281274
+
+---
+
+## last one
 
 ```javascript
 let map = (collection, fn) =>
   collection.map(fn);
 
-let mapWith = (fn) => rightApply(map, property);
+let mapWith = C(map);
+
+let namesOf = mapWith(nameOf);
 ```
 
 ---
 
+![original](images/combinators/dalbéra.jpg)
+
+^ https://www.flickr.com/photos/dalbera/20059027984
+
+---
+
+# `map` is a higher-order function
+
+# `mapWith` is a decomposition of `map` that names one part
+
+# `namesOf` is a decomposition of `map` that names and specifies one part
+
+![](images/combinators/dalbéra.jpg)
+
+^ https://www.flickr.com/photos/dalbera/20059027984
+
+---
+
 > Back to composition
+
+^ before we go, now you know what to say when somebody asks "What good is currying?" or "What is the practical purpose of partial application?" It's to decompose functions by responsibility.
 
 ---
 
@@ -465,6 +524,8 @@ let mapWith = (fn) => rightApply(map, property);
 
 > `let compose = (a, b) =>`
 > `  (c) => a(b(c));`
+
+^ 'compose'. `B = (a) => (b) => (c) => a(b(c))`
 
 ---
 
@@ -488,7 +549,7 @@ namesOf(deStijl)
 
 >  `pluckWith = compose(mapWith, getWith);`
 
-> `compose` wires the output of one function into the input of another
+^ `compose` wires the output of one function into the input of another
 
 ---
 
@@ -497,6 +558,8 @@ namesOf(deStijl)
 ^ https://www.flickr.com/photos/72283508@N00/2444938101
 
 ^ "We compose entities to make the relationships between them explicit"
+
+^ and now we know how to answer that question, too!
 
 ---
 
@@ -514,7 +577,8 @@ namesOf(deStijl)
 ---
 
 ```javascript
-let mix = (...ingredients) => console.log('mixing', ...ingredients);
+let mix = (...ingredients) =>
+  console.log('mixing', ...ingredients);
 
 let bake = () => console.log('baking');
 
@@ -654,22 +718,12 @@ class Bread {
   }
 
   mix () {
-    console.log('mixing', ...this.ingredients)
+    console.log('mixing', ...this.ingredients);
   };
 
-  bake () {
-    console.log('baking');
-  }
+  bake () { console.log('baking'); }
 
-  cool () {
-    console.log('cooling');
-  }
-
-  make () {
-    this.mix();
-    this.bake();
-    this.cool();
-  }
+  cool () { console.log('cooling'); }
 }
 ```
 
@@ -695,19 +749,16 @@ class Bread {
 
 ---
 
-## `beforeAll`
+## `decorateMethodWith`
 
 ```javascript
-const beforeAll = (behaviour, ...methodNames) =>
+const decorateMethodWith = (decorator, ...methodNames) =>
   (clazz) => {
     for (let methodName of methodNames) {
       const method = clazz.prototype[methodName];
 
-      Object.defineProperty(clazz.prototype, property, {
-        value: function (...args) {
-          behaviour.apply(this, args);
-          return method.apply(this, args);
-        },
+      Object.defineProperty(clazz.prototype, methodName, {
+        value: decorator(method),
         writable: true
       });
     }
@@ -717,26 +768,14 @@ const beforeAll = (behaviour, ...methodNames) =>
 
 ---
 
-## `afterAll`
+## `beforeAll` and `afterAll`
 
 ```javascript
-const afterAll = (behaviour, ...methodNames) =>
-  (clazz) => {
-    for (let methodName of methodNames) {
-      const method = clazz.prototype[methodName];
+const beforeAll = (decorator, ...methodNames) =>
+  decorateMethodWith((method) => before(method, decorator), ...methodNames),
 
-      Object.defineProperty(clazz.prototype, property, {
-        value: function (...args) {
-          const returnValue = method.apply(this, args);
-
-          behaviour.apply(this, args);
-          return returnValue;
-        },
-        writable: true
-      });
-    }
-    return clazz;
-  };
+      afterAll = (decorator, ...methodNames) =>
+  decorateMethodWith((method) => after(method, decorator), ...methodNames);
 ```
 
 ---
@@ -748,15 +787,18 @@ let invoke = (methodName) => function (...args) {
   return this[methodName](...args);
 }
 
-let Bread = beforeAll(invoke('mix'), 'make')(
-  afterAll(invoke('cool'), 'make')(class {
-    // ...
+let BetterBread =
+  beforeAll(invoke('mix'), 'make')(
+    afterAll(invoke('cool'), 'make')(
+      class {
+        // ...
 
-    make () {
-      this.bake();
-    }
-  })
-);
+        make () {
+          this.bake();
+        }
+      }
+    )
+  );
 ```
 
 ---
@@ -790,7 +832,7 @@ let invoke = (methodName) => function (...args) {
 
 @beforeAll(invoke('mix'), 'make')
 @afterAll(invoke('cool'), 'make')
-class Bread {
+class AwesomeBread {
 
   // ...
 
@@ -823,7 +865,7 @@ let invokeAfter = (methodName) =>
 
 ---
 
-## better bread
+## better make
 
 ```javascript
 class Bread {
@@ -878,9 +920,9 @@ class Bread {
 
 ---
 
-![original](https://farm1.staticflickr.com/54/107810852_44e98d9298_o_d.jpg)
+![original](images/combinators/Simultaneous-Counter-Composition-Theo-Van-Doesburg-1800x2880.jpg)
 
-^ https://www.flickr.com/photos/terry_wha/107810852
+^ http://wallpaperswiki.com/wp-content/uploads/2012/10/Simultaneous-Counter-Composition.-Theo-Van-Doesburg-728x546.jpg
 
 ^ "Decorators declutter secondary concerns"
 
@@ -889,15 +931,15 @@ class Bread {
 ## it's all the same idea
 # Decomposition makes responsibilities explicit
 
-![](https://farm1.staticflickr.com/54/107810852_44e98d9298_o_d.jpg)
+![](images/combinators/Simultaneous-Counter-Composition-Theo-Van-Doesburg-1800x2880.jpg)
 
-^ https://www.flickr.com/photos/terry_wha/107810852
+^ http://wallpaperswiki.com/wp-content/uploads/2012/10/Simultaneous-Counter-Composition.-Theo-Van-Doesburg-728x546.jpg
 
 ---
 
-![original](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+![original](images/combinators/GUGG_Composition_décentralisée.jpg)
 
-^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+^ https://en.wikipedia.org/wiki/Theo_van_Doesburg
 
 ^ "Composition makes relationships explicit"
 
@@ -906,9 +948,9 @@ class Bread {
 ## and it's all the same idea
 # Composition makes relationships explicit
 
-![](https://farm8.staticflickr.com/7144/6792412657_f8dbe78eb1_o_d.jpg)
+![](images/combinators/GUGG_Composition_décentralisée.jpg)
 
-^ https://www.flickr.com/photos/paulmccoubrie/6792412657
+^ https://en.wikipedia.org/wiki/Theo_van_Doesburg
 
 ---
 
@@ -978,7 +1020,7 @@ class Bread {
 
 ---
 
-# Combinators give us a language for naming things
+# Combinators give us a language for naming things in code
 
 ![](https://farm3.staticflickr.com/2693/4362414729_32f57b4f6d_o_d.jpg)
 
