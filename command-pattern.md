@@ -1134,7 +1134,7 @@ class Branch {
 ---
 
 # Reg Braithwaite<br>PagerDuty, Inc.
-### https://github.com/raganwald/presentations/blob/master/command-pattern.md
+### https://speakerdeck.com/raganwald/first-class-commands-an-unexpectedly-fertile-design-pattern
 
 ### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
 
