@@ -917,9 +917,11 @@ class Buffer {
 ```javascript
 class Buffer {
 
-  replaceWith (replacement, from = 0, to = this.length()) {
+  replaceWith (replacement,
+               from = 0, to = this.length()) {
+    let befores = this.befores,
     let edit = new Edit(this,
-                   {replacement, from, to, befores: this.befores}
+                   {replacement, from, to, befores}
                  );
     return this.perform(edit);
   }
@@ -1113,7 +1115,7 @@ class Branch {
 
 ---
 
-# with invocations as first-class entities, we can build algorithms and protocols mastering time and change, from single apps to distributed systems
+# with invocations as first-class entities, we can build distributed algorithms and protocols; we can master time and change
 
 ---
 
@@ -1132,6 +1134,8 @@ class Branch {
 ---
 
 # Reg Braithwaite<br>PagerDuty, Inc.
+### https://github.com/raganwald/presentations/blob/master/command-pattern.md
+
 ### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
 
 ![right, fit](images/allonge-six.jpg)
