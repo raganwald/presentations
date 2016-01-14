@@ -19,9 +19,7 @@ autoscale: true
 
 ---
 
-Why do we care about first-class commands?
-
-^ Placeholder for some overview talk
+> why do we care about commands?
 
 ---
 
@@ -713,7 +711,7 @@ buffer.redo();
 
 ---
 
-# what can fixing `redo` teach us about invocations as first-class entities?
+# what did fixing `redo` teach us about invocations as first-class entities?
 
 ---
 
@@ -836,6 +834,209 @@ bob.appendAll(alice);
 
 ---
 
+### 🐛
+
+^ "We have a little bug."
+
+---
+
+![fit](images/command/mothra.jpg)
+
+^ "Okay, a big bug! We can't appendAll more than once. Shared mutable data everywhere."
+
+---
+
+```javascript
+let GUID = () => ???
+
+class Buffer {
+
+  constructor (text = '', history = []) {
+    let befores = new Set(history.map(e => e.guid));
+    history = history.slice(0);
+    Object.assign(this, {text, history, befores});
+  }
+
+  share () {
+    return new Buffer(this.text, this.history);
+  }
+
+}
+```
+^ We're going to use guids and a set of before guids in the buffer and the edits
+
+^ let GUID = () => {
+^     let _p8 = (s) => {
+^         let p = (Math.random().toString(16)+"000000000").substr(2,8);
+^
+^         return s ? "-" + p.substr(0,4) + "-" + p.substr(4,4) : p ;
+^     }
+^     return _p8() + _p8(true) + _p8(true) + _p8();
+^ }
+
+---
+
+```javascript
+class Edit {
+
+  constructor (buffer,
+    { guid = GUID(), befores = new Set(),
+      replacement, from, to }) {
+    this.buffer = buffer;
+    befores = new Set(befores);
+
+    Object.assign(this,
+                  {guid, replacement, from, to, befores});
+  }
+
+}
+```
+
+---
+
+```javascript
+class Buffer {
+
+  has (edit) { return this.befores.has(edit.guid); }
+
+  perform (edit) {
+    if (!this.has(edit)) {
+      this.history.push(edit);
+      this.befores.add(edit.guid);
+      return edit.doIt();
+    }
+  }
+
+}
+```
+
+^ now we check edits before we perform them
+
+---
+
+```javascript
+class Buffer {
+
+  replaceWith (replacement, from = 0, to = this.length()) {
+    let edit = new Edit(this,
+                   {replacement, from, to, befores: this.befores}
+                 );
+    return this.perform(edit);
+  }
+
+}
+```
+
+^ simplifies `replaceWith`, `append`, and `appendAll`
+
+---
+
+```javascript
+class Buffer {
+
+  append (theirEdit) {
+    this.history.forEach( (myEdit) => {
+      theirEdit = theirEdit.prependedWith(myEdit);
+    });
+    return this.perform(new Edit(this, theirEdit));
+  }
+
+}
+```
+
+---
+
+```javascript
+class Buffer {
+
+  appendAll(otherBuffer) {
+    otherBuffer.history.forEach(
+      (theirEdit) =>
+        this.has(theirEdit) || this.append(theirEdit)
+    );
+    return this;
+  }
+
+}
+```
+
+---
+
+```javascript
+class Edit {
+
+  prependedWith (other) {
+    if (this.isBefore(other) ||
+        this.befores.has(other.guid) ||
+        this.guid === other.guid) return this;
+
+    let change = other.netChange(),
+        {guid, replacement, from, to, befores} = this;
+
+    from = from + change;
+    to = to + change;
+    befores = new Set(befores);
+    befores.add(other.guid);
+
+    return new Edit(this.buffer, {guid, replacement, from, to, befores});
+  }
+
+}
+```
+
+---
+
+![](images/command/alice-b-toklas.jpg)
+![](images/command/bob-fosse.jpg)
+![](images/command/carol.jpg)
+
+^ "Alice, Bob, and *Carol* are editing a script"
+
+---
+
+```javascript
+let alice = new Buffer(
+  "The quick brown fox jumped over the lazy dog"
+);
+
+let bob = alice.share();
+  //=> The quick brown fox jumped over the lazy dog
+
+alice.replaceWith("My", 0, 3);
+  //=> My quick brown fox jumped over the lazy dog
+```
+
+---
+
+```javascript
+let carol = alice.share();
+  //=> My quick brown fox jumped over the lazy dog
+
+bob.replaceWith("fast", 4, 9);
+  //=> The fast brown fox jumped over the lazy dog
+
+alice.appendAll(bob);
+  //=> My fast brown fox jumped over the lazy dog
+```
+
+---
+
+```javascript
+bob.appendAll(alice);
+  //=> My fast brown fox jumped over the lazy dog
+
+alice.replaceWith("spotted", 8, 13);
+  //=> My fast spotted fox jumped over the lazy dog
+
+bob.appendAll(alice);
+  //=> My fast spotted fox jumped over the lazy dog
+
+carol.appendAll(bob);
+  //=> My fast spotted fox jumped over the lazy dog
+```
+
+---
+
 > "Unfortunately, implementing OT sucks. There's a million algorithms with different tradeoffs, mostly trapped in academic papers. The algorithms are really hard and time consuming to implement correctly."
 
 ![](images/command/magazines.jpg)
@@ -844,15 +1045,7 @@ bob.appendAll(alice);
 
 ^ Joseph Gentle, from https://en.wikipedia.org/wiki/Operational_transformation
 
----
-
-# perhaps we can algorithmically extract the edits, and perform three-way merges?
-
----
-
-# git
-
-![](images/command/github.png)
+^ too much responsibility in edits, and we have an XY problem
 
 ---
 
@@ -870,7 +1063,63 @@ bob.appendAll(alice);
 
 ---
 
+# this is a very big problem space
+
+---
+
+![original](images/command/harrild-and-sons.jpg)
+
+^ https://www.flickr.com/photos/sidelong/18620995913
+
+^ There are only two hard problems in computer science: Cache invalidation, and naming things--Phil Karleton
+
+---
+
+```javascript
+class Buffer {
+
+  replaceWith () { ... }
+
+  share () { ... }
+
+  append () { ... }
+
+  appendAll () { ... }
+
+}
+```
+
+---
+
+```javascript
+class Branch {
+
+  commit () { ... }
+
+  fork () { ... }
+
+  cherryPick () { ... }
+
+  merge () { ... }
+
+}
+```
+
+---
+
+# distributed version control
+
+![](images/command/github.png)
+
+---
+
 # with invocations as first-class entities, we can build algorithms and protocols mastering time and change, from single apps to distributed systems
+
+---
+
+![original](images/command/phone-on-paper.jpg)
+
+^ https://www.flickr.com/photos/stawarz/3848824508
 
 ---
 
