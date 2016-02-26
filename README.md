@@ -2,11 +2,8 @@
 
 The first two talks were given at [NDC Oslo 2014][1]:
 
-* [JavaScript Combinators][7]
+* [JavaScript Combinators][7] 
 * [The Art of the JavaScript Metaobject Protocol][8]
-
-[7]: https://speakerdeck.com/raganwald/javascript-combinators
-[8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
 
 [1]: https://www.ndcoslo.com
 [2]: https://decksetapp.com
@@ -19,10 +16,13 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 
 The third talk was given at [Nordic JS 2014][6]:
 
-* [Duck Typing, Compatibility, and the Adaptor Pattern][7]
+* [Duck Typing, Compatibility, and the Adaptor Pattern][9] ([video][10])
 
 [6]: https://nordicjs.com
-[7]: https://speakerdeck.com/raganwald/duck-typing-compatibility-and-the-adaptor-pattern
+[7]: https://speakerdeck.com/raganwald/javascript-combinators
+[8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
+[9]: https://speakerdeck.com/raganwald/duck-typing-compatibility-and-the-adaptor-pattern
+[10]: http://www.youtube.com/watch?v=hp7sgLVepF8
 
 ---
 
