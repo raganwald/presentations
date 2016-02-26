@@ -2,8 +2,8 @@
 
 The first two talks were given at [NDC Oslo 2014][1]:
 
-* [JavaScript Combinators][7] 
-* [The Art of the JavaScript Metaobject Protocol][8]
+* [JavaScript Combinators][7] ([video][11])
+* [The Art of the JavaScript Metaobject Protocol][8] ([video][12])
 
 [1]: https://www.ndcoslo.com
 [2]: https://decksetapp.com
@@ -23,6 +23,8 @@ The third talk was given at [Nordic JS 2014][6]:
 [8]: https://speakerdeck.com/raganwald/the-art-of-the-javascript-metaobject-protocol
 [9]: https://speakerdeck.com/raganwald/duck-typing-compatibility-and-the-adaptor-pattern
 [10]: http://www.youtube.com/watch?v=hp7sgLVepF8
+[11]: https://vimeo.com/97408202
+[12]: https://vimeo.com/97415345
 
 ---
 
