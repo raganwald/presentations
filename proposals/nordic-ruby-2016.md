@@ -2,4 +2,4 @@
 
 *by Reginald Braithwaite*
 
-### Taming complexity with combinators: Simplicity in code, in processes, and in life
+### Thinking in Combinators: Making the simple, simple. And the complex, possible.
