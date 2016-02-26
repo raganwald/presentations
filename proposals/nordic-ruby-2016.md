@@ -2,4 +2,4 @@
 
 *by Reginald Braithwaite*
 
-### Thinking in Combinators: Making the simple, simple. And the complex, possible.
+### Composing Code: Making the simple, simple. And the complex, possible.
