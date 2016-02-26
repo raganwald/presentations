@@ -2,7 +2,7 @@
 
 NDC London 2016:
 
-* JavaScript Combinators, the “Six” Edition ([video][13])
+* [JavaScript Combinators, the “Six” Edition][14] ([video][13])
 
 [Nordic JS 2014][6]:
 
@@ -30,6 +30,7 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [11]: https://vimeo.com/97408202
 [12]: https://vimeo.com/97415345
 [13]: https://vimeo.com/153097877
+[14]: https://speakerdeck.com/raganwald/javascript-combinators-the-six-edition
 
 ---
 
