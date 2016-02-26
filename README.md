@@ -1,4 +1,4 @@
-# Three talks about programming in JavaScript
+# Conference Talks and Proposals
 
 The first two talks were given at [NDC Oslo 2014][1]:
 
