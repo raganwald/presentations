@@ -1,8 +1,8 @@
-## Speaking proposal for Nordic Ruby 2016
+### Speaking proposal for Nordic Ruby 2016
 
 *by Reginald Braithwaite*
 
-### `1.01 ** 365 => 37.78343433288728`
+# `1.01 ** 365 => 37.78343433288728`
 
 A popular meme explains that `1.01 ** 365 == 37.78`, but `0.99 ** 365 == 0.02`. Small differences in our productivity, carried out every day, lead to huge differences in outcome. Obviously we have a `37.78x` incentive to find better programming tools, techniques, and practices, even to hire better programmers.
 
