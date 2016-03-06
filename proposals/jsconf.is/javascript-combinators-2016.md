@@ -12,9 +12,8 @@ We'll explore writing both functional *and* OO code in JavaScript's natural styl
 
 **note**: An earlier version of this talk was given at NDC London in January of 2016:
 
-<iframe src="https://player.vimeo.com/video/153097877" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<script async class="speakerdeck-embed" data-id="6de247774b134f0f83f99170aa72c572" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+- [Video](https://vimeo.com/153097877)
+- [Slides](https://speakerdeck.com/raganwald/javascript-combinators-the-six-edition)
 
 ---
 
