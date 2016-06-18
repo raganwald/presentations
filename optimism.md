@@ -1,28 +1,14 @@
-footer: © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
+footer: Nordic Ruby | @raganwald
 slidenumbers: true
-
-![original](images/iceland/10017474965_4a521d0c7d_k.jpg)
-
-^ https://www.flickr.com/photos/aigle_dore/10017474965
-
----
 
 # Optimism
 ### the 6×9 edition
 
-^ about this talk
-
-^ This talk was conceived in 2009. Some friends were putting on a conference, and I put together a talk just in case I was invited to speak. I had just written a very technical talk about an obscure subject, so I wanted to go the other way and give a very personal talk.
-
-^ I didn't end up speaking at that conference, but I had this personal message inside me trying to get out, so I published it online as an essay instead. The words and ideas resonated with people, and I have returned to it over the years and it rings as true today as it did then.
-
-^ And now, seven years later, I have been given this chance to share it with you in person. And I hope my experience resonates with you. I hope I can help you find some names for some experiences you my be having. And perhaps, for a very few of you, I hope that the ideas I am going to share will help you make a change in your life.
-
 ---
 
-![original](images/iceland/13649199935_cd13b8bf75_k.jpg)
+![original](images/iceland/10017474965_4a521d0c7d_k.jpg)
 
-^ https://www.flickr.com/photos/aigle_dore/13649199935
+^ https://www.flickr.com/photos/aigle_dore/10017474965
 
 ^ I am going to talk about Optimism, and conversely, about Pessimism.
 
@@ -34,10 +20,16 @@ slidenumbers: true
 
 ---
 
-### I AMA
+### AMA
 # Bipolar Lisp Programmer
 
 ^ The One True Thing is this: I am a [Bipolar Lisp Programmer](http://www.lambdassociates.org/blog/bipolar.htm "The Bipolar Lisp Programmer"), and struggling with "both" afflictions has taught me some things that might help you out, even if you are refreshingly happy in your life, and even if you do not long for homoiconicity and macros.
+
+---
+
+![original](images/iceland/4517294977_a387d276f5_o.jpg)
+
+^ https://www.flickr.com/photos/8058853@N06/4517294977
 
 ^ I have had many high points in my life, but I also have had many low points. I have been jobless. I have been penniless. I have been friendless. I have been homeless. I have felt that I was pointless and that my life had no value.
 
@@ -47,9 +39,9 @@ slidenumbers: true
 
 # "Learned Optimism"
 
-^ Some years ago I was in an especially low point and I happened upon a book that changed my life. I cannot guarantee that it will change *your* life. "Chance favors the prepared mind," they say, and perhaps it can only change your life if you happen upon it at an inflection point, at a time when your life is ready to change.
+^ Some years ago I was in an especially low point and I happened upon a book that changed my life. I cannot guarantee that it will change *your* life. "Chance favours the prepared mind," they say, and perhaps it can only change your life if you happen upon it at an inflection point, at a time when your life is ready to change.
 
-^ I needed some change, I was open to change, with this book, I changed.
+^ I needed some change, I was open to change, and with this book, I changed.
 
 ^ The book is "[Learned Optimism](http://www.amazon.com/gp/product/1400078393?ie=UTF8&amp;tag=raganwald001-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1400078393 "Amazon.com: Learned Optimism: How to Change Your Mind and Your Life: Martin E. P. Seligman: Books")," by Dr. Martin Seligman. I'm not going to stand here and read the book aloud, you know that. But I am going to simplify it down to a few points, and you might very well think the book is too simplistic to be worth reading.
 
@@ -71,31 +63,33 @@ slidenumbers: true
 
 ---
 
-# Dr. Seligman's Theory
+# Dr. Seligman's Claims
 
-### The Two Claims
+^ Dr. Seligman makes two claims.
 
-^ Dr. Seligman has two claims.
+---
 
-^ The first is that we have patterns for our explanations, and that by testing our explanations, he can come up with a prediction for our behaviour. He gives us a test, he computes a number with the result, and he calls the resulting scalar "optimism," and he claims that people with high optimism are more successful and happier and whatever else that is nice than people with low optimism. And he thinks he has the numbers to prove it.
+![original](images/iceland/5372051028_52825a2c2c_o.jpg)
+
+^ https://www.flickr.com/photos/spanginator/5372051028
+
+^ The first is that we have patterns for our explanations, and that by testing our explanations, he can come up with a prediction for our behaviour. He gives us a test, he computes a number with the result, and he calls the resulting scalar "optimism," and he claims that people with high optimism are more productive and happier and whatever else that is nice than people with low optimism. And he thinks he has the numbers to prove it.
+
+---
+
+# The Second Claim
 
 ^ His second claim is that with cognitive therapy you can increase your optimism. And again, he went out and tested his claim and again he has research he claims proves it.
 
 ---
 
-# Seligman's First Claim
+![original](images/iceland/4665751943_cbb3e014af_b.jpg)
 
-- People make up explanations for why things happen in their lives
-- People's explanations follow patterns
-- We can identify these patterns and come up with a number Seligman calls "Optimism"
-- We can predict things about a person's mood and behaviour based on their "Optimism" score
+^ https://www.flickr.com/photos/bjarkis/4665751943
 
----
+^ This is an absolutely **crucial** claim. If the first claim was true, but not the second, this would be like being able to diagnose an ailment, but being unable to cure it.
 
-# Seligman's Second Claim
-
-- With Cogntive Therapy, people can become more optimistic
-- This change in optimism changes a person's mood and behaviour as well as the measured score
+^ But this claim says that we can measure whether we are optimistic or pessimistic, and then we can make ourselves more optimistic. We can cure the ailment.
 
 ---
 
@@ -115,7 +109,7 @@ slidenumbers: true
 
 ^ https://www.flickr.com/photos/aigle_dore/22080495601
 
-^ First, we decide something is personal or impersonal. For example, way back when I was registering for RubyFringe, someone I respect very much walked up to me and introduced themself, then told me that they didn't like the [andand gem](http://andand.rubyforge.org/ "Object#andand") I wrote.
+^ First, we decide something is personal or impersonal. For example, way back when I was registering for RubyFringe, someone I respect very much walked up to me and introduced themselves, then told me that they didn't like the [andand gem](http://andand.rubyforge.org/ "Object#andand") I wrote.
 
 ^ So how did I explain this to myself? If I thought there was something inherently wrong with `andand`, or even more personally, something inherently wrong with **me** as a developer that I could write something like `andand`, that's personalizing the explanation.
 
@@ -123,7 +117,9 @@ slidenumbers: true
 
 ^ I would say:
 
-> "They didn't like it, because **I** something-something."
+### They didn't like it, because
+# **"I"**
+### something-something.
 
 ^ On the other hand, if I explain them not liking my work as reflecting upon them and their values--and I don't mean this in a  negative way--that's *depersonalizing* the explanation.
 
@@ -131,7 +127,9 @@ slidenumbers: true
 
 ^ I would say:
 
-> "They didn't like it, because **they** something-something."
+### They didn't like it, because
+# **"they"**
+### something-something.
 
 ^ (For the record, I depersonalize criticism of things like `andand` very easily, so feel free to tell me what you think. Mostly, I think that people who don't like `andand` have a particular thing they want to do with their code, it is definitely not about me.
 
@@ -139,17 +137,18 @@ slidenumbers: true
 
 ---
 
+### summary
 # Personal vs. Impersonal
 
 ^ So there's the first axis, *personal vs. impersonal*. We can listen to someone's explanations for why things happened in their life, and we can decide whether their explanations tend to be more personal or impersonal. In other words, we can *measure* personalization.
 
-^ Dr. Seligman did exactly that: He gathered lots of subjects and measured their personalziation using objective criteria. He also measured their moods using standard criteria and furthermore, he measured their success in life, and the results were very interesting.
+^ Dr. Seligman did exactly that: He gathered lots of subjects and measured their personalization using objective criteria. He also measured their moods using standard criteria and furthermore, he measured their success in life, and the results were very interesting.
 
 ^ So, the obvious question to ask is, **Are optimists more or less likely to "take things personally?"**
 
 ^ I'm not going to say what he says just yet, but when I was reading about this in the book, I didn't know what to think. If you read books by self-help gurus, a lot of them talk quite a bit about taking responsibility for everything that happens in your life. It seems they advocate taking everything personally.
 
-^ Yet people who "take things too personally" are often morose, depressed, and defensive. It feels like a paradox: Happy, successful people take responsibility for their lives, while many depressed, uunsuccesful people think they are the cause of the unhappiness in their lives.
+^ Yet people who "take things too personally" are often morose, depressed, and defensive. It feels like a paradox: Happy, successful people take responsibility for their lives, while many depressed, unsuccessful people think they are the cause of the unhappiness in their lives.
 
 ^ We'll come back to Dr. Seligman's answer after discussing the other two axes.
 
@@ -169,7 +168,7 @@ slidenumbers: true
 
 ^ So when something I write flops, I say:
 
-> This **particular** blog post wasn't popular.
+> This **specific** blog post was unpopular.
 
 ---
 
@@ -181,9 +180,10 @@ slidenumbers: true
 
 ---
 
+### summary
 # Specific vs. General
 
-^ And thus it is with our explanations for the things that happen in our lives. Some of the explanations we make up are specific. Some of the explanations are general. And "specific vs. general" is the second axis of Dr. Selgiman's explanatory theory.
+^ And thus it is with our explanations for the things that happen in our lives. Some of the explanations we make up are specific. Some of the explanations are general. And "specific vs. general" is the second axis of Dr. Seligman's explanatory theory.
 
 ^ And if we have not read about Learned Optimism before, we must be curious: **Are optimists more likely to come up with specific explanations for things in their life? Or more likely to come up with general explanations?**
 
@@ -203,64 +203,278 @@ slidenumbers: true
 
 ^ The third and final axis--thanks for your patience with my explanations--is **temporal**. Some explanations describe an event as a result of **temporary** phenomena. And other explanations describe an event in terms of **permanent** phenomena.
 
----
+^ To give a very real and poignant example, I will tell you about something that happened to me more than forty years ago. When I was young, I thought that the subways in Toronto were very interesting.
 
-Here's an example from just before I started composing my speech. I was struggling with the testing framework for an application, but some weird gem dependencies kept biting me. I could have explained it thus: "Fuck, gems are always a pain in the ass in Ruby," **or**, I could have explained it thus: "I had a problem with gems today." One is a kind of permanent, "it always was this way, it will always be this way" explanation, the other is a very temporary, "it was a problem this one time" thing. So our third axis is *permanent vs. temporary*.
+^ There were these stacks of signal lights, and I tried to deduce how they worked. I was especially curious about how drivers would approach a red signal at speed, and just before the train reached the signal, it would change to green. How did they know?
 
-Let's recap. When we explain something in our heads, our explanations have three properties that matter to whether we are optimistic or not: Whether we explain things in a personal or impersonal way, whether we explain things in a specific or general way, and whether we explain things in a permanent or temporary way.
+^ And the technology was so interesting. They were trains... Underground! Buried beneath a huge city was another world, full of tunnels and maintenance shafts and cables and machinery.
 
----
+^ But I digress. I liked subways, and used to ride around on them, just for fun. Well, one day I was riding on the subway, and it was not very busy, and some boys got on, and started making some very loud remarks about my race.
 
-### Pause
+^ I disembarked, and they followed me. There was a confrontation, and they ended up assaulting me on the subway platform while shouting racist insults.
 
-So I know I just sprung this on you, but I am going to take a drink of water right now, and while I do that, those of you who are still awake and not twittering your drinking plans might want to try to decide for yourself whether optimistic people tend to explain the world personally or impersonally, whether they tend to explain the world generally or specifically, and whether they tend to explain the world permanently or temporarily.
-
-If you happen to think that the answer to one or more of those questions is "*Sometimes one, sometimes the other*," don't forget to come up with a theory of when one and when the other.
-
-### Asymmetry in Natural Law
-
-For what it's worth, I took a little test in his book at the time, and had someone told me they didn't like andand then, I would have taken it personally, thought it was all about my talent as a developer, and figured things weren't going to change.
-
-And the test revealed something else. Had someone told me I scored a particularly athletic goal in Ultimate, I would have put it down to my opponent being out of shape, explained that I really focus on being a good ultimate player who specializes in receiving goals, and remembered that on the play before I had run in one direction while my team mate threw the disk in the other, so it was just a one-off. I would have explained the compliment as being impersonal, specific, and temporary.
-
-See the asymmetry? This surprised me, I was not consistent. I didn't always explain things one way or the other. More interestingly, I was consistently inconsistent: I explained *bad things* as being personal, general, and permanent, but I explained away the good things as being impersonal, specific, and temporary.
-
-This may not seem rational. Logically, each of us ought to be consistent in how we explain the world. But we aren't, or at least some of us aren't.
-
-The moment this was revealed to me I could guess what came next. I was a *pessimist*. No kidding, according to me all the bad things in my life were everywhere, they followed me around because they were about me, and they lasted forever, while the good things were all about other people, and they only came into my life for short moments.
-
-Do I need to explain that optimists are the opposite, cheerfully inconsistent? That's what Dr. Seligman discovered. Like the pessimists, optimists do not always explain the world the same way. But to an optimist, someone not liking andand is simply one person (impersonal, specific) not liking that one thing (specific again), for their own reasons (impersonal), and it was just a few words in the middle of a long day (extremely temporary). And to the optimist, they're a good athlete (personal, general) and have been all their life (permanent). That one goal was just another scene in their long-playing movie of game highlights.
-
-Optimists explain good things as being personal, general, and permanent, and explain away bad things as being impersonal, specific, and temporary. And if you point out the contradiction in their explanations, they see no contradiction. To them, the bad stuff really isn't about them, it's just that one thing that one time.
-
-The book shocked me, I read it a bunch of times and actually bought copies for other people. Besides myself, I knew lots of people who fit Dr. Seligman's pessimist theory, I knew this because they cried on my shoulder about their long-running, personal flaws that affected every part of their lives. They were personal, general, and permanent on the subject of unhappiness. And on the subject of happiness, they were impersonal, specific, and temporary.
-
-So there you have it. One predictor of success is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent.
-
-(By the way, he goes on to explain how to change your explanations, to become more optimistic, and to become more successful. I don't need to explain that to you now. I've already told you to read the book, so I won't say it again. But if you think it could help you in your life, please buy it. If you can't afford it, get a copy from your library. If that's too much trouble, ask me and I'll loan you a copy. If what I just said resonated with you in a personal way, I hope it can help you as it has helped me.)
-
-### Let's Treat Each Other Like Children
-
-But whether you are happy with your life or not, whether you are a bipolar lisp programmer or a well-adjusted Rubyist, there's another application of Dr. Seligman's theory I want to share with you. Most of you are probably acquainted with  the expression, "*Praise the child and criticize the behaviour*."
-
-For example, you say "Reg, you are a consistently intelligent guy, but relating a personal anecdote is not the most persuasive form of rhetoric, try again." Let's think about that one for a moment. It's really Dr. Seligman's theory, isn't it? You say something positive, and you make it personal, general, and permanent. Then you say something negative, but it's impersonal, it's specific, and ideally it's temporary.
-
-This makes other people feel good, and it gets your point across, and we need to do more of that in our technical community. Most of the ad hominem flame wars I see do the reverse: They criticize people in a very personal, general, and permanent way, like saying "So-and-so is a douchebag," and the little praise they hand out is impersonal, specific and temporary "The framework he created was interesting when it first appeared, but so much has happened since then."
-
-Honestly, what the fuck? This is a recipe for making people depressed. It's also bad for *us*. When we criticize other people in a general and permanent way, we close ourselves off from learning from them. Saying that so-and-so is a permanent bozo is a subtle way of explaining that your life always has had a bozo in it and always will have a bozo in it. When we criticize that person's specific actions, we are saying that there was something temporary and specific and impersonal in our life, but it's over now. That's a win for ourselves as people.
-
-So here's my specific call to action:
-
-Let's think about those three things whenever we look at someone or something. Let's think of the positives as personal, general, and permanent. Let's think of the negatives as impersonal, specific, and temporary. Let's actually go out of our way to inject these three things into our discussions and debates and flame wars.
-
-And let's do it when we talk about things as well as about people. For example, I can say that *Ruby is a great language, it has changed the world. Mind you, I am not a fan of this or that specific feature of Ruby, and here's what I'm doing to change it, which pretty much demonstrates that I think the problem is temporary.*
-
-**Praise the language, criticize the features, then fix them**. Isn't that the essence of hacking, an optimism that the state of the world is not permanent, that we can change things and we will? That we can invent new and better ways to do things? Optimism is what drives us forward to create and change. The pessimists are the ones who cling to legacy technologies and old ways of doing things. They accept the bad things as permanent and deny themselves the ability to change things, to fix things.
-
-But we believe the good things, our curiosity, our ability to tinker and hack and create, we believe those things are permanent and are ours, we believe it is personal and general. And we believe we take those personal and general and permanent hacking and changing skills and apply them to making specific bad things that other people foist on us go away, we make them temporary, we isolate them in specific silos where they don't weigh upon our spirit.
-
-THIS spirit of confidence and change is optimism, and it's what I hope we will all practice between now and when I see you again at RubyFringe 3. Thank you so much for listening. I'm optimistic that **we**--*pause*--**will continue**--*pause*--to change **the world**.
+^ And you know, we still have problems with racism in the world. But let's talk about my explanation:
 
 ---
 
-(The original Hacker News discussion is [here](https://news.ycombinator.com/item?id=589200))
+^ I could have said:
+
+> **That day**, I was assaulted by racists.
+
+^ And that would be perfectly true.
+
+---
+
+^ I could also have said:
+
+> I've **always** faced racism in my life.
+
+^ And that would be just as true.
+
+---
+
+### summary
+# Temporary vs. Permanent
+
+^ So there you have two more ways of explaining something: Is it temporary? Or is it permanent? Did it happen just this specific time? Or is an on-going part of our lives?
+
+^ Obviously, we can measure whether explanations tend to describe things in temporary or permanent ways. And given what we saw with personal vs. impersonal, and specific vs. general explanations, we would not be surprised to discover that happy successful people appear to describe all sorts of things in permanent ways, like their success. And so do unhappy, unsuccessful people.
+
+^ But Dr. Seligman did his research, and came up with a way to work out whether someone is optimistic or pessimistic from the way they described events in all three ways.
+
+---
+
+![original](images/iceland/2042632469_6a91c07f9c_o.jpg)
+
+^ https://www.flickr.com/photos/martinofranchi/2042632469
+
+^ Let's recap. When we explain something in our heads, our explanations have three properties that matter to whether we are optimistic or not: Whether we explain things in a *personal or impersonal way*, whether we explain things in a *specific or general way*, and whether we explain things in a *temporary or permanent way*.
+
+^ And my proposition is that both productive and unproductive people can be observed describing things as personal, as general, and as permanent. And although I haven't given examples today, I assure you that both productive and unproductive people can also be observed describing things as impersonal, specific, and temporary.
+
+^ Given that Dr. Seligman was able to take these observations and turn them into a metric for measuring optimism, we can deduce that there is more to this than simply measuring whether someone tends to describe things in these three ways.
+
+^ We can deduce that there is something else, a missing factor. One that will perhaps tell us *when* an optimist will describe something as personal. When an optimist will describe something as specific. And when an optimist will describe something as being temporary.
+
+^ What is this factor?
+
+---
+
+# Asymmetry in Natural Law
+
+^ When I first read "Learned Optimism," I took a little test in the book, and then Dr. Seligman explained the theory. And based on that theory, I had a model for how I made up explanations.
+
+^ For example, I took criticism of my `andand` gem **personally**, I thought it was a comment on my **general** ability as a developer, and I figured that my inability to write popular libraries was **permanent**.
+
+^ And model told me something else.
+
+^ When someone told me that I scored a good goal in Ultimate, I would have put it down to **my opponent** being out of shape, explained that I **specialized** in scoring goals, and thought that maybe I got lucky on that play. I would have explained the compliment as being **impersonal**, **specific**, and **temporary**.
+
+^ Do you grasp the asymmetry?
+
+---
+
+![original](images/iceland/4493539956_38224d8fda_o.jpg)
+
+^ https://www.flickr.com/photos/borkurdotnet/4493539956
+
+^ I was not consistent. I didn't always explain things one way or the other. More interestingly, I was *consistently inconsistent*: I explained *bad things* as being personal, general, and permanent, but I explained away the good things as being impersonal, specific, and temporary.
+
+^ This may not seem rational. Logically, each of us ought to be consistent in how we explain the world. But we aren't, or at least some of us aren't.
+
+---
+
+# Pessimists
+
+^ The moment this was revealed to me I could guess what came next. I was a *pessimist*.
+
+^ According to me, all the bad things in my life were everywhere, they followed me around because they were about me, and they lasted forever, while the good things were all about other people, and they only came into my life for short moments.
+
+^ Dr. Seligman had discovered something important: Pessimists had a particular kind of asymmetry in the way they explained good and bad things in their lives.
+
+---
+
+# Optimists
+
+^ And Dr. Seligman also discovered that optimists are cheerfully inconsistent, they have the mirror image asymmetry.
+
+^ Like pessimists, optimists do not always explain the world the same way. But to an optimist, someone not liking a piece of code is simply one person (impersonal, specific) not liking that one thing (specific again), for their own reasons (impersonal), and it was just a few words in the middle of a long day (extremely temporary).
+
+^ And to the optimist, they're a good athlete (personal, general) and have been all their life (permanent). That one goal was just another scene in their long-playing movie of game highlights.
+
+^ Optimists explain good things as being personal, general, and permanent, and explain away bad things as being impersonal, specific, and temporary. And if you point out the contradiction in their explanations, they see no contradiction. To them, the bad stuff really isn't about them, it's just that one thing that one time.
+
+---
+
+![original](images/iceland/11755209913_bd391eb972_k.jpg)
+
+^ https://www.flickr.com/photos/jonathanhood/11755209913
+
+^ "Learned Optimism" shocked me. I read it a bunch of times and actually bought copies for other people. Besides myself, I knew lots of people who fit Dr. Seligman's pessimist theory.
+
+^ I knew this because they cried on my shoulder about their long-running, personal flaws that affected every part of their lives. They were personal, general, and permanent on the subject of unhappiness. And on the subject of happiness, they were impersonal, specific, and temporary.
+
+^ And the book also explained all the successful people in my life. And it explained why I found it hard to relate to them when they were explaining their success: I had a built-in perspective that was the opposite to theirs, I saw a completely different explanation for everything going on.
+
+^ So there you have it. One predictor of happiness and success is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent, and specifically whether you are asymmetric in your explanations.
+
+---
+
+# **Learned**
+### Optimism
+
+^ This is Dr. Seligman's first claim. What about the second?
+
+^ Well, that is the point of the book. That is why it is called **Learned** Optimism.
+
+^ After explaining how to predict whether people are optimistic or pessimistic based on their explanations, the book  goes on to explain how to use cognitive behavioural therapy to change the way you explain things to yourself.
+
+^ I am not a psychologist, I cannot teach you cognitive therapy at all, much less in thirty minutes. So please, read the book and follow the exercises. And I mean, *follow the exercises*.
+
+^ But the basis of the method is this:
+
+^ You train yourself to make a note of your explanations, every day. Repetition and consistency matters: You have to do it every day.
+
+^ You analyze whether your explanations for good things are personal, general, and permanent. You analyze whether your explanations for bad things are impersonal, specific, and temporary.
+
+^ And then you correct your explanations to make them optimistic. Every time. And you track your progress, just as you would track your progress for anything else you are trying to change in your life.
+
+^ Seligman's research shows that you **can** change the way you explain things, and the research also shows that the change makes you happier and more productive.
+
+---
+
+# Conclusion:
+
+### Changing your explanations through repetition and consistency, changes your life: You become happier and more productive.
+
+---
+
+# My Conjecture
+
+^ Whether you are happy with your life or not, whether you are a Bipolar Lisp Programmer or a Well-Adjusted Rubyist, I conjecture that Dr. Seligman's theory applies to more than understanding why we are unhappy, and I conjecture that it applies to more than teaching ourselves to be more optimistic.
+
+^ My conjecture is that the way we explain things to others—specifically the way we explain things that happen to others, or that others have done—affects their mood and productivity in exactly the same way as their own explanations affect them.
+
+^ Like Cognitive Behavioural Therapy, we have to apply these explanations repeatedly and consistently to make a change. It's not presenting people with an epiphany, it's creating an optimistic environment for them.
+
+^ In other words, I conjecture that we can give optimistic and pessimistic feedback to people about the things that happen to them. And I conjecture that optimistic feedback makes other people happier and more productive.
+
+---
+
+![original](images/iceland/15187392082_99b22c494a_k.jpg)
+
+^ https://www.flickr.com/photos/mejvis/15187392082
+
+^ Unfortunately, optimistic feedback is not a given. We often encounter the opposite,  **pessimistic feedback**.
+
+^ Pessimistic praise is impersonal, specific, and temporary: "Ruby made `andand` really elegant for its time."
+
+^ Pessimistic criticism is personal, general, and permanent: "Only a life-long loser would make mistakes like this."
+
+^ Pessimistic feedback is a recipe for making people depressed and pessimistic, we are imposing a pessimistic explanation on them and on everybody who comes into contact with us.
+
+---
+
+# Why is there Pessimistic Feedback?
+
+^ I think about why I was a pessimist, and it tells me why teams and cultures become pessimistic.
+
+^ First, it is because we are not given a specific model for good feedback. We hear about the importance of giving and receiving transparent feedback without softening it, and we don't realize that just being transparent isn't enough, we must also be effective.
+
+^ Second, it is because there are some examples of smart people who give bad feedback in the world. This is not surprising: They are generally amazing people, but have one specific thing they do that is not amazing.
+
+^ But we can change this. For one thing, when we receive some feedback, we can translate it from pessimistic to optimistic. And we can train the person giving us the feedback by reiterating it back to them in optimistic terms.
+
+^ That's good for us, and for them.
+
+^ And second, we can give better feedback.
+
+---
+
+![original](images/iceland/13649199935_cd13b8bf75_k.jpg)
+
+^ https://www.flickr.com/photos/aigle_dore/13649199935
+
+^ Let's talk about praise and criticism.
+
+^ Praise and criticism are the foundation of performance improvement. In every place where humans work together, they give each other feedback, and they take that feedback and use it to get better.
+
+^ But some teams, some organizations, some communities are better at it. Some managers have a knack for giving great feedback that helps people grow. Some teams have a culture of giving honest but fair feedback that encourages everyone to reach for excellence. And some communities have high standards, but set a positive, encouraging tone that motivates everyone to reach and exceed expectations.
+
+^ Quite simply, praise should follow Seligman's model for optimistically explaining good things.
+
+^ Criticism should follow Seligman's model for optimistically explaining bad things.
+
+---
+
+# Optimistic praise should be personal, general, and permanent.
+
+^ If people are to *own* praise, it has to be personal. Praise for the team or company is appropriate, but if you never praise individuals, they cannot connect themselves with the group.
+
+^ If people are to keep doing what made them productive, it has to be permanent.
+
+---
+
+> This issue you filed shows why **you** have been and will **continue** to be an **asset** to the community.
+
+---
+
+# Optimistic criticism should be impersonal, specific, and temporary.
+
+^ There's a difference between criticizing words or code and criticizing people.
+
+^ If we want people to be able to change, he have to be specific in our criticism.
+
+^ If we want performance to improve, if we want people to grow, our criticism by definition has to be temporary.
+
+---
+
+> **This** pull request does not **currently** meet **our** standards, because these **specific** something-something-somethings.
+
+---
+
+![original](images/iceland/5720433220_7267247541_o.jpg)
+
+^ https://www.flickr.com/photos/8058853@N06/5720433220
+
+^ Optimistic feedback is how we create a positive, high-performance environment for people to work with people.
+
+^ Sometimes, people think that to encourage others, we need to avoid criticism, to shy away from "hurting their feelings" or "offending them." And thus, you have a false dichotomy where you have a choice between giving criticism and encouraging high performance.
+
+^ If my conjecture is correct, we can be optimistic, offer criticism where necessary, and still maintain personal motivation and high performance.
+
+^ And that will work for pair programming, for teams, for companies, and communities.
+
+---
+
+# Optimistic Repetition and Consistency
+
+^ Giving optimistic feedback once-in-a-while is not enough. Change of this type requires repetition and consistency. If we are going to change a team, a company, or a community, we need a critical mass of people giving optimistic feedback.
+
+^ This is why "culture" is so important. If there is a critical mass of people giving optimistic feedback, and reasoning about events in an optimistic way, then they are providing consistent, repetitive optimistic explanations.
+
+^ A critical mass of optimistic people makes a team optimistic. A critical mass of optimistic people makes a company optimistic. And a critical mass of optimistic people makes a culture optimistic.
+
+^ A critical mass of optimistic people isn't just optimistic, it's self-correcting. This follows directly from Seligman's work on changing your optimism.
+
+---
+
+![original](images/iceland/12638784843_6537551db1_k.jpg)
+
+^ https://www.flickr.com/photos/chris-collation/12638784843
+
+^ I'm here because I feel optimistic.
+
+^ I will tell you that my parents were hippies who demonstrated for civil rights. That work is far from done, but their generation left us a tremendous legacy: An understanding that things don't always have to be so.
+
+^ That belief is a belief that although society is, in general, good, there are specific things about it that are bad. And that this can be a temporary state of affairs. and that it's not us at fault.
+
+^ Their legacy for me was a sense of optimism. A belief that my generation could take our talents and move the needle. Whether it's on a small scale or a large one. Whether it's on people, process, or society.
+
+^ I hope you feel that same sense of optimism in your life.
+
+^ And I hope you will take your talents, your excellence, forward. If you have been struggling, I hope you now have a hint that perhaps your struggles are temporary, and specific, and that you will fix them.
+
+^ And I hope that you will take this model, these ideas, and apply them to making your team, your community, and your society happy, optimistic, and productive.
+
+^ Thank you.
