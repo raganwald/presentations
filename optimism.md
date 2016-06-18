@@ -1,8 +1,11 @@
 footer: Nordic Ruby | @raganwald
 slidenumbers: true
 
+![original](images/iceland/9023803415_4bd6976618_o.jpg)
+
+---
+
 # Optimism
-### the 6×9 edition
 
 ---
 
