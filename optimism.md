@@ -3,6 +3,8 @@ slidenumbers: true
 
 ![original](images/iceland/9023803415_4bd6976618_o.jpg)
 
+^ © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
+
 ---
 
 # Optimism
