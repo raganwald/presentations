@@ -1,5 +1,9 @@
 # Conference Talks and Proposals
 
+[Nordic Ruby 2016][18]:
+
+* [Optimism][19] ([video][20])
+
 [NDC London 2016][17]:
 
 * [JavaScript Combinators, the “Six” Edition][14] ([video][13])
@@ -35,6 +39,9 @@ Most of the code from the "JavaScript Combinators" is adapted from [JavaScript A
 [15]: https://speakerdeck.com/raganwald/first-class-commands-an-unexpectedly-fertile-design-pattern
 [16]: http://raganwald.com/2016/01/19/command-pattern.html
 [17]: http://ndc-london.com/
+[18]: http://www.nordicruby.org
+[19]: https://speakerdeck.com/raganwald/optimism
+[20]: https://www.youtube.com/watch?v=8xjntzo-mYc
 
 ---
 
