@@ -483,7 +483,7 @@ slidenumbers: true
 
 ^ There's a difference between criticizing words or code and criticizing people.
 
-^ If we want people to be able to change, he have to be specific in our criticism.
+^ If we want people to be able to change, we have to be specific in our criticism.
 
 ^ If we want performance to improve, if we want people to grow, our criticism by definition has to be temporary.
 
