@@ -159,7 +159,7 @@ slidenumbers: true
 ### summary
 # Personal vs. Impersonal
 
-^ So there's the first axis, *personal vs. impersonal*. We can listen to someone's explanations for why things happened in their life, and we can decide whether their explanations tend to be more personal or impersonal. In other words, we can *measure* personalization.
+^ So there's the first axis, *personal vs. impersonal*. We can listen to someone's explanations for why things happened in their lives, and we can decide whether their explanations tend to be more personal or impersonal. In other words, we can *measure* personalization.
 
 ^ Dr. Seligman did exactly that: He gathered lots of subjects and measured their personalization using objective criteria. He also measured their moods using standard criteria and furthermore, he measured their success in life, and the results were very interesting.
 
