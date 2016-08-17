@@ -48,7 +48,7 @@ slidenumbers: true
 
 ^ The book is "[Learned Optimism](http://www.amazon.com/gp/product/1400078393?ie=UTF8&amp;tag=raganwald001-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1400078393 "Amazon.com: Learned Optimism: How to Change Your Mind and Your Life: Martin E. P. Seligman: Books")," by Dr. Martin Seligman. I'm not going to stand here and read the book aloud, you know that. But I am going to simplify it down to a few points, and you might very well think the book is too simplistic to be worth reading.
 
-^ But trust me on this:** You should not judge a book solely by whether you like what I said about it in a short talk**. Read it for yourself and decide.
+^ But trust me on this: **You should not judge a book solely by whether you like what I said about it in a short talk**. Read it for yourself and decide.
 
 ---
 
