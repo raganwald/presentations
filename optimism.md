@@ -5,6 +5,21 @@ slidenumbers: true
 
 ^ © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
 
+^ Note to the reader: This document is written in [Markdown], a somewhat human-readable markup language. It is processed by a program called [DeckSet], which turns it into a presentation. DeckSet does various things such as treating every paragraph that begins with a caret (`^`) into a speaker's note that is not visible to the audience.
+
+[Markdown]: https://en.wikipedia.org/wiki/Markdown
+[DeckSet]: http://www.decksetapp.com
+
+^ I delivered this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck] 
+
+[Nordic Ruby]: http://www.nordicruby.org
+[YouTube]: https://www.youtube.com/watch?v=8xjntzo-mYc
+[SpeakerDeck]: https://speakerdeck.com/raganwald/optimism
+
+^ Some people have pointed out that DeckSet's markdown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like fork it on GitHub, so MarkDown does have some interesting affordances.
+
+^ Thanks for reading this, and feel free to post an [Issue](https://github.com/raganwald/presentations/issues).
+
 ---
 
 # Optimism
