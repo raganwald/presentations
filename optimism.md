@@ -16,7 +16,9 @@ slidenumbers: true
 [YouTube]: https://www.youtube.com/watch?v=8xjntzo-mYc
 [SpeakerDeck]: https://speakerdeck.com/raganwald/optimism
 
-^ Some people have pointed out that DeckSet's markdown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like fork it on GitHub, so MarkDown does have some interesting affordances.
+^ Some people have pointed out that DeckSet's MarkDown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like submit your own [pull request] on GitHub, so MarkDown does have some interesting affordances.
+
+[pull request]: https://github.com/raganwald/presentations/pulls?q=is%3Apr+is%3Aclosed
 
 ^ Thanks for reading this, and feel free to post an [Issue](https://github.com/raganwald/presentations/issues).
 
