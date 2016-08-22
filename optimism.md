@@ -105,7 +105,7 @@ slidenumbers: true
 
 ^ His second claim is that with cognitive behavioural therapy, you can change the patterns in your explanations.
 
-^ Further, he claims that this increases increase your optimism. And that this changes your mood and your productivity.
+^ Further, he claims that this increases your optimism. And that this changes your mood and your productivity.
 
 ^ And again, he went out and tested his claim and again he has research he claims proves it.
 
