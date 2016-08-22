@@ -10,6 +10,10 @@ slidenumbers: true
 [Markdown]: https://en.wikipedia.org/wiki/Markdown
 [DeckSet]: http://www.decksetapp.com
 
+^ You may be looking at a partially-rendered version of this document, thanks to GitHub's ability to render basic MarkDown in the browser as formatted text. If so, you can look at the original document by clicking the [Raw] link above.
+
+[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/optimism.md
+
 ^ I delivered this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck] 
 
 [Nordic Ruby]: http://www.nordicruby.org
