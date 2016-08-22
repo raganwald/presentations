@@ -542,7 +542,7 @@ slidenumbers: true
 
 ^ I will tell you that my parents were hippies who demonstrated for civil rights. That work is far from done, but their generation left us a tremendous legacy: An understanding that things don't always have to be so.
 
-^ That belief is a belief that although society is, in general, good, there are specific things about it that are bad. And that this can be a temporary state of affairs. and that it's not us at fault.
+^ That belief is a belief that although society is, in general, good, there are specific things about it that are bad. And that this can be a temporary state of affairs. And that it's not us at fault.
 
 ^ Their legacy for me was a sense of optimism. A belief that my generation could take our talents and move the needle. Whether it's on a small scale or a large one. Whether it's on people, process, or society.
 
