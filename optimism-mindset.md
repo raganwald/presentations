@@ -14,7 +14,7 @@ slidenumbers: true
 
 [Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/optimism.md
 
-^ I delivered this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck] 
+^ I delivered this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck]
 
 [Nordic Ruby]: http://www.nordicruby.org
 [YouTube]: https://www.youtube.com/watch?v=8xjntzo-mYc
@@ -559,3 +559,13 @@ slidenumbers: true
 ^ And I hope that you will take this model, these ideas, and apply them to making your team, your community, and your society happy, optimistic, and productive.
 
 ^ Thank you.
+
+---
+
+# Reg Braithwaite<br>PagerDuty, Inc.
+### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
+
+![right, fit](images/learned-optimism.jpg)
+
+^ https://leanpub.com/javascr
+
