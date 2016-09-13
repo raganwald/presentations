@@ -497,6 +497,12 @@ slidenumbers: true
 
 ^ We may think that we are telling them, "You are talented," but what they hear is, "People have fixed talents." This is a very important distinction, because what it tells them is that activities like study or practise do not change their talent, they merely serve to reveal what is permanently there.
 
+---
+
+![original](images/iceland/overturned.png)
+
+^ https://www.flickr.com/photos/stignygaard/3867959479
+
 ^ And if they do not believe in their own fixed talent--and why should they, they are children, it is sensible for a child to feel incompetent at a great many things--then they will perceive activities like study and practise as opportunities to reveal to themselves, and to the world, that they lack the talent.
 
 ^ So for them, study and practise and other things that would make them better are not only a waste of time, but they may embarrassingly reveal their lack of talent. So they *avoid* study and practise, and wind up doing *worse* than had we not praised them for being talented.
@@ -509,7 +515,17 @@ slidenumbers: true
 
 ^ What about when we praise children for what they did to perform? What happens when they don't have a lot of confidence in their talent, but we tell them, "Your practise paid off today," or perhaps, "That A on your report card is no accident, you studied hard and deserve it." How do they respond?
 
-^
+^ What they hear now is, "People have talents that can grow." And they hear, "I just grew, and I can grow some more."
+
+---
+
+![original](images/iceland/14475132795_db17b60755_o.jpg)
+
+^ https://www.flickr.com/photos/xavier-gardere/14475132795
+
+^ And many of them go on and practise some more, and study some more, and lo an behold, they get better, and this reinforces the idea that people's abilities are subject to growth and development, and they do more studying and practise.
+
+^ Well, they're children, so they also play games and watch cartoons, and have fun. As they should, no framework for performance should try to transform children into child prodigies. But Dr. Dweck's research shows that continued reinforcement of a Grown Mindset leads children to better performance.
 
 ---
 
