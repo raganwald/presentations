@@ -14,11 +14,15 @@ slidenumbers: true
 
 [Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/optimism.md
 
-^ I delivered this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck]
+^ I delivered the first version of this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck]
 
 [Nordic Ruby]: http://www.nordicruby.org
 [YouTube]: https://www.youtube.com/watch?v=8xjntzo-mYc
 [SpeakerDeck]: https://speakerdeck.com/raganwald/optimism
+
+^ This version was updated for [DevDay 2016]. When a video or rendered slides are available, links will be added to this document.
+
+[DevDav 2016]: http://devday.pl
 
 ^ Some people have pointed out that DeckSet's MarkDown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like submit your own [pull request] on GitHub, so MarkDown does have some interesting affordances.
 
@@ -383,8 +387,7 @@ slidenumbers: true
 
 ---
 
-# **Learned**
-### Optimism
+# **Learned** Optimism
 
 ^ This is Dr. Seligman's first claim. What about the second?
 
@@ -426,139 +429,55 @@ slidenumbers: true
 
 ---
 
-# My Conjecture
+# The Optimism Mindset
 
-^ My conjecture is that the way we explain things to others—specifically the way we explain things that happen to others, or that others have done—affects their mood and productivity in exactly the same way as their own explanations affect them.
+### "A funny thing happened on the way to the **DevDay 2016** forum."
 
-^ Like Cognitive Behavioural Therapy, we have to apply these explanations repeatedly and consistently to make a change. It's not presenting people with an epiphany, it's creating an optimistic environment for them.
+^ I orginally wrote about Learned Optimism in 2009 (Here's a copy you can [read for yourself][2009]). I then spoke about it in June 2016. A while after that, Hacker News discovered my speaker's notes.
 
-^ In other words, I conjecture that we can give optimistic and pessimistic feedback to people about the things that happen to them. And I conjecture that optimistic feedback makes other people happier and more productive.
+[2009]: http://braythwayt.com/homoiconic/2009/05/01/optimism.html
 
----
-
-![original](images/iceland/15187392082_99b22c494a_k.jpg)
-
-^ https://www.flickr.com/photos/mejvis/15187392082
-
-^ Unfortunately, optimistic feedback is not a given. We often encounter the opposite,  **pessimistic feedback**.
-
-^ Pessimistic praise is impersonal, specific, and temporary: "Ruby made `andand` really elegant for its time."
-
-^ Pessimistic criticism is personal, general, and permanent: "Only a life-long loser would make mistakes like this."
-
-^ Pessimistic feedback is a recipe for making people depressed and pessimistic, we are imposing a pessimistic explanation on them and on everybody who comes into contact with us.
+^ After each discovery, a few people would share the exact same feedback with me: Dr. Seligman's theories about Learned Optimism conflicted directly with a different theory, **Mindsets**.
 
 ---
 
-# Why is there Pessimistic Feedback?
+![original](images/iceland/14959573699_28aba848f8_k.jpg)
 
-^ I think about why I was a pessimist, and it tells me why teams and cultures become pessimistic.
+^ Stanford University psychologist Dr. Carol Dweck has also done a lot of research into what makes people productive, and like Dr. Seligman, she also believes that she has a model that explains a class of unproductive people. And also like Dr Seligman, she believes that through a particular type of CBT, unproductive people can change the way they think about the root causes of their success and falure, and that this change results in them becoming successful.
 
-^ First, it is because we are not given a specific model for good feedback. We hear about the importance of giving and receiving transparent feedback without softening it, and we don't realize that just being transparent isn't enough, we must also be effective.
-
-^ Second, it is because there are some examples of smart people who give bad feedback in the world. This is not surprising: They are generally amazing people, but have one specific thing they do that is not amazing.
-
-^ Remember the paradoxes? Well, an unconsciously optimistic person thinks that their success is personal, general, and permanent. That's how they think programming works.
-
-^ So when they give feedback, they do it in terms of the model they understand: They tell us about what they think are personal, general, and permanent characteristics. And they happen to be wrong about that.
-
-^ But we can change this dynamic.
-
-^ For one thing, when we receive some feedback, we can translate it from pessimistic to optimistic. And we can train the person giving us the feedback by reiterating it back to them in optimistic terms.
-
-^ That's good for us, and for them.
-
-^ And second, we can give better feedback to others.
+^ https://www.flickr.com/photos/41812768@N07/14959573699
 
 ---
 
-![original](images/iceland/13649199935_cd13b8bf75_k.jpg)
+# Fixed and Growth Mindsets
 
-^ https://www.flickr.com/photos/aigle_dore/13649199935
+^ Dr. Dweck summaried her work in a very famous newsmagazine article, and when that became wildly popular, she wrote a book called **Mindset** explaining how laypeople can learn to better themselves and the people they care for.
 
-^ Let's talk about praise and criticism.
+^ Once again, I'm not going to read an entire book to you. If you like what I have to say about Dr. Dweck's work, read her book. If you don't like what I have to say about it, read her book and find out what I got wrong. But here goes.
 
-^ Praise and criticism are the foundation of performance improvement. In every place where humans work together, they give each other feedback, and they take that feedback and use it to get better.
-
-^ But some teams, some organizations, some communities are better at it. Some managers have a knack for giving great feedback that helps people grow. Some teams have a culture of giving honest but fair feedback that encourages everyone to reach for excellence. And some communities have high standards, but set a positive, encouraging tone that motivates everyone to reach and exceed expectations.
-
-^ Quite simply, praise should follow Seligman's model for optimistically explaining good things.
-
-^ Criticism should follow Seligman's model for optimistically explaining bad things.
+^ Dr. Dweck asked people a lot of clever questions, and based on the answers to those questions, she divided respondents up into two categories: Those with a **fixed** mindset, and those with a **growth** mindset.
 
 ---
 
-# Optimistic praise should be personal, general, and permanent.
+# The **Fixed** Mindset
 
-^ If people are to *own* praise, it has to be personal. Praise for the team or company is appropriate, but if you never praise individuals, they cannot connect themselves with the group.
+^ The fixed mindset is a belief that people have certain predetermined capabilities, and that these capabilities do not change much, if at all, over time. I am smart, or I'm not. You are likeable, or you're not. They are competent, or they're not.
 
-^ If people are to keep doing what made them productive, it has to be permanent.
-
----
-
-> This issue you filed shows why **you** have been and will **continue** to be an **asset** to the community.
+^ People with the fixed mindset believe that activities like studying, training, or practise serve to reveal the fixed capabilities the person always had or never had. So if you are "naturally fit," exercise and sports practise simply brings your natural capability to light.
 
 ---
 
-# Optimistic criticism should be impersonal, specific, and temporary.
+# The **Growth** Mindset
 
-^ There's a difference between criticizing words or code and criticizing people.
+^ The growth mindset is a belief that people do not have predetermined capabilities: People have abilities that grow over time, and that growth is driven by their investment in their own abilities. So I have learned a lot, you have gone out of your way to make friends, and they have a great deal of experience.
 
-^ If we want people to be able to change, we have to be specific in our criticism.
-
-^ If we want performance to improve, if we want people to grow, our criticism by definition has to be temporary.
+^ People with the growth mindset believe that activities like studying, traing, and practising increase their abilities. They accept that there are limits to human performance that vary from person to person, but in general everyone can be better at things, and working on your abilities does indeed make you better.
 
 ---
 
-> **This** pull request does not **currently** meet **our** standards, because these **specific** something-something-somethings.
+![original](images/iceland/4899034463_d8fbc98d2c_b.jpg)
 
----
-
-![original](images/iceland/5720433220_7267247541_o.jpg)
-
-^ https://www.flickr.com/photos/8058853@N06/5720433220
-
-^ Optimistic feedback is how we create a positive, high-performance environment for people to work with people.
-
-^ Sometimes, people think that to encourage others, we need to avoid criticism, to shy away from "hurting their feelings" or "offending them." And thus, you have a false dichotomy where you have a choice between giving criticism and encouraging high performance.
-
-^ If my conjecture is correct, we can be optimistic, offer criticism where necessary, and still maintain personal motivation and high performance.
-
-^ And that will work for pair programming, for teams, for companies, and communities.
-
----
-
-# Optimistic Repetition and Consistency
-
-^ Giving optimistic feedback once-in-a-while is not enough. Change of this type requires repetition and consistency. If we are going to change a team, a company, or a community, we need a critical mass of people giving optimistic feedback.
-
-^ This is why "culture" is so important. If there is a critical mass of people giving optimistic feedback, and reasoning about events in an optimistic way, then they are providing consistent, repetitive optimistic explanations.
-
-^ A critical mass of optimistic people makes a team optimistic. A critical mass of optimistic people makes a company optimistic. And a critical mass of optimistic people makes a culture optimistic.
-
-^ A critical mass of optimistic people isn't just optimistic, it's self-correcting. This follows directly from Seligman's work on changing your optimism.
-
----
-
-![original](images/iceland/12638784843_6537551db1_k.jpg)
-
-^ https://www.flickr.com/photos/chris-collation/12638784843
-
-^ I'm here because I feel optimistic.
-
-^ I will tell you that my parents were hippies who demonstrated for civil rights. That work is far from done, but their generation left us a tremendous legacy: An understanding that things don't always have to be so.
-
-^ That belief is a belief that although society is, in general, good, there are specific things about it that are bad. And that this can be a temporary state of affairs. And that it's not us at fault.
-
-^ Their legacy for me was a sense of optimism. A belief that my generation could take our talents and move the needle. Whether it's on a small scale or a large one. Whether it's on people, process, or society.
-
-^ I hope you feel that same sense of optimism in your life.
-
-^ And I hope you will take your talents, your excellence, forward. If you have been struggling, I hope you now have a hint that perhaps your struggles are temporary, and specific, and that you will make them better.
-
-^ And I hope that you will take this model, these ideas, and apply them to making your team, your community, and your society happy, optimistic, and productive.
-
-^ Thank you.
+^ https://www.flickr.com/photos/davidstanleytravel/4899034463
 
 ---
 
