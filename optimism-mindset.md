@@ -433,7 +433,7 @@ slidenumbers: true
 
 ### "A funny thing happened on the way to the **DevDay 2016** forum."
 
-^ I orginally wrote about Learned Optimism in 2009 (Here's a copy you can [read for yourself][2009]). I then spoke about it in June 2016. A while after that, Hacker News discovered my speaker's notes.
+^ I originally wrote about Learned Optimism in 2009 (Here's a copy you can [read for yourself][2009]). I then spoke about it in June 2016. A while after that, Hacker News discovered my speaker's notes.
 
 [2009]: http://braythwayt.com/homoiconic/2009/05/01/optimism.html
 
@@ -443,7 +443,7 @@ slidenumbers: true
 
 ![original](images/iceland/14959573699_28aba848f8_k.jpg)
 
-^ Stanford University psychologist Dr. Carol Dweck has also done a lot of research into what makes people productive, and like Dr. Seligman, she also believes that she has a model that explains a class of unproductive people. And also like Dr Seligman, she believes that through a particular type of CBT, unproductive people can change the way they think about the root causes of their success and falure, and that this change results in them becoming successful.
+^ Stanford University psychologist Dr. Carol Dweck has also done a lot of research into what makes people productive, and like Dr. Seligman, she also believes that she has a model that explains a class of unproductive people. And also like Dr Seligman, she believes that through a particular type of CBT, unproductive people can change the way they think about the root causes of their success and failure, and that this change results in them becoming successful.
 
 ^ https://www.flickr.com/photos/41812768@N07/14959573699
 
@@ -451,7 +451,7 @@ slidenumbers: true
 
 # Fixed and Growth Mindsets
 
-^ Dr. Dweck summaried her work in a very famous newsmagazine article, and when that became wildly popular, she wrote a book called **Mindset** explaining how laypeople can learn to better themselves and the people they care for.
+^ Dr. Dweck summarized her work in a very famous newsmagazine article, and when that became wildly popular, she wrote a book called **Mindset** explaining how laypeople can learn to better themselves and the people they care for.
 
 ^ Once again, I'm not going to read an entire book to you. If you like what I have to say about Dr. Dweck's work, read her book. If you don't like what I have to say about it, read her book and find out what I got wrong. But here goes.
 
@@ -471,13 +471,45 @@ slidenumbers: true
 
 ^ The growth mindset is a belief that people do not have predetermined capabilities: People have abilities that grow over time, and that growth is driven by their investment in their own abilities. So I have learned a lot, you have gone out of your way to make friends, and they have a great deal of experience.
 
-^ People with the growth mindset believe that activities like studying, traing, and practising increase their abilities. They accept that there are limits to human performance that vary from person to person, but in general everyone can be better at things, and working on your abilities does indeed make you better.
+^ People with the growth mindset believe that activities like studying, training, and practising increase their abilities. They accept that there are limits to human performance that vary from person to person, but in general everyone can be better at things, and working on your abilities does indeed make you better.
 
 ---
 
 ![original](images/iceland/4899034463_d8fbc98d2c_b.jpg)
 
+^ The Mindset model has become very popular amongst laypeople. Dr. Dweck uses anecdotes (both real and composite) to illustrate the conclusions she draws from her research. One such anecdote concerns what happens when we give feedback to children.
+
+^ Dr. Dweck explains it like this: If we praise children for things that appear to be fixed talents, like being "smart" or "athletic," this reinforces a fixed mindset. If we praise children for the results of the things they did to better themselves, like study or practise, this reinforces a growth mindset.
+
+^ So what difference does this make to the children?
+
+^ Well, the answer depends very much on what the children already think of themselves. If a child thinks that they are good at something, if the child thinks they are competent, telling them that they are good at it and that they have accomplished something simply reinforces what they already believed.
+
+^ But what if the child has doubts? This is an important case, because most children have doubts abut themselves in one way or another. This is the very basis of being a child, being small and inexperienced and powerless in the world.
+
 ^ https://www.flickr.com/photos/davidstanleytravel/4899034463
+
+---
+
+# Children and the Fixed Mindset
+
+^ When a child has doubts, when they do not firmly believe in their own talent and competency, telling them that they have talent and competency may seem like it will reverse their self-belief. But it doesn't. What it actually does, is reinforce their belief that success and accomplishment comes from fixed talents.
+
+^ We may think that we are telling them, "You are talented," but what they hear is, "People have fixed talents." This is a very important distinction, because what it tells them is that activities like study or practise do not change their talent, they merely serve to reveal what is permanently there.
+
+^ And if they do not believe in their own fixed talent--and why should they, they are children, it is sensible for a child to feel incompetent at a great many things--then they will perceive activities like study and practise as opportunities to reveal to themselves, and to the world, that they lack the talent.
+
+^ So for them, study and practise and other things that would make them better are not only a waste of time, but they may embarrassingly reveal their lack of talent. So they *avoid* study and practise, and wind up doing *worse* than had we not praised them for being talented.
+
+^ Sadly, I am not spouting conjecture here. Dr. Dweck has studied this behaviour and reports that it is very real. Praising children for fixed talents can actually make their performance worse.
+
+---
+
+# Children and the Growth Mindset
+
+^ What about when we praise children for what they did to perform? What happens when they don't have a lot of confidence in their talent, but we tell them, "Your practise paid off today," or perhaps, "That A on your report card is no accident, you studied hard and deserve it." How do they respond?
+
+^
 
 ---
 
