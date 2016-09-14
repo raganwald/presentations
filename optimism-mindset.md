@@ -355,6 +355,10 @@ slidenumbers: true
 
 ^ Dr. Seligman had discovered something important: Pessimists had a particular kind of asymmetry in the way they explained good and bad things in their lives.
 
+^ Is this a bad thing? Research has shown that sometimes, pessimistic people make particular kinds of good choices. Being a pessimist in Dr. Seligman's sense is not a pejorative valuation of people as human beings.
+
+^ However, the research is that on balance, pessimists are less happy and make choices that lead to lower performance.
+
 ---
 
 # Optimists
@@ -366,6 +370,8 @@ slidenumbers: true
 ^ And to the optimist, they're a good athlete (personal, general) and have been all their life (permanent). That one goal was just another scene in their long-playing movie of game highlights.
 
 ^ Optimists explain good things as being personal, general, and permanent, and explain away bad things as being impersonal, specific, and temporary. And if you point out the contradiction in their explanations, they see no contradiction. To them, the bad stuff really isn't about them, it's just that one thing that one time.
+
+^ Again, "optimist" is not a value judgment. At the extremes, optimists might be unrealistic about some of the choices they make. But on balance, optimists make choices that result in being happier and having higher performance.
 
 ---
 
@@ -379,7 +385,7 @@ slidenumbers: true
 
 ^ And the book also explained all the successful people in my life. And it explained why I found it hard to relate to them when they were explaining their success: I had a built-in perspective that was the opposite to theirs, I saw a completely different explanation for everything going on.
 
-^ So there you have it. One predictor of happiness and success is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent, and specifically whether you are asymmetric in your explanations.
+^ So there you have it. One predictor of happiness and making high-performance chocies is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent, and specifically whether you are asymmetric in your explanations.
 
 ---
 
@@ -391,7 +397,7 @@ slidenumbers: true
 
 ^ After explaining how to predict whether people are optimistic or pessimistic based on their explanations, the book  goes on to explain how to use cognitive behavioural therapy to change the way you explain things to yourself.
 
-^ I am not a psychologist, I cannot teach you cognitive therapy at all, much less in thirty minutes. So please, read the book and follow the exercises. And I mean, *follow the exercises*.
+^ I am not a psychologist, I cannot teach you cognitive therapy at all, much less in less than an hour. So please, read the book and follow the exercises. And I mean, *follow the exercises*.
 
 ---
 
@@ -407,7 +413,7 @@ slidenumbers: true
 
 ^ And then you correct your explanations to make them optimistic. Every time. And you track your progress, just as you would track your progress for anything else you are trying to change in your life.
 
-^ Seligman's research shows that you **can** change the way you explain things, and the research also shows that the change makes you happier and more productive.
+^ Seligman's research shows that you **can** change the way you explain things, and the research also shows that the change makes you happier and more productive. And by more productive, we mean that you make more productive choices.
 
 ---
 
@@ -552,7 +558,7 @@ slidenumbers: true
 
 ^ Dr. Dweck teaches people to explain their success as the result of activities that grow their abilities.
 
-^ Are these things opposites?
+^ How do these relate to each other?
 
 ---
 
@@ -564,8 +570,6 @@ slidenumbers: true
 
 ^ After talking at length with people, I came up with a conjecture of my own: It absolutely works to attribute the positive things in our lives to personal, general, and permanent forces, but it matters which forces we choose.
 
-^ Let's consider an example from Dr. Dweck's book.
-
 ^ https://www.flickr.com/photos/41812768@N07/14959573699
 
 ---
@@ -573,7 +577,9 @@ slidenumbers: true
 ## **against**
 # Learned Optimism
 
-^ Let's consider what happens when we tell a child that they got an "A" on a test because they are *smart*. This is indeed something that sounds like a personal, general, and permanent attribute. And the research shows that children who are told they get good results because they are smart end up doing more poorly than those who are told that they got an "A" because they studied.
+^ Let's consider an example from Dr. Dweck's book.
+
+^ What happens when we tell a child that they got an "A" on a test because they are *smart*? This  sounds like a personal, general, and permanent attribute. And the research shows that children who are told they get good results because they are smart end up doing more poorly than those who are told that they got an "A" because they studied.
 
 ^ Studying is personal, but it is specific in that it mostly improves performance in the subject you studied. Is it permanent? Well, if your learned something, that knowledge is somewhat permanent. But if you want to keep doing well in school, you have to keep studying. So from the perspective of getting more "A's," studying is temporary.
 
@@ -591,9 +597,11 @@ slidenumbers: true
 
 ^ So telling a child that they got an "A" because they were smart is telling them that they got an "A" because they get "A's." That's not a model, that's a tautology.
 
-^ In Dr. Seligman's model, things that are *general* are not things that are vague, they are things that explain a lot of different events in our lives. The problem with "Smart" is not that it's general, it's that it doesn't actually explain anything.
+^ Let's go back to Dr. Seligman's work on Learned Optimism. What does it constantly emphasize? That optimistic people are happier and more productive. The happiness comes from optimistic beliefs. The performance comes from making better choices.
 
-^ In short, I assert that it is not enough to attribute good events to a personal, general, and permanent force in our lives, we must choose one that has an objective relationship to those events.
+^ If we do not believe that we are smart, we are unlikely to start believing it just because someone says so and we got this one "A." But even if we did, maybe we would be a little happier. But would we make better choices and become more productive? I say, no. "Smart" has nothing to do with choice. It does not express our agency.
+
+^ "Smart" is not a good explanation for the growth mindset, and it isn't a particularly good explanation for Learned Optimism, either. It has no choice in it.
 
 ^ https://www.flickr.com/photos/briangratwicke/14788286996
 
@@ -601,7 +609,7 @@ slidenumbers: true
 
 # Optimistic Growth
 
-^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific and temporary. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
+^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific and temporary. But it does express choice. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
 
 ^ Yes, there is. Consider:
 
@@ -626,50 +634,23 @@ slidenumbers: true
 
 ^ Aha! This feedback is personal, general, permanent, and growth-oriented. Being growth-oriented need not conflict with Learned Optimism, but we must carefully choose our explanations to fit both models.
 
----
-
-## The Optimistic Mindset
-
-- A credible model: The
-- The cause must be personal
-- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
-- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+^ And the model I am presenting to you for doing this, is to express the Learned Optimism axes in terms of **choices**.
 
 ---
 
-## The Optimistic Mindset
+# The optimistic mindset for **positive** events
 
-- There must be an objectively sound model
-- The cause must be personal
-- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
-- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
-
----
-
-## The Optimistic Mindset
-
-- There must be an objectively sound model
-- The cause must be personal
-- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
-- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+- Emphasizes personal choice;
+- Generalizes the results of the specific choices;
+- Emphasizes an ongoing arc of applying choices to produce personal growth.
 
 ---
 
-## The Optimistic Mindset
+# The optimistic mindset for **negative** events
 
-- There must be an objectively sound model
-- The cause must be personal
-- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
-- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
-
----
-
-## The Optimistic Mindset
-
-- There must be an objectively sound model
-- The cause must be personal
-- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
-- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+- Deëmphasizes personal choice;
+- Narrows the results of the choices;
+- Casts the negative as temporary blips in an otherwise positive ongoing arc.
 
 ---
 
