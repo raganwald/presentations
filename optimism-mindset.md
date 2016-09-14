@@ -429,9 +429,8 @@ slidenumbers: true
 
 ---
 
-# The Optimism Mindset
-
-### "A funny thing happened on the way to the **DevDay 2016** forum."
+## a funny thing happened on the way to
+# **DevDay 2016**
 
 ^ I originally wrote about Learned Optimism in 2009 (Here's a copy you can [read for yourself][2009]). I then spoke about it in June 2016. A while after that, Hacker News discovered my speaker's notes.
 
@@ -441,11 +440,11 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/14959573699_28aba848f8_k.jpg)
+![original](images/iceland/541610754_3000c46692_o.jpg)
 
 ^ Stanford University psychologist Dr. Carol Dweck has also done a lot of research into what makes people productive, and like Dr. Seligman, she also believes that she has a model that explains a class of unproductive people. And also like Dr Seligman, she believes that through a particular type of CBT, unproductive people can change the way they think about the root causes of their success and failure, and that this change results in them becoming successful.
 
-^ https://www.flickr.com/photos/41812768@N07/14959573699
+^ https://www.flickr.com/photos/vicmontol/541610754
 
 ---
 
@@ -526,6 +525,58 @@ slidenumbers: true
 ^ And many of them go on and practise some more, and study some more, and lo an behold, they get better, and this reinforces the idea that people's abilities are subject to growth and development, and they do more studying and practise.
 
 ^ Well, they're children, so they also play games and watch cartoons, and have fun. As they should, no framework for performance should try to transform children into child prodigies. But Dr. Dweck's research shows that continued reinforcement of a Grown Mindset leads children to better performance.
+
+^ So to summarize: If we praise children for their fixed talents, they adopt a fixed mindset in a  negative way and avoid study, training, or practise, which leads to negative performance.
+
+^ But when we praise children for the things they do to grow their abilities, they adopt a growth mindset in a positive way, and develop the habit of studying, training, and practising. And this leads to positive performance.
+
+---
+
+# Changing Mindsets
+
+^ I am not going to read the entire book to you, and given what you have already heard about Dr. Seligman's second conjecture, you will not be surprised to hear that Dr. Dweck discovered a similar thing with Mindsets, whether with children or adults:
+
+^ People with a Fixed Mindset could, through practice and repetition, teach themselves to adopt a Growth Mindset. And, when they adopted the Growth Mindset, they embraced activities to grow their abilities, and their performance improved.
+
+^ This is exciting. Amongst other things, I take from it that no matter what we think of a particular model, be it Learned Optimism or Mindsets, people seem to be *plastic*: Our ability to learn and grow is an ability just like sales or programming or riding a bicycle, it can be improved through training and practice.
+
+^ In short, what these two researchers have discovered reinforces the Growth Mindset model of personal growth.
+
+---
+
+# Learned Optimism vs. Mindsets
+
+^ Now we have two models, Dr. Seligman's "Learned Optimism" model, and Dr. Dweck's "Mindsets" model.
+
+^ They have similar mechanisms. They both focus on the way people explain their success or failure to themselves. They both are backed by research that shows that people can change the way they model their performance through practice changing the way they explain their performance to themselves.
+
+^ But superficially, they seem to take two completely opposite perspectives on the subject of abilities:
+
+^ Dr. Seligman teaches people to explain their successes as being Personal, General, and Permanent.
+
+^ Dr. Dweck teaches people to explain their success as the result of activities that grow their abilities.
+
+^ Are these things opposites?
+
+---
+
+![original](images/iceland/14959573699_28aba848f8_k.jpg)
+
+^ Remember all the people talking to me about Learned Optimism? They said that they did not understand how Learned Optimism could work, given what Dr. Dweck had discovered. They were certain that teaching yourself to attribute the good things in your life to personal, general, and permanent forces was teaching yourself the *fixed* mindset.
+
+^ This surprised me, because I saw Learned Optimism as teaching me the *growth* mindset. How did I see growth where others saw fixed?
+
+^ After talking at length with people, I came up with a conjecture of my own: It absolutely works to attribute the positive things in our lives to personal, general, and permanent forces, but it matters which forces we choose.
+
+^ Let's consider an example from Dr. Dweck's book.
+
+^ https://www.flickr.com/photos/41812768@N07/14959573699
+
+---
+
+![original](images/iceland/14788286996_b5e932302b_k.jpg)
+
+^ https://www.flickr.com/photos/briangratwicke/14788286996
 
 ---
 
