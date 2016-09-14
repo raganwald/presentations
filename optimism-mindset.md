@@ -256,7 +256,7 @@ slidenumbers: true
 
 ---
 
-> I did some good things, and as a result, **this project** was a success.
+> We did some good things, and as a result, **this project** was a success.
 
 ^ And that would be perfectly true.
 
@@ -360,9 +360,9 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/11755209913_bd391eb972_k.jpg)
+![original](images/iceland/541610754_3000c46692_o.jpg)
 
-^ https://www.flickr.com/photos/jonathanhood/11755209913
+^ https://www.flickr.com/photos/vicmontol/541610754
 
 ^ "Learned Optimism" shocked me. I read it a bunch of times and actually bought copies for other people. Besides myself, I knew lots of people who fit Dr. Seligman's pessimist theory.
 
@@ -370,7 +370,7 @@ slidenumbers: true
 
 ^ And the book also explained all the successful people in my life. And it explained why I found it hard to relate to them when they were explaining their success: I had a built-in perspective that was the opposite to theirs, I saw a completely different explanation for everything going on.
 
-^ So there you have it. One predictor of happiness and making high-performance chocies is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent, and specifically whether you are asymmetric in your explanations.
+^ So there you have it. One predictor of happiness and making high-performance choices is this characteristic Dr. Seligman calls optimism, which he measures by testing whether you explain good or bad events as being personal, general, and permanent, and specifically whether you are asymmetric in your explanations.
 
 ---
 
@@ -406,13 +406,7 @@ slidenumbers: true
 
 ### Changing your explanations through repetition and consistency, changes your life: You become happier and more productive.
 
----
-
-![original](images/iceland/15867820274_766cc09f19_k.jpg)
-
-^ https://www.flickr.com/photos/anieto2k/15867820274
-
-^ Whether you are happy with your life or not, whether you are a Bipolar Lisp Programmer or a Well-Adjusted Rubyist, I conjecture that Dr. Seligman's theory applies to more than understanding why we are unhappy, and I conjecture that it applies to more than teaching ourselves to be more optimistic.
+^ And now, to part II.
 
 ---
 
@@ -427,11 +421,11 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/541610754_3000c46692_o.jpg)
+![original](images/iceland/15867820274_766cc09f19_k.jpg)
+
+^ https://www.flickr.com/photos/anieto2k/15867820274
 
 ^ Stanford University psychologist Dr. Carol Dweck has also done a lot of research into what makes people productive, and like Dr. Seligman, she also believes that she has a model that explains a class of unproductive people. And also like Dr Seligman, she believes that through a particular type of CBT, unproductive people can change the way they think about the root causes of their success and failure, and that this change results in them becoming successful.
-
-^ https://www.flickr.com/photos/vicmontol/541610754
 
 ---
 
@@ -594,7 +588,7 @@ slidenumbers: true
 
 # Optimistic Growth
 
-^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific and temporary. But it does express choice. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
+^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific, temporary, and it expresses choice. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
 
 ^ Yes, there is. Consider:
 
@@ -631,6 +625,14 @@ slidenumbers: true
 
 ---
 
+![original](images/iceland/4517294977_a387d276f5_o.jpg)
+
+^ https://www.flickr.com/photos/8058853@N06/4517294977
+
+^ And from our asymmetric model of Learned Optimism, we reverse our explanations for negative events: We make them impersonal, we deëmphasize choice, we make the event specific, and we emphasize the temporary nature of the event.
+
+---
+
 # The optimistic mindset for **negative** events
 
 - Deëmphasizes personal choice;
@@ -639,9 +641,23 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/4517294977_a387d276f5_o.jpg)
+![original](images/iceland/11755209913_bd391eb972_k.jpg)
 
-^ https://www.flickr.com/photos/8058853@N06/4517294977
+^ https://www.flickr.com/photos/jonathanhood/11755209913
+
+^ As we can see, the "Learned Optimism" and "Growth Mindsets" can fit together. I suggest that one way to do so is to ensure that positive explanations incorporate personal choice.
+
+^ Speaking of personal choice, I also want to emphasize that Dr. Seligman's work on Learned Optimism is based on actual research, as is Dr. Dweck's work on Mindsets. My own experience applying these ideas to my life is just an anecdote. My conjectures about fitting the two together is an exploration, and if the DevDay organizers invite me back in 2026, I'll let you know how it worked out.
+
+^ So, if Learned Optimism is new to you, please go and get Dr. Seligman's book, read it, and do the exercises for yourself. Likewise, if Mindsets is new to you, please go and get Dr. Dweck's book, read that book too, and do its exercises for yourself.
+
+^ I believe that we all can grow, and that our choices drive our growth. I also believe that we can influence each other's mental models for the better, by framing our feedback for each other in optimistic and growth mindset ways.
+
+^ You have all chosen to be here at DevDay, and you are learning. You are literally living this out in real time. so please, go forth into the world and continue to choose to learn and grow, and to encourage each other to grow.
+
+^ And if what I've shared resonates with you, make one of your choices be reading these two books.
+
+^ Thank you.
 
 ---
 
