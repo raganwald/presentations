@@ -1,7 +1,7 @@
 footer: DevDay 2016 | @raganwald
 slidenumbers: true
 
-![original](images/iceland/9023803415_4bd6976618_o.jpg)
+# Optimism
 
 ^ © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -32,10 +32,6 @@ slidenumbers: true
 
 ---
 
-# Optimism
-
----
-
 ![original](images/iceland/10017474965_4a521d0c7d_k.jpg)
 
 ^ https://www.flickr.com/photos/aigle_dore/10017474965
@@ -50,9 +46,9 @@ slidenumbers: true
 
 ---
 
-# "Learned Optimism"
+# **Learned** Optimism
 
-^ Some years ago I was in an especially low point and I happened upon a book that changed my life. I cannot guarantee that it will change *your* life. "Chance favours the prepared mind," they say, and perhaps it can only change your life if you happen upon it at an inflection point, at a time when your life is ready to change.
+^ Some years ago, I was in an especially low point and I happened upon a book that changed my life. I cannot guarantee that it will change *your* life. "Chance favours the prepared mind," they say, and perhaps it can only change your life if you happen upon it at an inflection point, at a time when your life is ready to change.
 
 ^ I needed some change, I was open to change, and with this book, I changed.
 
@@ -635,9 +631,49 @@ slidenumbers: true
 
 # The optimistic mindset for **negative** events
 
-- Deëmphasizes personal choice;
-- Narrows the results of the choices;
+- Emphasizes an impersonal event;
+- Restricted to a specific impact;
 - Casts the negative as temporary blips in an otherwise positive ongoing arc.
+
+---
+
+![original](images/iceland/23692080713_a4c7de35ea_k.jpg)
+
+^ https://www.flickr.com/photos/jenniferboyer/23692080713
+
+^ If you accept my conjecture, Learned Optimism and the Growth Mindset are not in conflict, but can work together.
+
+^ And if they do work together, we  can train ourselves to be optimistic and to have a growth mindset, improving our happiness and productivity.
+
+^ How about feedback? Can we encourage others to be optimistic **and** to have a growth mindset through feedback?
+
+---
+
+# Positive Feedback
+
+^ Positive feedback is easy to construct: Emphasize the personal choice, generalize its results, and put it in the context of an ongoing character arc:
+
+---
+
+### this code is great, because
+
+## **when you study technique and apply it to your work, the results get better and better**
+
+---
+
+# Negative Feedback
+
+^ Negative feedback is also easy to construct, it requires two steps. First, we give impersonal, specific, and temporary feedback about behaviour that we want changed:
+
+---
+
+## **this** blog post lacks an overall narrative that would hold its arguments together
+
+^ Then we frame a suggested course of action in optimistic and growth mindset terms:
+
+---
+
+## when **you** state a theme and stick to it, your posts are always powerful
 
 ---
 
@@ -645,17 +681,29 @@ slidenumbers: true
 
 ^ https://www.flickr.com/photos/jonathanhood/11755209913
 
-^ As we can see, the "Learned Optimism" and "Growth Mindsets" can fit together. I suggest that one way to do so is to ensure that positive explanations incorporate personal choice.
+^ As we can see, the "Learned Optimism" and "Growth Mindsets" can fit together, both in how we teach ourselves to think, and in how we construct feedback for others to encourage them to be optimistic and to have their own growth mindsets.
 
-^ Speaking of personal choice, I also want to emphasize that Dr. Seligman's work on Learned Optimism is based on actual research, as is Dr. Dweck's work on Mindsets. My own experience applying these ideas to my life is just an anecdote. My conjectures about fitting the two together is an exploration, and if the DevDay organizers invite me back in 2026, I'll let you know how it worked out.
+---
+
+# The Optimistic Team
+
+^ It is not an accident that I am talking about feedback at a software conference.
+
+^ We used to think that writing software was a question of hiring people who are "smart," a fixed mindset approach. Now we not only know that "smart" is a vague attribute, but we know that the highest performing teams are learning teams, teams that have a collective growth mindset.
+
+^ It turns out that the dynamics of a team matter more than the skill of the individual contributors. One huge part of that dynamic is how the team views itself: Is it an Optimistic Team? Does the team have a Growth Mindset?
+
+^ My proposition today is that we have an enormous influence over the team's dynamics through the way we explain the team's performance and the way the team gives itself feedback. And I've given you two models to consider for your own personal growth as well as for your team's growth.
+
+^ I  want to emphasize that Dr. Seligman's work on Learned Optimism is based on actual research, as is Dr. Dweck's work on Mindsets. My own experience applying these ideas to my life is just an anecdote. My conjectures about fitting the two together is an exploration of an idea, it is not a proven concept.
 
 ^ So, if Learned Optimism is new to you, please go and get Dr. Seligman's book, read it, and do the exercises for yourself. Likewise, if Mindsets is new to you, please go and get Dr. Dweck's book, read that book too, and do its exercises for yourself.
 
 ^ I believe that we all can grow, and that our choices drive our growth. I also believe that we can influence each other's mental models for the better, by framing our feedback for each other in optimistic and growth mindset ways.
 
-^ You have all chosen to be here at DevDay, and you are learning. You are literally living this out in real time. so please, go forth into the world and continue to choose to learn and grow, and to encourage each other to grow.
+^ And I believe that we can make our teams and communities happier and more productive, just as we make ourselves happier and more productive.
 
-^ And if what I've shared resonates with you, make one of your choices be reading these two books.
+^ And if what I've shared resonates with you, please choose to follow up and research the ideas behind Learned Optimism and the Growth Mindset.
 
 ^ Thank you.
 
@@ -665,6 +713,4 @@ slidenumbers: true
 ### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
 
 ![right, fit](images/learned-optimism.jpg)
-
-^ https://leanpub.com/javascr
 
