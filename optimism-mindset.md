@@ -42,26 +42,11 @@ slidenumbers: true
 
 ^ I am going to talk about Optimism, and conversely, about Pessimism.
 
-^ I'm going to describe a framework for understanding why some people are optimistic and some are pessimistic. I'm going to explain how you can actually become more optimistic in your life, and I am going to explain how I think you can help other people be more optimistic in your personal life and in your community.
+^ I'm going to describe a framework for understanding why some people are optimistic and some are pessimistic. And I'm going to explain how you can actually become more optimistic in your life.
 
-^ Before I do that, I want to share with you One True Thing about myself, and it will help you understand why I have spent most of my life struggling to be happy, despite having many privileges and gifts.
+^ Then I'm going to talk about another framework, this one for personal growth and agency. And I'll do my best to fit the two frameworks together.
 
-^ So, from my heart:
-
----
-
-### I LIVE WITH
-# Depression
-
----
-
-![original](images/iceland/4517294977_a387d276f5_o.jpg)
-
-^ https://www.flickr.com/photos/8058853@N06/4517294977
-
-^ I have had many high points in my life, but I also have had many low points. I have been jobless. I have been penniless. I have been friendless. I have been homeless. I have felt that I was pointless and that my life had no value.
-
-^ **Those of you who have not had this affliction may question this, but it is true, and part of what I will describe today will explain why it is difficult for people who feel optimistic and happy in life to understand people who are pessimistic and sad.**
+^ Here we go!
 
 ---
 
@@ -651,6 +636,12 @@ slidenumbers: true
 - Deëmphasizes personal choice;
 - Narrows the results of the choices;
 - Casts the negative as temporary blips in an otherwise positive ongoing arc.
+
+---
+
+![original](images/iceland/4517294977_a387d276f5_o.jpg)
+
+^ https://www.flickr.com/photos/8058853@N06/4517294977
 
 ---
 
