@@ -574,9 +574,70 @@ slidenumbers: true
 
 ---
 
+## **against**
+# Learned Optimism
+
+^ Let's consider what happens when we tell a child that they got an "A" on a test because they are *smart*. This is indeed something that sounds like a personal, general, and permanent attribute. And the research shows that children who are told they get good results because they are smart end up doing more poorly than those who are told that they got an "A" because they studied.
+
+^ Studying is personal, but it is specific in that it mostly improves performance in the subject you studied. Is it permanent? Well, if your learned something, that knowledge is somewhat permanent. But if you want to keep doing well in school, you have to keep studying. So from the perspective of getting more "A's," studying is temporary.
+
+^ So it sounds like the growth mindset comes from telling children that their success flows from activities that are personal, but also specific and temporary.
+
+^ Or does it?
+
+---
+
 ![original](images/iceland/14788286996_b5e932302b_k.jpg)
 
+^ My proposition is that "being smart" is a broken model for success, and it has nothing to do with being general or permanent. It's just broken! What is smart? If we tell someone, "You got an A because you're smart," are we really saying that everyone with an IQ of at least 120 would also get an "A?"
+
+^ "Smart" is a vague word, and mostly what we mean when we say someone is "smart," is that they get "A's" on tests, or solve hard problems, or find interesting insights into complicated phenomena.
+
+^ So telling a child that they got an "A" because they were smart is telling them that they got an "A" because they get "A's." That's not a model, that's a tautology.
+
+^ In Dr. Seligman's model, things that are *general* are not things that are vague, they are things that explain a lot of different events in our lives. The problem with "Smart" is not that it's general, it's that it doesn't actually explain anything.
+
+^ In short, I assert that it is not enough to attribute good events to a personal, general, and permanent force in our lives, we must choose one that has an objective relationship to those events.
+
 ^ https://www.flickr.com/photos/briangratwicke/14788286996
+
+---
+
+# Optimistic Growth
+
+^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific and temporary. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
+
+^ Yes, there is. Consider:
+
+---
+
+### you got an "A," because
+## **you studied**
+
+^ That's the specific and temporary feedback that is growth-oriented. Now consider:
+
+---
+
+### you got an "A," because
+## **when you study, your grades improve**
+
+^ This feedback is still specific, and still growth-oriented, but it's permanent. Can we make it general without making it vague or introducing a broken model? Consider:
+
+---
+
+### you got an "A," because
+## **when you study, you learn, and your grades reflect your learning**
+
+^ Aha! This feedback is personal, general, permanent, and growth-oriented. Being growth-oriented need not conflict with Learned Optimism, but we must carefully choose our explanations to fit both models.
+
+---
+
+## The Optimistic Mindset
+
+- A sound model
+- Personal
+- General: impacting more than one kind of event, but not vague, as in intangibly related.
+- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
 
 ---
 
