@@ -165,8 +165,8 @@ slidenumbers: true
 
 ---
 
-### Some people like `andand`, because
-# **"I"**
+### Some people like andand, because
+# **I**
 ### something-something.
 
 ^ On the other hand, if I explain them not liking my work as reflecting upon them and their values--and I don't mean this in a  negative way--that's *depersonalizing* the explanation.
@@ -175,8 +175,8 @@ slidenumbers: true
 
 ---
 
-### Some people dislike `andand`, because
-# **"IT"**
+### Some people dislike andand, because
+# **they**
 ### something-something.
 
 ---
@@ -210,23 +210,25 @@ slidenumbers: true
 
 ^ The second axis or binary property is **specific vs. general**.
 
-^ Remember the person who didn't like `andand`? Did I take this as a suggestion that they didn't like me in a general sense? Or did I conclude that they didn't like this one little thing I wrote, maybe twenty or thirty lines of code?
+^ Remember the person who didn't like `andand`? Did I take this as a suggestion that they didn't like this one little thing I wrote, maybe twenty or thirty lines of code?
 
-^ Sometimes, something happens and we generalize the explanation. Sometimes we make it really specific. For example, I have really specific explanations for the success or failure of the blog posts I write, and I judge each one specifically.
+^ Or did I conclude that they didn't like all of my code? Or that they didn't like my work in even more general terms, like disliking my writing and ideas as well?
 
-^ So when something I write flops, I say…
+^ Sometimes, when something happens, we reason about that one specific event on its own. And sometimes, we generalize our explanation: We conclude that the event is a specific case of a set of events that apply across many aspects of our lives.
 
----
-
-> This **specific** post didn't click.
-
-^ On the other hand, I can take a terribly general attitude about my writing overall.
-
-^ So when I wrote an essay about Optimism, and it went to #1 on Hacker News, I said…
+^ For example, when something I write about code hits the front page of Hacker News, I might say…
 
 ---
 
-> This post clicked because **generally**, I'm a good writer.
+> Hacker News liked this blog post.
+
+^ That is very specific. But I could also say:
+
+---
+
+> I have experience, I've thought these ideas out, and Hacker News validates my experience and my approach.
+
+^ That's a general explanation, it speaks to a broad set of reasons for this event. Note that both explanations are perfectly true! The choice of explanation is a question of perspective, of emphasis, not of right or wrong.
 
 ---
 
@@ -243,9 +245,7 @@ slidenumbers: true
 
 ^ And if we have not read about Learned Optimism before, we must be curious: **Are optimists more likely to come up with specific explanations for things in their life? Or more likely to come up with general explanations?**
 
-^ When I read this, I was just as confused as I was when I read about personal and impersonal explanations. I knew many people who were happy and successful, and they had overwhelmingly general ideas about their own talents. They sincerely believed they were successful in a general sense.
-
-^ (By the way, this often trips successful people up when they try for an "Act II:" They believe so sincerely in the general explanation for their success that they fail to realize how specific their experience and talents really are.)
+^ When I read this, I was just as confused as I was when I read about personal and impersonal explanations. I knew many people who were happy and successful, and they had overwhelmingly general ideas about their own experience and talent. They sincerely believed they were successful in a general sense.
 
 ^ But I also knew some very depressed people who had remarkably general explanations for their failure. They believed that they were "failures in life," a general explanation if ever there was one.
 
@@ -634,9 +634,45 @@ slidenumbers: true
 
 ## The Optimistic Mindset
 
-- A sound model
-- Personal
-- General: impacting more than one kind of event, but not vague, as in intangibly related.
+- A credible model: The
+- The cause must be personal
+- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
+- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+
+---
+
+## The Optimistic Mindset
+
+- There must be an objectively sound model
+- The cause must be personal
+- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
+- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+
+---
+
+## The Optimistic Mindset
+
+- There must be an objectively sound model
+- The cause must be personal
+- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
+- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+
+---
+
+## The Optimistic Mindset
+
+- There must be an objectively sound model
+- The cause must be personal
+- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
+- The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
+
+---
+
+## The Optimistic Mindset
+
+- There must be an objectively sound model
+- The cause must be personal
+- The cause must be general, as in impacting more than one kind of event, but not vague, as in intangibly related.
 - The cause must be permanent, as in an assertion that continuing to apply the cause will continue to produce the good events.
 
 ---
