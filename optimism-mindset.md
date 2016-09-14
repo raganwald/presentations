@@ -44,7 +44,7 @@ slidenumbers: true
 
 ^ I'm going to describe a framework for understanding why some people are optimistic and some are pessimistic. And I'm going to explain how you can actually become more optimistic in your life.
 
-^ Then I'm going to talk about another framework, this one for personal growth and agency. And I'll do my best to fit the two frameworks together.
+^ Then I'm going to talk about another framework called "Mindsets", this one for personal growth and agency. And I'll do my best to fit the two frameworks together.
 
 ^ Here we go!
 
@@ -128,9 +128,9 @@ slidenumbers: true
 
 ![original](images/iceland/andand.png)
 
-^ Hey! Ruby!!
+^ Hey! Some code!!
 
-^ In 2009, I was registering for a conference very much like this called RubyFringe. And someone I respect very much walked up to me, introduced themselves, then told me that they didn't like the [andand gem](http://andand.rubyforge.org/ "Object#andand") that I wrote.
+^ In 2009, I was registering for a conference called RubyFringe. And someone I respect very much walked up to me, introduced themselves, then told me that they didn't like the [andand gem](http://andand.rubyforge.org/ "Object#andand") that I wrote.
 
 ^ So how did I explain this to myself?
 
@@ -457,6 +457,8 @@ slidenumbers: true
 
 ![original](images/iceland/4899034463_d8fbc98d2c_b.jpg)
 
+^ https://www.flickr.com/photos/davidstanleytravel/4899034463
+
 ^ The Mindset model has become very popular amongst laypeople. Dr. Dweck uses anecdotes (both real and composite) to illustrate the conclusions she draws from her research. One such anecdote concerns what happens when we give feedback to children.
 
 ^ Dr. Dweck explains it like this: If we praise children for things that appear to be fixed talents, like being "smart" or "athletic," this reinforces a fixed mindset. If we praise children for the results of the things they did to better themselves, like study or practise, this reinforces a growth mindset.
@@ -466,8 +468,6 @@ slidenumbers: true
 ^ Well, the answer depends very much on what the children already think of themselves. If a child thinks that they are good at something, if the child thinks they are competent, telling them that they are good at it and that they have accomplished something simply reinforces what they already believed.
 
 ^ But what if the child has doubts? This is an important case, because most children have doubts abut themselves in one way or another. This is the very basis of being a child, being small and inexperienced and powerless in the world.
-
-^ https://www.flickr.com/photos/davidstanleytravel/4899034463
 
 ---
 
@@ -543,13 +543,13 @@ slidenumbers: true
 
 ![original](images/iceland/14959573699_28aba848f8_k.jpg)
 
+^ https://www.flickr.com/photos/41812768@N07/14959573699
+
 ^ Remember all the people talking to me about Learned Optimism? They said that they did not understand how Learned Optimism could work, given what Dr. Dweck had discovered. They were certain that teaching yourself to attribute the good things in your life to personal, general, and permanent forces was teaching yourself the *fixed* mindset.
 
 ^ This surprised me, because I saw Learned Optimism as teaching me the *growth* mindset. How did I see growth where others saw fixed?
 
 ^ After talking at length with people, I came up with a conjecture of my own: It absolutely works to attribute the positive things in our lives to personal, general, and permanent forces, but it matters which forces we choose.
-
-^ https://www.flickr.com/photos/41812768@N07/14959573699
 
 ---
 
@@ -570,6 +570,8 @@ slidenumbers: true
 
 ![original](images/iceland/14788286996_b5e932302b_k.jpg)
 
+^ https://www.flickr.com/photos/briangratwicke/14788286996
+
 ^ My proposition is that "being smart" is a broken model for success, and it has nothing to do with being general or permanent. It's just broken! What is smart? If we tell someone, "You got an A because you're smart," are we really saying that everyone with an IQ of at least 120 would also get an "A?"
 
 ^ "Smart" is a vague word, and mostly what we mean when we say someone is "smart," is that they get "A's" on tests, or solve hard problems, or find interesting insights into complicated phenomena.
@@ -581,8 +583,6 @@ slidenumbers: true
 ^ If we do not believe that we are smart, we are unlikely to start believing it just because someone says so and we got this one "A." But even if we did, maybe we would be a little happier. But would we make better choices and become more productive? I say, no. "Smart" has nothing to do with choice. It does not express our agency.
 
 ^ "Smart" is not a good explanation for the growth mindset, and it isn't a particularly good explanation for Learned Optimism, either. It has no choice in it.
-
-^ https://www.flickr.com/photos/briangratwicke/14788286996
 
 ---
 
