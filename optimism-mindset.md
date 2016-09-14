@@ -259,31 +259,27 @@ slidenumbers: true
 
 ^ The third and final axis--thanks for your patience with my explanations--is **temporal**. Some explanations describe an event as a result of **temporary** phenomena. And other explanations describe an event in terms of **permanent** phenomena.
 
-^ To give a very real and poignant example, I will tell you about something that happened to me more than forty years ago. When I was young, I thought that the subways in Toronto were very interesting.
+^ I've spoken about some code and about writing about code, let me give an example from working with other people.
 
-^ There were these stacks of signal lights, and I tried to deduce how they worked. I was especially curious about how drivers would approach a red signal at speed, and just before the train reached the signal, it would change to green. How did they know?
+^ Recently, PagerDuty started up a new team. As the most experienced developer on the team, I had a lot of experience to contribute. But we also work in a very egalitarian way: I do not have a fancy title like "Technical Lead" or "Architect."
 
-^ And the technology was so interesting. They were trains... Underground! Buried beneath a huge city was another world, full of tunnels and maintenance shafts and cables and machinery.
+^ Any ways, I worked very hard to evangelize and support a particularly lean approach to development, where our iterations were pared down to the minimum required to learn important things we would use in subsequent iterations.
 
-^ But I digress. I liked subways, and used to ride around on them, just for fun. Well, one day I was riding on the subway, and it was not very busy, and some boys got on, and started making some very loud remarks about my race.
+^ And thanks to some great people who brought an equal amount of energy and good ideas to the work, we did some very good work that I'm very proud of, and the feedback has been fantastic.
 
-^ I disembarked, and they followed me. There was a confrontation, and they ended up assaulting me on the subway platform while shouting racist insults.
-
-^ And you know, we still have problems with racism in the world. But let's talk about my explanation:
-
-^ I could have said…
+^ So there are some explanations already, but let me isolate the temporal idea. I could tell you:
 
 ---
 
-> **That day**, I was assaulted by racists.
+> I did some good things, and as a result, **this project** was a success.
 
 ^ And that would be perfectly true.
 
-^ I could also have said…
+^ I could also tell you…
 
 ---
 
-> I've **always** faced racism in my life.
+> This was one highlight on a 30+ year **career arc**, as well as PagerDuty's own ongoing growth.
 
 ^ And that would be just as true.
 
@@ -330,7 +326,7 @@ slidenumbers: true
 
 ^ And the model told me something else.
 
-^ When someone told me that I scored a good goal in Ultimate, I would have put it down to **my opponent** being out of shape, explained that I **specialized** in scoring goals, and thought that maybe I got lucky on that play. I would have explained the compliment as being **impersonal**, **specific**, and **temporary**.
+^ When I considered a positive event in my life like a successful project, I would have explained that **the company** chose a fruitful product to work on, that I was fortunate to have the **specific** technical skills needed for this project to succeed, and that we happened to be in the right place at the right time, a **temporary** phenomenon.
 
 ^ Do you grasp the asymmetry?
 
