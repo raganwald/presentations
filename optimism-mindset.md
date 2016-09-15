@@ -187,15 +187,17 @@ slidenumbers: true
 
 ---
 
-> Hacker News liked this blog post.
+## Hacker News liked **this blog post**.
 
-^ That is very specific. But I could also say:
+^ That is very specific. It's one permutation of words. But I could also say:
 
 ---
 
-> I have experience, I've thought these ideas out, and Hacker News validates my experience and my approach.
+## Hacker News validated **my experience** as a programmer.
 
-^ That's a general explanation, it speaks to a broad set of reasons for this event. Note that both explanations are perfectly true! The choice of explanation is a question of perspective, of emphasis, not of right or wrong.
+^ That's a "general" explanation, it speaks to my experience, a factor that can contribute to a very broad set of events, this is just one particular positive consequence.
+
+^ Note that both explanations are perfectly true! The choice of explanation is a question of perspective, of emphasis, not of right or wrong.
 
 ---
 
@@ -224,7 +226,7 @@ slidenumbers: true
 
 ---
 
-> We did some good things, and as a result, **this project** was a success.
+## Our work made **this project** a success.
 
 ^ And that would be perfectly true.
 
@@ -232,7 +234,7 @@ slidenumbers: true
 
 ---
 
-> This was one highlight on a 30+ year **career arc**, as well as PagerDuty's own ongoing growth.
+## This was one highlight in my and PagerDuty's **ongoing growth**.
 
 ^ And that would be just as true.
 
@@ -574,7 +576,7 @@ slidenumbers: true
 
 ### this code is great, because
 
-## **when you study technique and apply it to your work, the results get better and better**
+## **when you apply learning to your work, the results get better and better**
 
 ---
 
@@ -608,7 +610,7 @@ slidenumbers: true
 
 ---
 
-## **this** blog post lacks an overall narrative that would hold its arguments together
+## **this** blog post lacks a narrative that would hold its arguments together
 
 ^ Then we frame the suggested course of action in optimistic and growth mindset terms:
 
