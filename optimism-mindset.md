@@ -122,7 +122,7 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/andand.png)
+![original](images/andand.png)
 
 ^ Hey! Some code!!
 
