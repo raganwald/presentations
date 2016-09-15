@@ -17,7 +17,7 @@ slidenumbers: false
 ^ I delivered this version at [DevDay 2016]. The fully rendered slides are on [SpeakerDeck], and you can download a PDF there as well.
 
 [SpeakerDeck]: https://speakerdeck.com/raganwald/optimism-ii
-[DevDav 2016]: http://devday.pl
+[DevDay 2016]: http://devday.pl
 
 ^ Some people have pointed out that DeckSet's MarkDown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like submit your own [pull request] on GitHub, so MarkDown does have some interesting affordances.
 
