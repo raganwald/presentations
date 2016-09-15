@@ -1,5 +1,5 @@
 footer: DevDay 2016 | @raganwald | #ABBDevDay
-slidenumbers: true
+slidenumbers: false
 
 # Optimism II
 
