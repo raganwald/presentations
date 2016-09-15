@@ -12,16 +12,11 @@ slidenumbers: false
 
 ^ You may be looking at a partially-rendered version of this document, thanks to GitHub's ability to render basic MarkDown in the browser as formatted text. If so, you can look at the original document by clicking the [Raw] link above.
 
-[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/optimism.md
+[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/optimism-ii.md
 
-^ I delivered the first version of this presentation at [Nordic Ruby] in 2016. You watch see an "unofficial" video of the presentation on [YouTube]. You can also review the fully rendered slides on [SpeakerDeck]
+^ I delivered this version at [DevDay 2016]. The fully rendered slides are on [SpeakerDeck], and you can download a PDF there as well.
 
-[Nordic Ruby]: http://www.nordicruby.org
-[YouTube]: https://www.youtube.com/watch?v=8xjntzo-mYc
-[SpeakerDeck]: https://speakerdeck.com/raganwald/optimism
-
-^ This version was updated for [DevDay 2016]. When a video or rendered slides are available, links will be added to this document.
-
+[SpeakerDeck]: https://speakerdeck.com/raganwald/optimism-ii
 [DevDav 2016]: http://devday.pl
 
 ^ Some people have pointed out that DeckSet's MarkDown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like submit your own [pull request] on GitHub, so MarkDown does have some interesting affordances.
