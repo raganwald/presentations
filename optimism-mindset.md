@@ -616,7 +616,7 @@ slidenumbers: true
 
 ---
 
-## when **you** state a theme and stick to it, your posts are always powerful
+## when **you** state and stick to a theme, your posts are always coherent
 
 ---
 
