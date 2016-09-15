@@ -1,7 +1,7 @@
-footer: DevDay 2016 | @raganwald
+footer: DevDay 2016 | @raganwald | #ABBDevDay
 slidenumbers: true
 
-# Optimism
+# Optimism II
 
 ^ © 2016 Reginald Braithwaite. [Some rights reserved](http://creativecommons.org/licenses/by-sa/4.0/).
 
@@ -171,20 +171,6 @@ slidenumbers: true
 
 ---
 
-### THE
-## Personal vs. Impersonal
-# Paradox
-
-^ So, the obvious question to ask is, **Are optimists more or less likely to "take things personally?"**
-
-^ I'm not going to say what he says just yet, but when I was reading about this in the book, I didn't know what to think. If you read books by self-help gurus, a lot of them talk quite a bit about taking responsibility for everything that happens in your life. It seems they advocate taking everything personally.
-
-^ Yet people who "take things too personally" are often morose, depressed, and defensive. It feels like a paradox: Happy, successful people take responsibility for their lives, while many depressed, unsuccessful people think they are the cause of the unhappiness in their lives.
-
-^ We'll come back to Dr. Seligman's answer after discussing the other two axes.
-
----
-
 ![original](images/iceland/9997796545_b8788d161b_k.jpg)
 
 ^ https://www.flickr.com/photos/aigle_dore/9997796545
@@ -217,20 +203,6 @@ slidenumbers: true
 # Specific vs. General
 
 ^ And thus it is with our explanations for the things that happen in our lives. Some of the explanations we make up are specific. Some of the explanations are general. And "specific vs. general" is the second axis of Dr. Seligman's explanatory theory.
-
----
-
-### THE
-## Specific vs. General
-# Paradox
-
-^ And if we have not read about Learned Optimism before, we must be curious: **Are optimists more likely to come up with specific explanations for things in their life? Or more likely to come up with general explanations?**
-
-^ When I read this, I was just as confused as I was when I read about personal and impersonal explanations. I knew many people who were happy and successful, and they had overwhelmingly general ideas about their own experience and talent. They sincerely believed they were successful in a general sense.
-
-^ But I also knew some very depressed people who had remarkably general explanations for their failure. They believed that they were "failures in life," a general explanation if ever there was one.
-
-^ So once again: Paradox! Were optimistic people more likely to give general or specific explanations for the things that happened to them? And how could we reconcile this with what we know about unhappy, unsuccessful people?
 
 ---
 
@@ -272,14 +244,6 @@ slidenumbers: true
 ^ So there you have two more ways of explaining something: Is it temporary? Or is it permanent? Did it happen just this specific time? Or is an on-going part of our lives?
 
 ^ And neither explanation has to be wrong. It's just a question of what we emphasize to ourselves.
-
----
-
-### THE
-## Temporary vs. Permanent
-# Paradox
-
-^ Obviously, we can measure whether explanations tend to describe things in temporary or permanent ways. And given what we saw with personal vs. impersonal, and specific vs. general explanations, we would not be surprised to discover that happy successful people appear to describe all sorts of things in permanent ways, like their success. And so do unhappy, unsuccessful people.
 
 ---
 
@@ -402,7 +366,23 @@ slidenumbers: true
 
 ### Changing your explanations through repetition and consistency, changes your life: You become happier and more productive.
 
-^ And now, to part II.
+^ Learned Optimism resonated with me. I worked on adjusting the way I explained good and bad events to myself, and the way I talked about them with other people, and over time I did become happier, and while it's hard to measure productivity for programming, I observed that I was dropping a lot of my unproductive habits.
+
+^ And now, to Part II.
+
+---
+
+![original](images/iceland/4981970535_cb99c4f660_o.jpg)
+
+^ https://www.flickr.com/photos/magical-world/4981970535
+
+^ But there was an interesting counterpoint to my experience.
+
+^ I've worked and trained with a number of successful people. Many describe *other* successful people as having personal, general and permanent attributes for success, like being "smart, or "athletic."
+
+^ But they describe their own success as coming from specific and temporary causes, like practise and training. According to the Learned Optimism model, they were a little pessimistic! They saw their success as coming from hard work, or as one person I know put it in a presentation, from "**grit**."
+
+^ What explains this?
 
 ---
 
@@ -495,7 +475,7 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/14475132795_db17b60755_o.jpg)
+![original](images/iceland/14475132795_db17b60755_o.jpg "Icelandair takeoff")
 
 ^ https://www.flickr.com/photos/xavier-gardere/14475132795
 
@@ -521,7 +501,9 @@ slidenumbers: true
 
 ---
 
-# Learned Optimism vs. Mindsets
+![original](images/iceland/14959573699_28aba848f8_k.jpg "Volcano")
+
+^ https://www.flickr.com/photos/41812768@N07/14959573699
 
 ^ Now we have two models, Dr. Seligman's "Learned Optimism" model, and Dr. Dweck's "Mindsets" model.
 
@@ -531,127 +513,62 @@ slidenumbers: true
 
 ^ Dr. Seligman teaches people to explain their successes as being Personal, General, and Permanent.
 
-^ Dr. Dweck teaches people to explain their success as the result of activities that grow their abilities.
+^ Dr. Dweck teaches people to explain their success as the result of activities that grow their abilities, not permanent talents.
 
-^ How do these relate to each other?
-
----
-
-![original](images/iceland/14959573699_28aba848f8_k.jpg)
-
-^ https://www.flickr.com/photos/41812768@N07/14959573699
-
-^ Remember all the people talking to me about Learned Optimism? They said that they did not understand how Learned Optimism could work, given what Dr. Dweck had discovered. They were certain that teaching yourself to attribute the good things in your life to personal, general, and permanent forces was teaching yourself the *fixed* mindset.
-
-^ This surprised me, because I saw Learned Optimism as teaching me the *growth* mindset. How did I see growth where others saw fixed?
-
-^ After talking at length with people, I came up with a conjecture of my own: It absolutely works to attribute the positive things in our lives to personal, general, and permanent forces, but it matters which forces we choose.
+^ Is this a conflict?
 
 ---
 
-## **against**
-# Learned Optimism
+# Returning to Childhood
 
-^ Let's consider an example from Dr. Dweck's book.
+^ Let's return to the example of getting an "A" from studying.
 
-^ What happens when we tell a child that they got an "A" on a test because they are *smart*? This  sounds like a personal, general, and permanent attribute. And the research shows that children who are told they get good results because they are smart end up doing more poorly than those who are told that they got an "A" because they studied.
+^ By Dr. Seligman's model, explaining that a child "Received an A because they studied," is personal (they studied), is specific, and it's temporary.
 
-^ Studying is personal, but it is specific in that it mostly improves performance in the subject you studied. Is it permanent? Well, if your learned something, that knowledge is somewhat permanent. But if you want to keep doing well in school, you have to keep studying. So from the perspective of getting more "A's," studying is temporary.
+^ Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that fit the Learned Optimism model and the Growth Mindset model.
 
-^ So it sounds like the growth mindset comes from telling children that their success flows from activities that are personal, but also specific and temporary.
-
-^ Or does it?
-
----
-
-![original](images/iceland/14788286996_b5e932302b_k.jpg)
-
-^ https://www.flickr.com/photos/briangratwicke/14788286996
-
-^ My proposition is that "being smart" is a broken model for success, and it has nothing to do with being general or permanent. It's just broken! What is smart? If we tell someone, "You got an A because you're smart," are we really saying that everyone with an IQ of at least 120 would also get an "A?"
-
-^ "Smart" is a vague word, and mostly what we mean when we say someone is "smart," is that they get "A's" on tests, or solve hard problems, or find interesting insights into complicated phenomena.
-
-^ So telling a child that they got an "A" because they were smart is telling them that they got an "A" because they get "A's." That's not a model, that's a tautology.
-
-^ Let's go back to Dr. Seligman's work on Learned Optimism. What does it constantly emphasize? That optimistic people are happier and more productive. The happiness comes from optimistic beliefs. The performance comes from making better choices.
-
-^ If we do not believe that we are smart, we are unlikely to start believing it just because someone says so and we got this one "A." But even if we did, maybe we would be a little happier. But would we make better choices and become more productive? I say, no. "Smart" has nothing to do with choice. It does not express our agency.
-
-^ "Smart" is not a good explanation for the growth mindset, and it isn't a particularly good explanation for Learned Optimism, either. It has no choice in it.
-
----
-
-# Optimistic Growth
-
-^ So what about studying? By Dr. Seligman's model, explaining that a child received an "A" because they studied, is specific, temporary, and it expresses choice. Is there a way to make "studying" general and permanent? If there was, we could give feedback to children that was both Optimistic *and* Growth-Oriented.
-
-^ Yes, there is. Consider:
+^ Consider:
 
 ---
 
 ### you got an "A," because
 ## **you studied**
 
-^ That's the specific and temporary feedback that is growth-oriented. Now consider:
+^ That's specific and temporary. Now consider:
 
 ---
 
 ### you got an "A," because
 ## **when you study, your grades improve**
 
-^ This feedback is still specific, and still growth-oriented, but it's permanent. Can we make it general without making it vague or introducing a broken model? Consider:
+^ This feedback is still specific, but it's permanent. Can we make it general as well? Consider:
 
 ---
 
 ### you got an "A," because
 ## **when you study, you learn, and your grades reflect your learning**
 
-^ Aha! This feedback is personal, general, permanent, and growth-oriented. Being growth-oriented need not conflict with Learned Optimism, but we must carefully choose our explanations to fit both models.
-
-^ And the model I am presenting to you for doing this, is to express the Learned Optimism axes in terms of **choices**.
+^ Aha! This feedback is personal, general, permanent, *and* it fits the Growth Mindset.
 
 ---
 
-# The optimistic mindset for **positive** events
+![original](images/iceland/14788286996_b5e932302b_k.jpg "The oldest library in Iceland")
 
-- Emphasizes personal choice;
-- Generalizes the results of the specific choices;
-- Emphasizes an ongoing arc of applying choices to produce personal growth.
+^ https://www.flickr.com/photos/briangratwicke/14788286996
 
----
+^ The lesson here is that it is possible to construct explanations for positive events as being personal, general, permanent, **and** emphasize growth.
 
-![original](images/iceland/4517294977_a387d276f5_o.jpg)
-
-^ https://www.flickr.com/photos/8058853@N06/4517294977
-
-^ And from our asymmetric model of Learned Optimism, we reverse our explanations for negative events: We make them impersonal, we deëmphasize choice, we make the event specific, and we emphasize the temporary nature of the event.
+^ And we see that one way to do this is through emphasizing our agency, the personal choices we make, and casting them in terms of lifelong growth.
 
 ---
 
-# The optimistic mindset for **negative** events
+# Optimism and growth for **positive** feedback
 
-- Emphasizes an impersonal event;
-- Restricted to a specific impact;
-- Casts the negative as temporary blips in an otherwise positive ongoing arc.
+- Emphasize personal choice;
+- Generalize the results of the our choices;
+- Emphasize an ongoing arc of applying choices to produce personal growth.
 
----
-
-![original](images/iceland/23692080713_a4c7de35ea_k.jpg)
-
-^ https://www.flickr.com/photos/jenniferboyer/23692080713
-
-^ If you accept my conjecture, Learned Optimism and the Growth Mindset are not in conflict, but can work together.
-
-^ And if they do work together, we  can train ourselves to be optimistic and to have a growth mindset, improving our happiness and productivity.
-
-^ How about feedback? Can we encourage others to be optimistic **and** to have a growth mindset through feedback?
-
----
-
-# Positive Feedback
-
-^ Positive feedback is easy to construct: Emphasize the personal choice, generalize its results, and put it in the context of an ongoing character arc:
+^ This applies to our own explanations and to feedback that we give others. Here's an example:
 
 ---
 
@@ -661,15 +578,39 @@ slidenumbers: true
 
 ---
 
-# Negative Feedback
+![original](images/iceland/4517294977_a387d276f5_o.jpg "The Last House")
 
-^ Negative feedback is also easy to construct, it requires two steps. First, we give impersonal, specific, and temporary feedback about behaviour that we want changed:
+^ https://www.flickr.com/photos/8058853@N06/4517294977
+
+^ Of course, not all events are positive, and not all feedback is positive.
+
+^ From our asymmetric model of Learned Optimism, we reverse our explanations for negative events: We make them impersonal, we deëmphasize choice, we make the event specific, and we emphasize the temporary nature of the event. Like this:
+
+---
+
+# Optimism and growth for **negative** feedback
+
+- Emphasize an impersonal cause of the event;
+- Restrict to a specific impact;
+- Emphasize that this is a temporary blip in an otherwise positive ongoing arc.
+
+---
+
+![original](images/iceland/23692080713_a4c7de35ea_k.jpg "Litlibær")
+
+^ https://www.flickr.com/photos/jenniferboyer/23692080713
+
+^ There are many ways to give good constructive feedback in response to a negative event. One deservedly popular approach is to be impersonal, specific, and temporary about the negative event, then provide personal, general, and permanent guidance as to how to improve things in the future.
+
+^ Note that "general" does not preclude giving specific advice about what to do, it speaks to the *general impact* of the recommended action.
+
+^ So we start with the negative feedback:
 
 ---
 
 ## **this** blog post lacks an overall narrative that would hold its arguments together
 
-^ Then we frame a suggested course of action in optimistic and growth mindset terms:
+^ Then we frame the suggested course of action in optimistic and growth mindset terms:
 
 ---
 
@@ -677,15 +618,28 @@ slidenumbers: true
 
 ---
 
-![original](images/iceland/11755209913_bd391eb972_k.jpg)
+![original](images/iceland/17745689272_f25cf08ba8_k.jpg "Silfra Rift")
 
-^ https://www.flickr.com/photos/jonathanhood/11755209913
+^ https://www.flickr.com/photos/jenniferboyer/17745689272
 
-^ As we can see, the "Learned Optimism" and "Growth Mindsets" can fit together, both in how we teach ourselves to think, and in how we construct feedback for others to encourage them to be optimistic and to have their own growth mindsets.
+^ So we can give constructive feedback to others--or ourselves--that fits the Learned Optimism and Growth Mindset models.
+
+^ The "Learned Optimism" and "Growth Mindsets" can fit together, both in how we teach ourselves to think, and in how we construct feedback for others to encourage them to be optimistic and to have their own growth mindsets.
 
 ---
 
-# The Optimistic Team
+# Grit
+### (explained)
+
+^ I mentioned earlier that some people see their accomplishments as flowing from a lifelong series of activities. They see themselves as less talented than other people, but they make up for it with hard work, or discipline, or "grit."
+
+^ At first glance, Learned Optimism didn't seem to fit their model for success, but now we see that it does, we just need to see that the personal, general and permanent cause for their success is the way they apply hard work, discipline, and grit to become successful.
+
+---
+
+![original](images/iceland/24548550959_2343cbe619_k.jpg "Harpa Opera House")
+
+^ https://www.flickr.com/photos/misschatter/24548550959
 
 ^ It is not an accident that I am talking about feedback at a software conference.
 
@@ -693,7 +647,23 @@ slidenumbers: true
 
 ^ It turns out that the dynamics of a team matter more than the skill of the individual contributors. One huge part of that dynamic is how the team views itself: Is it an Optimistic Team? Does the team have a Growth Mindset?
 
+---
+
+# The Optimistic Team
+
 ^ My proposition today is that we have an enormous influence over the team's dynamics through the way we explain the team's performance and the way the team gives itself feedback. And I've given you two models to consider for your own personal growth as well as for your team's growth.
+
+^ I love technical work as much as anybody. But agonizing for months over what framework to use for our code while ignoring the framework we use for thinking about our work and for communicating with each other is an example of misplaced priorities.
+
+^ So this is why I am here today, to share with you my personal experience adopting a framework for thinking about the causes for things that happen in my life and my work, and how that relates to communicating with others.
+
+---
+
+![original](images/iceland/11755209913_bd391eb972_k.jpg "Fireworks")
+
+^ https://www.flickr.com/photos/jonathanhood/11755209913
+
+^ A final caution.
 
 ^ I  want to emphasize that Dr. Seligman's work on Learned Optimism is based on actual research, as is Dr. Dweck's work on Mindsets. My own experience applying these ideas to my life is just an anecdote. My conjectures about fitting the two together is an exploration of an idea, it is not a proven concept.
 
@@ -709,7 +679,8 @@ slidenumbers: true
 
 ---
 
-# Reg Braithwaite<br>PagerDuty, Inc.
+# Reginald Braithwaite
+## PagerDuty, Inc.
 ### [raganwald.com](http://raganwald.com)<br>[@raganwald](https://twitter.com/raganwald)
 
 ![right, fit](images/learned-optimism.jpg)
