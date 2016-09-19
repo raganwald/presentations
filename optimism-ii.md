@@ -440,7 +440,7 @@ slidenumbers: false
 
 ^ Well, the answer depends very much on what the children already think of themselves. If a child thinks that they are good at something, if the child thinks they are competent, telling them that they are good at it and that they have accomplished something simply reinforces what they already believed.
 
-^ But what if the child has doubts? This is an important case, because most children have doubts abut themselves in one way or another. This is the very basis of being a child, being small and inexperienced and powerless in the world.
+^ But what if the child has doubts? This is an important case, because most children have doubts about themselves in one way or another. This is the very basis of being a child, being small and inexperienced and powerless in the world.
 
 ---
 
