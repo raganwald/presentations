@@ -8,6 +8,25 @@ autoscale: true
 
 ^ The Command Pattern
 
+^ Note to the reader: This document is written in [Markdown], a somewhat human-readable markup language. It is processed by a program called [DeckSet], which turns it into a presentation. DeckSet does various things such as treating every paragraph that begins with a caret (`^`) into a speaker's note that is not visible to the audience.
+
+[Markdown]: https://en.wikipedia.org/wiki/Markdown
+[DeckSet]: http://www.decksetapp.com
+
+^ You may be looking at a partially-rendered version of this document, thanks to GitHub's ability to render basic MarkDown in the browser as formatted text. If so, you can look at the original document by clicking the [Raw] link above.
+
+[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/command-pattern.md
+
+^ The fully rendered slides are on [SpeakerDeck], and you can download a PDF there as well.
+
+[SpeakerDeck]: https://speakerdeck.com/raganwald/first-class-commands-an-unexpectedly-fertile-design-pattern
+
+^ Some people have pointed out that DeckSet's MarkDown is not an excellent format for reading the material as compared to an essay. This is true. In its favour, you can't read a PowerPoint or KeyNote presentation's raw file *at all*, nor can you do interesting things like submit your own [pull request] on GitHub, so MarkDown does have some interesting affordances.
+
+[pull request]: https://github.com/raganwald/presentations/pulls?q=is%3Apr+is%3Aclosed
+
+^ Thanks for reading this, and feel free to post an [Issue](https://github.com/raganwald/presentations/issues).
+
 ---
 
 # First-Class Commands
