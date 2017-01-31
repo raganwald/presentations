@@ -178,10 +178,6 @@ Unfulfilled ideas are ideas that _would have_ become features creating customer 
 
 # Unfulfilled Data
 
----
-
-# Unfulfilled Data
-
 
 Unfulfilled data is data that _would have_ pointed us towards valuable ideas for creating customer value, had we considered it earlier than we did.
 
@@ -243,7 +239,7 @@ Waste is:
 
 ---
 
-# Three-Part Examination
+# Five Easy Pieces
 
 ![](images/waste/exam.jpg)
 
@@ -266,6 +262,18 @@ Waste is:
 ### Question Three
 
 # Is **tooling** actually waste?
+
+---
+
+### Question Four
+
+## What does this model tell us about **continuous integration and deployment**?
+
+---
+
+### Question Five
+
+# What does this model tell us about **big design up-front**?
 
 ---
 
