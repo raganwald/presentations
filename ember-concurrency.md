@@ -78,7 +78,7 @@ task(function * () {
 
 ---
 
-# 💣
+# 🐛
 
 ```
 this.set('isLoading', true);
@@ -97,7 +97,7 @@ this.xhr = fetch(id).then(
 
 ---
 
-# 🎉
+# 🎈
 
 ```
 
@@ -164,7 +164,7 @@ anInstance.cancel();
 
 ---
 
-# 💣
+# ⛈
 
 ```
 websocket ping: [-----------------]
@@ -176,7 +176,7 @@ our user submits an update in the foreground.
 
 ---
 
-# ❓
+# ☀️
 
 ![inline](images/ember-concurrency/enqueued.png)
 
