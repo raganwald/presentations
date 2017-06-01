@@ -15,7 +15,7 @@ footer: Reginald @raganwald Braithwaite, PagerDuty Inc.
 
 # tasks and instances
 
-```
+```javascript
 aTask = task(function * () {
   const { geolocation, store } = this.get(...);
 
@@ -56,7 +56,7 @@ anInstance = someTask.perform();
 
 # concurrency protocols
 
-```
+```javascript
 task(function * () {
   // ...
 }).drop()
@@ -80,7 +80,7 @@ task(function * () {
 
 # 🐛
 
-```
+```javascript
 this.set('isLoading', true);
 this.xhr = fetch(id).then(
   success => {
@@ -99,8 +99,7 @@ this.xhr = fetch(id).then(
 
 # 🎈
 
-```
-
+```javascript
 isLoading: reads('fetchTask.isRunning')
 ```
 
@@ -122,7 +121,7 @@ isLoading: reads('fetchTask.isRunning')
 
 # progress
 
-```
+```javascript
 const chunks = _.chunk(incidents, CHUNK_SIZE);
 let done = 0;
 
@@ -142,7 +141,7 @@ for (const theseIncidents of chunks) {
 
 # cancellation
 
-```
+```javascript
 aTask.cancelAll();
 
 anInstance.cancel();
@@ -184,7 +183,7 @@ our user submits an update in the foreground.
 
 # sharing one task
 
-```
+```javascript
 task(function * (promissoryThunk) {
   let result;
 
@@ -216,7 +215,7 @@ submit update:            [-------]
 
 # task groups
 
-```
+```javascript
 tasks: taskGroup().enqueue(),
 
 handlePing: task(function * () {
