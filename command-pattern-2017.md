@@ -15,7 +15,7 @@ autoscale: true
 
 ^ You may be looking at a partially-rendered version of this document, thanks to GitHub's ability to render basic MarkDown in the browser as formatted text. If so, you can look at the original document by clicking the [Raw] link above.
 
-[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/command-pattern.md
+[Raw]: https://raw.githubusercontent.com/raganwald/presentations/master/command-pattern-2017.md
 
 ^ The fully rendered slides are on [SpeakerDeck], and you can download a PDF there as well.
 
@@ -131,7 +131,7 @@ buffer.replaceWith("canine", 40, 43);
 
 ---
 
-# store it
+# storing invocations
 
 ![](images/command/hp2600n.jpg)
 
@@ -193,7 +193,25 @@ while (jobQueue.length > 0) {
 
 ---
 
-# query it
+# job queues
+
+![](images/command/houston-chronicale.jpg)
+
+^ https://www.flickr.com/photos/eschipul/1219204898)
+^ Deferred execution
+^ Asynchronous execution
+
+---
+
+![fit](images/command/enqueued.png)
+
+^ chaining and handling serialization
+^ cancel
+^ ember concurrency: task instances are like commands, tasks are like job queues
+
+---
+
+# querying invocations
 
 ![](images/command/keyboard.jpg)
 
@@ -207,6 +225,7 @@ class Edit {
   netChange () {
     return this.from - this.to + this.replacement.length;
   }
+
 }
 ```
 
@@ -226,11 +245,38 @@ buffer.replaceWith("fast", 4, 9).netChange();
 
 ---
 
-# transform it
+# command state
+
+---
+
+![fit](images/command/acknowledging.png)
+
+^ status
+^ queue control versus debouncing functions
+
+---
+
+# command history
+
+---
+
+![fit](images/command/timeline.png)
+
+^ logs as first-class entities
+^ tracking behaviour
+
+^ traditional logs are terrible and opaque
+^ why litter our UX code with tracking invocations?
+
+---
+
+# transforming invocations
 
 ![](images/command/stamps.jpg)
 
 ^ https://www.flickr.com/photos/micurs/4906349993
+
+^ combinators, combinators, combinators
 
 ---
 
@@ -243,6 +289,7 @@ class Edit {
         to = from + this.replacement.length;
     return new Edit(buffer, {replacement, from, to});
   }
+
 }
 ```
 
@@ -1084,6 +1131,14 @@ carol.appendAll(bob);
 
 ---
 
+# how does differential synchronization differ from the command pattern?
+
+^ lose the semantics
+
+^ but more flexible!
+
+---
+
 # this is a very big problem space
 
 ---
@@ -1093,6 +1148,8 @@ carol.appendAll(bob);
 ^ https://www.flickr.com/photos/sidelong/18620995913
 
 ^ There are only two hard problems in computer science: Cache invalidation, and naming things--Phil Karleton
+
+^ leads into discussing what we call merging and version control
 
 ---
 
@@ -1132,6 +1189,12 @@ class Branch {
 
 ![](images/command/github.png)
 
+^ git is differential
+
+^ what we lose is semantics like "rename this variable"
+
+^ what we win is flexibility: any tool can perform edits
+
 ---
 
 # with invocations as first-class entities, we can build distributed algorithms and protocols; we can master time and change
@@ -1142,13 +1205,44 @@ class Branch {
 
 ^ https://www.flickr.com/photos/stawarz/3848824508
 
+^ today's users expect real-time and collaborative applications
+
 ---
 
-> "Never confuse the example given of a pattern, with the underlying idea the pattern represents."
+
+![fit](images/command/schedule.png)
+
+^ real-time and interactive is the default. we really need to take another look at EVERY single-user batch-and-submit UX interaction and rethink it.
+
+^ Why can't support help me fill out a form?
+
+^ Why can't multiple people collaboratively edit a form?
+
+^ Why don't things we save have version control?
+
+^ Why can't we merge changes from multiple forks of a form?
+
+---
+
+# down, tiger!
 
 ![](images/command/ibm-1403-printer-chain.jpg)
 
 ^ https://www.flickr.com/photos/mwichary/3338901313
+
+^ These are excellent ideas, but somewhat "boil the ocean."
+
+^ What can we do modestly? How do we get started?
+
+---
+
+# separation of concerns
+
+![](images/command/printing-inks.jpg)
+
+^ https://www.flickr.com/photos/churchhatestucker/2472583642
+
+^ this is the big wrap-up: get a lot of code out of the UX and out of the persistence mechanism
 
 ---
 
