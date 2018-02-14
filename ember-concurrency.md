@@ -32,13 +32,11 @@ anInstance = someTask.perform();
 
 ---
 
-# problems
-# ember-concurrency
-# solves easily
+# problems ember-concurrency solves, easily
 
 ---
 
-## Mashing the "submit" button on an update
+## mashing the "submit" button on an update
 
 ![inline 200%](images/ember-concurrency/mash.png)
 
@@ -107,9 +105,7 @@ isLoading: reads('fetchTask.isRunning')
 
 ---
 
-# using
-# ember-concurrency
-# to solve other problems
+# using ember-concurrency to solve other problems
 
 ---
 
@@ -153,13 +149,13 @@ anInstance.cancel();
 
 ---
 
-> In JavaScript, asynchronous tasks happen concurrently and unreliably.
+> In JavaScript, AJAX requests happen **concurrently**.
 
 ---
 
 ^ Job Switching Video
 
-![autoplay mute](https://www.youtube.com/watch?v=_FLpXmxTbbM&t=1m30s)
+![autoplay mute](https://www.youtube.com/watch?v=_FLpXmxTbbM&t=1m28s)
 
 ---
 
@@ -237,5 +233,9 @@ submitUpdate: task(function * () {
 ---
 
 ## Simple things are easy,  complex things are *possible*.
+
+---
+
+![](/Users/reg/Desktop/train.jpg)
 
 
