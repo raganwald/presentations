@@ -1,5 +1,5 @@
 build-lists: true
-footer: © Reginald Braithwaite and PagerDuty, 2017
+footer: © 2017 Reginald Braithwaite and PagerDuty, Inc.
 slidenumbers: true
 
 ![](/Users/reg/work/presentations/images/waste/gov-waste.jpg)
